@@ -1,1 +1,6 @@
 theme: jekyll-theme-cayman
+author_profile: true
+title: WEB322
+description: Web Programming Tools and Frameworks
+baseurl: /web322
+encoding: UTF-8
