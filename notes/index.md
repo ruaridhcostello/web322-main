@@ -22,7 +22,7 @@ Here, you will find the links to the weekly notes.  Please also remember to refe
 <td>
   Topic:<br><br>
 <ul>
-<li>Details<li>
+<li>Details</li>
 </ul>
 </td>
 </tr>
@@ -31,7 +31,7 @@ Here, you will find the links to the weekly notes.  Please also remember to refe
 <td>
   Topic:<br><br>
 <ul>
-<li>Details<li>
+<li>Details</li>
 </ul>
 </td>
 </tr>
@@ -40,7 +40,7 @@ Here, you will find the links to the weekly notes.  Please also remember to refe
 <td>
 Topic:<br><br>
 <ul>
-<li>Details<li>
+<li>Details</li>
 </ul>
 </td>
 </tr>
@@ -49,7 +49,7 @@ Topic:<br><br>
 <td>
 Topic:<br><br>
 <ul>
-<li>Details<li>
+<li>Details</li>
 </ul>
 </td>
 </tr>
@@ -58,7 +58,7 @@ Topic:<br><br>
 <td>
 Topic:<br><br>
 <ul>
-<li>Details<li>
+<li>Details</li>
 </ul>
 </td>
 </tr>
@@ -67,7 +67,7 @@ Topic:<br><br>
 <td>
 Topic:<br><br>
 <ul>
-<li>Details<li>
+<li>Details</li>
 </ul>
 </td>
 </tr>
@@ -76,7 +76,7 @@ Topic:<br><br>
 <td>
 Topic:<br><br>
 <ul>
-<li>Details<li>
+<li>Details</li>
 </ul>
 </td>
 </tr>
@@ -85,7 +85,7 @@ Topic:<br><br>
 <td>
 Topic:<br><br>
 <ul>
-<li>Details<li>
+<li>Details</li>
 </ul>
 </td>
 </tr>
@@ -94,7 +94,7 @@ Topic:<br><br>
 <td>
 Topic:<br><br>
 <ul>
-<li>Details<li>
+<li>Details</li>
 </ul>
 </td>
 </tr>
@@ -103,7 +103,7 @@ Topic:<br><br>
 <td>
 Topic:<br><br>
 <ul>
-<li>Details<li>
+<li>Details</li>
 </ul>
 </td>
 </tr>
@@ -112,7 +112,7 @@ Topic:<br><br>
 <td>
 Topic:<br><br>
 <ul>
-<li>Details<li>
+<li>Details</li>
   </ul>
 </td>
 </tr>
@@ -121,7 +121,7 @@ Topic:<br><br>
 <td>
 Topic:<br><br>
 <ul>
-<li>Details<li>
+<li>Details</li>
 </ul>  
 </td>
 </tr>
