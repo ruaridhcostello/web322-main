@@ -26,7 +26,7 @@ You will need to also install other applications to run the examples once the re
 ## Cloning the repo
 
 The command to clone the repo is:
-> `git clone https://github.com/sictweb/web322.git`.
+> `git clone https://github.com/Seneca-WEB322/examples.git`.
 
 You will want to already be in the folder where you want the repo to be cloned and stored. A good place is c:\gitrepos on windows or /gitrepos on mac. A gitrepos folder right in your root of your main drive. You can put it anywhere you want though.
 
