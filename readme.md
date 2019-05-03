@@ -35,7 +35,7 @@ Important Note: If you run the 'git clone' command from within an open folder Vi
 <a name="a2"></a>
 ## Running the examples locally
 
-One you have cloned the repo you will want to make sure you are in the main folder and you can set up the examples.
+One you have cloned the repo you will want to make sure you are in the "Code Examples" folder and you can set up the examples.
 
 The main step is to run npm install in the repo to install all the packages that the examples are dependant on.
 > `npm install`
