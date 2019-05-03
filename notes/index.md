@@ -5,7 +5,7 @@ layout: default
 
 ## Notes
 
-Here, you will find the links to the weekly notes.  Please also remember to refer to the [learning resources](/web322/resources) for additional help.
+Here, you will find the links to the weekly notes.  
 
 <br>
 
@@ -20,108 +20,213 @@ Here, you will find the links to the weekly notes.  Please also remember to refe
 <tr>
 <td><a href="/web322/notes/week01">1 - Notes</a></td>
 <td>
-  Topic:<br><br>
+  Course Introduction:<br><br>
 <ul>
-<li>Details</li>
+<li>Development Environment / Technology / Tools</li>
+<li>Web Servers &amp; HTTP Request / Response Paradigm</li>
+<li>HTTP Protocol Overview
+<ul>
+<li>Verbs</li>
+<li>Status Codes</li>
+<li>Headers</li>
+<li>Request / Response Formats</li>
+</ul>
+</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td><a href="/web322/notes/week02">2 - Notes</a></td>
 <td>
-  Topic:<br><br>
+  Node.js Introduction:<br><br>
 <ul>
-<li>Details</li>
+<li>What is Node.js / Why use it?</li>
+<li>Modules explained</li>
+<li>NPM – Node Package Manager</li>
+<li>Package.json Explained</li>
+<li>Building a simple web server using Node.js with Express.js
+<ul>
+<li>Files / Directory Structure</li>
+<li>Downloading dependencies (Express.js) with NPM</li>
+<li>Coding a simple server using Express</li>
+<li>Sending Data back from a “get” request</li>
+</ul>
+</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td><a href="/web322/notes/week03">3 - Notes</a></td>
 <td>
-Topic:<br><br>
+JavaScript Concept Review:<br><br>
 <ul>
-<li>Details</li>
+<li>Object Oriented JavaScript Review:
+<ul>
+<li>Custom Objects using Object Literal Notation &amp; Function Constructors</li>
+<li>Error handling with try / catch / finally &amp; throw</li>
+<li>Prototypal Inheritance</li>
+</ul>
+</li>
+<li>Advanced JavaScript / ES6 Features:
+<ul>
+<li>Promises</li>
+<li>“var” vs “let” vs “const”</li>
+<li>“class” keyword</li>
+<li>“this” keyword &amp; arrow functions (lexical “this”)</li>
+</ul>
+</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td><a href="/web322/notes/week04">4 - Notes</a></td>
 <td>
-Topic:<br><br>
+Express.js Introduction:<br><br>
 <ul>
-<li>Details</li>
+<li>What is Express.js?</li>
+<li>Configuration &amp; Settings</li>
+<li>Routing</li>
+<li>Middleware</li>
+<li>Error Handling</li>
+<li>Chrome Dev tools – Network tab, Response data</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td><a href="/web322/notes/week05">5 - Notes</a></td>
 <td>
-Topic:<br><br>
+Processing Forms with Express.js:<br><br>
 <ul>
-<li>Details</li>
+<li>HTML Forms Review</li>
+<li>Processing Forms in Express.js
+<ul>
+<li>HTTP Post &amp; Urlencoded data</li>
+<li>Content-Type in POST header &amp; enctype in HTML forms</li>
+<li>body-parser module (urlencoded form data)</li>
+<li>Multer module (multipart form data – file uploads)</li>
+</ul>
+</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td><a href="/web322/notes/week06">6 - Notes</a></td>
 <td>
-Topic:<br><br>
+Template Engines – Handlebars.js:<br><br>
 <ul>
-<li>Details</li>
+<li>Template Engines in Express.js
+<ul>
+<li>What is a Template Engine / Why do we need one</li>
+</ul>
+</li>
+<li>Handlebars.js
+<ul>
+<li>Including the express-handlebars module</li>
+<li>Getting Started with Handlebars.js &amp; Samples</li>
+<li>Block Expressions / Helpers</li>
+<li>Built-In Helpers
+<ul>
+<li>if, unless, each</li>
+</ul>
+</li>
+<li>Partials</li>
+</ul>
+</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td><a href="/web322/notes/week07">7 - Notes</a></td>
 <td>
-Topic:<br><br>
+Relational Database:<br><br>
 <ul>
-<li>Details</li>
+<li>Setting up a “Postgres” Database</li>
+<li>Downloading the “sequelize” &amp; “pg” modules</li>
+<li>Object-Relational Mapping Explained &amp; Requesting Data</li>
+<li>Returning &amp; Formatting data using Handlebars.js</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td><a href="/web322/notes/week08">8 - Notes</a></td>
 <td>
-Topic:<br><br>
+MongoDB:<br><br>
 <ul>
-<li>Details</li>
+<li>What is a NoSQL Database? Advances / Disadvantages</li>
+<li>Configuring a NoSQL Database (MongoDB)</li>
+<li>Downloading / installing MongoDB Driver (module) for Node</li>
+<li>Queries</li>
+<li>Tools – Robo 3T (Robomongo) </li>
+<li>Mongoose.js</li>
+<li>Schema, indexes</li>
 </ul>
 </td>
 </tr>
   <tr>
 <td><a href="/web322/notes/week09">9 - Notes</a></td>
 <td>
-Topic:<br><br>
+AJAX Review / Practical AJAX Programming:<br><br>
 <ul>
-<li>Details</li>
+<li>Review: What is AJAX? Why do we need it?</li>
+<li>Requesting data (JSON) on the Client Side using JavaScript
+<ul>
+<li>XMLHttpRequest Object</li>
+<li>Handling State Changes &amp; Processing the Response</li>
+<li>Updating the DOM</li>
+</ul>
+</li>
+<li>Processing XMLHttpRequest Requests on the server and returning data</li>
+<li>RESTful API Introduction</li>
 </ul>
 </td>
 </tr>
   <tr>
 <td><a href="/web322/notes/week10">10 - Notes</a></td>
 <td>
-Topic:<br><br>
+Managing State Information:<br><br>
 <ul>
-<li>Details</li>
+<li>Cookies</li>
+<li>Sessions</li>
+<li>Authorization vs. Authentication</li>
 </ul>
 </td>
 </tr>
     <tr>
 <td><a href="/web322/notes/week11">11 - Notes</a></td>
 <td>
-Topic:<br><br>
+Introduction to jQuery & Bootstrap Frameworks:<br><br>
 <ul>
-<li>Details</li>
-  </ul>
+<li>jQuery Introduction
+<ul>
+<li>Selectors, event handlers, AJAX</li>
+</ul>
+</li>
+<li>Introduction to the Bootstrap UI Framework
+<ul>
+<li>Responsive Layouts, HTML / CSS &amp; jQuery Components</li>
+</ul>
+</li>
+</ul>
 </td>
 </tr>
   <tr>
 <td><a href="/web322/notes/week12">12 - Notes</a></td>
 <td>
-Topic:<br><br>
+Security Considerations:<br><br>
 <ul>
-<li>Details</li>
+<li>HTTPS</li>
+<li>Letsencypt.org, free https certificates forever</li>
+<li>Password Encryption, bcrypt.js</li>
+</ul>
+</td>
+</tr>
+  <tr>
+<td><a href="/web322/notes/week12">12 - Notes</a></td>
+<td>
+Course Review:<br><br>
+<ul>
+<li>Course Review</li>
+<li>Help with any outstanding Projects</li>
 </ul>  
 </td>
 </tr>
