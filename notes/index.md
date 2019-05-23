@@ -18,7 +18,7 @@ Here, you will find the links to the weekly notes.
 </thead>
 <tbody>
 <tr>
-<td><a href="/web322/notes/week01">1 - Notes</a></td>
+<td><a href="/web322/notes/week01">1 - Notes <mark>(markdown conversion in progress)</mark></a></td>
 <td>
   Course Introduction:<br><br>
 <ul>
