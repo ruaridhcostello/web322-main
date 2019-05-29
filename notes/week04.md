@@ -7,7 +7,7 @@ layout: default
 
 <br>
 
-## ... <mark>Raw Markdown Conversion - No Fixes Done</mark>
+## ... <mark>Raw Markdown Conversion - Only Image Fixes Done</mark>
 
 ### Introduction to Express.js
 
