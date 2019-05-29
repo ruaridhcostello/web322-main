@@ -36,7 +36,7 @@ Here, you will find the links to the weekly notes.
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week02">2 - Notes</a></td>
+<td><a href="/web322/notes/week02">2 - Notes <mark>(markdown conversion in progress)</mark></a></td>
 <td>
   Node.js Introduction:<br><br>
 <ul>
@@ -56,7 +56,7 @@ Here, you will find the links to the weekly notes.
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week03">3 - Notes</a></td>
+<td><a href="/web322/notes/week03">3 - Notes <mark>(markdown conversion in progress)</mark></a></td>
 <td>
 JavaScript Concept Review:<br><br>
 <ul>
@@ -79,7 +79,7 @@ JavaScript Concept Review:<br><br>
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week04">4 - Notes</a></td>
+<td><a href="/web322/notes/week04">4 - Notes <mark>(markdown conversion in progress)</mark></a></td>
 <td>
 Express.js Introduction:<br><br>
 <ul>
@@ -148,7 +148,7 @@ Relational Database:<br><br>
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week08">8 - Notes</a></td>
+<td><a href="/web322/notes/week08">8 - Notes <mark>(markdown conversion in progress)</mark></a></td>
 <td>
 MongoDB:<br><br>
 <ul>
@@ -181,7 +181,7 @@ AJAX Review / Practical AJAX Programming:<br><br>
 </td>
 </tr>
   <tr>
-<td><a href="/web322/notes/week10">10 - Notes</a></td>
+<td><a href="/web322/notes/week10">10 - Notes <mark>(markdown conversion in progress)</mark></a></td>
 <td>
 Managing State Information:<br><br>
 <ul>
@@ -192,7 +192,7 @@ Managing State Information:<br><br>
 </td>
 </tr>
     <tr>
-<td><a href="/web322/notes/week11">11 - Notes</a></td>
+<td><a href="/web322/notes/week11">11 - Notes <mark>(markdown conversion in progress)</mark></a></td>
 <td>
 Introduction to jQuery & Bootstrap Frameworks:<br><br>
 <ul>
