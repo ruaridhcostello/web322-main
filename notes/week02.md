@@ -5,6 +5,8 @@ layout: default
 
 ## WEB322 Week 2 Notes
 
+
+
 <br>
 
 ## ... <mark>Raw Markdown Conversion - Only Image Fixes Done</mark>
@@ -76,10 +78,12 @@ Some of the key elements that we will be using are:
 
 <td>The name of the directory that the currently executing script resides in.  
 
-For example: if our .js file is located in /Users/pcrawford/ex1.js:
+For example: if our .js file is located in /Users/pcrawford/ex1.js:<br><br>
 
-    console.log(__dirname);
-    // outputs /Users/pcrawford
+{% highlight javascript %}
+console.log(__dirname);
+// outputs /Users/pcrawford
+{% endhighlight %}
 
 </td>
 
