@@ -317,7 +317,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 
     <tr>
 
-    <td>**[GET](https://tools.ietf.org/html/rfc7231#section-4.3.1)**</td>
+    <td><a href="https://tools.ietf.org/html/rfc7231#section-4.3.1" target="_blank">GET</a></td>
 
     <td>The GET method is used to retrieve information from a specified URI (Universal Resource Identifier) and is assumed to be a safe, repeatable operation by browsers, caches and other HTTP aware components. This means that the operation must have no side effects and GET requests can be re-issued without worrying about the consequences.</td>
 
@@ -325,7 +325,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 
     <tr>
 
-    <td>**[POST](https://tools.ietf.org/html/rfc7231#section-4.3.3)**</td>
+    <td><a href="https://tools.ietf.org/html/rfc7231#section-4.3.3" target="_blank">POST</a></td>
 
     <td>The POST method requests that the target resource process the representation enclosed in the request according to the resource’s own specific semantics. For example, POST is used for the following functions (among others):
 
@@ -340,7 +340,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 
     <tr>
 
-    <td>**[PUT](https://tools.ietf.org/html/rfc7231#section-4.3.4)**</td>
+    <td><a href="https://tools.ietf.org/html/rfc7231#section-4.3.4" target="_blank">PUT</a></td>
 
     <td>The PUT method is used to request that server store the content included in message body at a location specified by the given URL. For example, this might be a file that will be created or replaced.</td>
 
@@ -348,7 +348,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 
     <tr>
 
-    <td>**[HEAD](https://tools.ietf.org/html/rfc7231#section-4.3.2)**</td>
+    <td><a href="https://tools.ietf.org/html/rfc7231#section-4.3.2" target="_blank">HEAD</a></td>
 
     <td>The HEAD method is identical to GET except that the server MUST NOT send a message body in the response (i.e., the response terminates at the end of the header section). This method can be used for obtaining metadata about the selected representation without transferring the representation data</td>
 
@@ -356,7 +356,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 
     <tr>
 
-    <td>**[DELETE](https://tools.ietf.org/html/rfc7231#section-4.3.5)**</td>
+    <td><a href="https://tools.ietf.org/html/rfc7231#section-4.3.5" target="_blank">DELETE</a></td>
 
     <td>The DELETE method requests that the origin server remove the association between the target resource and its current functionality. In effect, this method is similar to the rm command in UNIX: it expresses a deletion operation on the URI mapping of the origin server.</td>
 
@@ -364,7 +364,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 
     <tr>
 
-    <td>**[CONNECT](https://tools.ietf.org/html/rfc7231#section-4.3.6)**</td>
+    <td><a href="https://tools.ietf.org/html/rfc7231#section-4.3.6" target="_blank">CONNECT</a></td>
 
     <td>The CONNECT method requests that the recipient establish a tunnel to the destination origin server identified by the request-target and, if successful, thereafter restrict its behavior to blind forwarding of packets, in both directions, until the tunnel is closed. Tunnels are commonly used to create an end-to-end virtual connection, through one or more proxies, which can then be secured using TLS (Transport Layer Security).</td>
 
@@ -372,7 +372,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 
     <tr>
 
-    <td>**[OPTIONS](https://tools.ietf.org/html/rfc7231#section-4.3.7)**</td>
+    <td><a href="https://tools.ietf.org/html/rfc7231#section-4.3.7" target="_blank">OPTIONS</a></td>
 
     <td>The OPTIONS method requests information about the communication options available for the target resource. This method allows a client to determine the options and/or requirements associated with a resource, or the capabilities of a server, without implying a resource action.</td>
 
@@ -380,7 +380,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 
     <tr>
 
-    <td>**[TRACE](https://tools.ietf.org/html/rfc7231#section-4.3.8)**</td>
+    <td><a href="https://tools.ietf.org/html/rfc7231#section-4.3.8" target="_blank">TRACE</a></td>
 
     <td>The TRACE method requests a remote, application-level loop-back of the request message. This is typically used to echo the contents of an HTTP Request back to the requester which can be used for debugging purposes during development.</td>
 
@@ -390,17 +390,20 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 
     </table>
 
-2.  The request target (this can vary between the different HTTP methods) – for example, this can be:
+2.  The request target (this can vary between the different HTTP methods) – for example, this can be:<br><br>
     *   An absolute path, optionally followed by a ‘?’ and a query string. This is the most common form, called origin form, and is used with GET, POST, HEAD, and OPTIONS methods, for example:
+
         *   **POST / HTTP 1.1**
         *   **GET /background.png HTTP/1.0**
         *   **HEAD /test.html?query=alibaba HTTP/1.1**
         *   **OPTIONS /anypage.html HTTP/1.0**
-    *   A complete URL, the absolute form, mostly used with GET when connected to a proxy, for example:
+
+    *   A complete URL, the absolute form, mostly used with GET when connected to a proxy, for example:<br><br>
         *   **GET http://developer.mozilla.org/en-US/docs/Web/HTTP/Messages HTTP/1.1**
-    *   The authority component of an URL, that is the domain name and optionally the port (prefixed by a ‘:’), called the authority form. It is only used with CONNECT when setting up an HTTP tunnel, for example:
+        
+    *   The authority component of an URL, that is the domain name and optionally the port (prefixed by a ‘:’), called the authority form. It is only used with CONNECT when setting up an HTTP tunnel, for example:<br><br>
         *   **CONNECT developer.mozilla.org:80 HTTP/1.1**
-    *   The asterisk form, a simple asterisk (‘*’) used with OPTIONS and representing the server as a whole, for example:
+    *   The asterisk form, a simple asterisk (‘*’) used with OPTIONS and representing the server as a whole, for example:<br><br>
         *   **OPTIONS * HTTP/1.1**
 3.  The HTTP version, that defines the structure of the rest of the message, and acts as an indicator of the version to use for the response.
 
@@ -435,95 +438,55 @@ Other requests send data in the body to the server in order to update it: this i
 
 The start line of an HTTP response, called the status line, contains the following information:
 
-1.  The protocol version, usually **HTTP/1.1**.
+1.  The protocol version, usually **HTTP/1.1**.<br><br>
 2.  A [status code](http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml) beginning with 1, 2, 3, 4 or 5 that provides information such as the success or failure of the request:  
 
     <table>
-
     <thead>
-
     <tr>
-
     <th>Range</th>
-
     <th>Description</th>
-
     </tr>
-
     </thead>
-
     <tbody>
-
     <tr>
-
-    <td>**[1xx](https://tools.ietf.org/html/rfc7231#section-6.2)**</td>
-
-    <td>**Informational:** Request received, continuing process.
-
-    For example, Microsoft IIS (Internet Information Services) initially replies with [100 (Continue)](https://tools.ietf.org/html/rfc7231#section-6.2.1) when it receives a POST request and then with [200 (OK)](https://tools.ietf.org/html/rfc7231#section-6.3.1) once it has been processed.
-
-    </td>
-
+    <td><strong><a href="https://tools.ietf.org/html/rfc7231#section-6.2" target="_blank">1xx</a></strong></td>
+    <td><strong>Informational:</strong> Request received, continuing process.  <p></p>
+    <p>For example, Microsoft IIS (Internet Information Services) initially replies with <a href="https://tools.ietf.org/html/rfc7231#section-6.2.1" target="_blank">100 (Continue)</a> when it receives a POST request and then with <a href="https://tools.ietf.org/html/rfc7231#section-6.3.1" target="_blank">200 (OK)</a> once it has been processed.
+    </p></td>
     </tr>
-
     <tr>
-
-    <td>**[2xx](https://tools.ietf.org/html/rfc7231#section-6.3)**</td>
-
-    <td>**Success:** The action was successfully received, understood, and accepted.
-
-    For example, the [200 (Ok)](https://tools.ietf.org/html/rfc7231#section-6.3.1) status code indicates that the request has succeeded. The meaning of “success” varies depending on the HTTP method:
-
-    *   **GET:** The resource has been fetched and is transmitted in the message body.
-    *   **HEAD:** The entity headers are in the message body.
-    *   **POST:** The resource describing the result of the action is transmitted in the message body.
-    *   **TRACE:** The message body contains the request message as received by the server
-
+    <td><strong><a href="https://tools.ietf.org/html/rfc7231#section-6.3" target="_blank">2xx</a></strong></td>
+    <td><strong>Success:</strong> The action was successfully received, understood, and accepted.<p></p>
+    <p>For example, the <a href="https://tools.ietf.org/html/rfc7231#section-6.3.1" target="_blank">200 (Ok)</a> status code indicates that the request has succeeded. The meaning of “success” varies depending on the HTTP method:</p>
+    <ul>
+    <li><strong>GET:</strong> The resource has been fetched and is transmitted in the message body.</li>
+    <li><strong>HEAD:</strong> The entity headers are in the message body.</li>
+    <li><strong>POST:</strong> The resource describing the result of the action is transmitted in the message body.</li>
+    <li><strong>TRACE:</strong> The message body contains the request message as received by the server</li>
+    </ul>
     </td>
-
     </tr>
-
     <tr>
-
-    <td>**[3xx](https://tools.ietf.org/html/rfc7231#section-6.4)**</td>
-
-    <td>**Redirection:** Further action must be taken in order to complete the request.
-
-    For example, The [302 (Found)](https://tools.ietf.org/html/rfc7231#section-6.4.3) status code indicates that the requested resource has been temporarily moved and the browser should issue a request to the URL supplied in the Location response header.
-
-    </td>
-
+    <td><strong><a href="https://tools.ietf.org/html/rfc7231#section-6.4" target="_blank">3xx</a></strong></td>
+    <td><strong>Redirection:</strong> Further action must be taken in order to complete the request.<p></p>
+    <p>For example, The <a href="https://tools.ietf.org/html/rfc7231#section-6.4.3" target="_blank">302 (Found)</a> status code indicates that the requested resource has been temporarily moved and the browser should issue a request to the URL supplied in the Location response header.</p></td>
     </tr>
-
     <tr>
-
-    <td>**[4xx](https://tools.ietf.org/html/rfc7231#section-6.5)**</td>
-
-    <td>**Client Error:** The request contains bad syntax or cannot be fulfilled.
-
-    For example, the famous [404 (Not Found)](https://tools.ietf.org/html/rfc7231#section-6.5.4) status code indicates that the server can not find requested resource, or is not willing to disclose that one exists.
-
-    </td>
-
+    <td><strong><a href="https://tools.ietf.org/html/rfc7231#section-6.5" target="_blank">4xx</a></strong></td>
+    <td><strong>Client Error:</strong> The request contains bad syntax or cannot be fulfilled.<p></p>
+    <p>For example, the famous <a href="https://tools.ietf.org/html/rfc7231#section-6.5.4" target="_blank">404 (Not Found)</a> status code indicates that the server can not find requested resource, or is not willing to disclose that one exists.
+    </p></td>
     </tr>
-
     <tr>
-
-    <td>**[5xx](https://tools.ietf.org/html/rfc7231#section-6.6)**</td>
-
-    <td>**Server Error:** The server failed to fulfill an apparently valid request.
-
-    For example, the [500 (Internal Server Error)](https://tools.ietf.org/html/rfc7231#section-6.6.1) status code indicates that the server encountered an unexpected error / condition that prevented it from fulfilling the request./td>  
-
-    </td>
-
-    </tr>
-
+    <td><strong><a href="https://tools.ietf.org/html/rfc7231#section-6.6" target="_blank">5xx</a></strong></td>
+    <td><strong>Server Error:</strong> The server failed to fulfill an apparently valid request.<p></p>
+    <p>For example, the <a href="https://tools.ietf.org/html/rfc7231#section-6.6.1" target="_blank">500 (Internal Server Error)</a> status code indicates that the server encountered an unexpected error / condition that prevented it from fulfilling the request./td&gt;<br>
+    </p></td></tr>
     </tbody>
-
     </table>
 
-3.  A status text, purely informational, that is a textual short description of the status code. This helps HTTP messages be more human-readable, for example:
+3.  A status text, purely informational, that is a textual short description of the status code. This helps HTTP messages be more human-readable, for example:<br><br>
     *   **HTTP/1.1 404 Not Found**
 
 <br>
