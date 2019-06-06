@@ -85,7 +85,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/web322/media/uploads/2016/08/dev-tools-2.jpg" /></td>
 
-<td>**Device Toolbar Toggle:** Toggles the “device toolbar” on and off. This allows the developer to select a device and manually enter the pixel dimensions of the screen and scale of the page. This is useful for ensuring that the page looks correct in a variety of devices</td>
+<td><strong>Device Toolbar Toggle:</strong> Toggles the “device toolbar” on and off. This allows the developer to select a device and manually enter the pixel dimensions of the screen and scale of the page. This is useful for ensuring that the page looks correct in a variety of devices</td>
 
 </tr>
 
@@ -93,7 +93,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/web322/media/uploads/2016/08/dev-tools-3.jpg" /></td>
 
-<td>**Elements Panel:** Shows a view of the current page’s Document Object Model (DOM) tree as HTML. Selecting a given node (element) will highlight it in the page and show it’s applied CSS in the “Styles” panel. Developers can also modify this element and corresponding CSS (“Styles” panel) live and see the results directly in the browser. Important Note: The HTML shown in this panel isn’t necessarily the source code of the page, as it will show elements and attributes that have been dynamically added after the page is loaded. Changes to the HTML/CSS/JavaScript in this mode will not save to the source file.</td>
+<td><strong>Elements Panel:</strong> Shows a view of the current page’s Document Object Model (DOM) tree as HTML. Selecting a given node (element) will highlight it in the page and show it’s applied CSS in the “Styles” panel. Developers can also modify this element and corresponding CSS (“Styles” panel) live and see the results directly in the browser. Important Note: The HTML shown in this panel isn’t necessarily the source code of the page, as it will show elements and attributes that have been dynamically added after the page is loaded. Changes to the HTML/CSS/JavaScript in this mode will not save to the source file.</td>
 
 </tr>
 
@@ -101,7 +101,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/web322/media/uploads/2016/08/dev-tools-4.jpg" /></td>
 
-<td>**Console Panel:** shows a JavaScript console pane. JavaScript calls to “console.log()” will show the resultant text in this window. Additionally, all JavaScript errors will show up in this location in red. Developers can also write small JavaScript code snippets to be executed immediately within the context of the page.</td>
+<td><strong>Console Panel:</strong> shows a JavaScript console pane. JavaScript calls to “console.log()” will show the resultant text in this window. Additionally, all JavaScript errors will show up in this location in red. Developers can also write small JavaScript code snippets to be executed immediately within the context of the page.</td>
 
 </tr>
 
@@ -109,7 +109,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/web322/media/uploads/2016/08/dev-tools-5.jpg" /></td>
 
-<td>**Sources Panel:** shows a list of all items included in the page (ie: all images, CSS, JavaScript, etc) and their corresponding locations of origin. Developers can click on an item to show it’s contents in the middle (preview) panel. If the selected item is a JavaScript file, developers can (in the “debugger” panel) set breakpoints and watch variables to help identify and debug a misbehaving piece of JavaScript code.</td>
+<td><strong>Sources Panel:</strong> shows a list of all items included in the page (ie: all images, CSS, JavaScript, etc) and their corresponding locations of origin. Developers can click on an item to show it’s contents in the middle (preview) panel. If the selected item is a JavaScript file, developers can (in the “debugger” panel) set breakpoints and watch variables to help identify and debug a misbehaving piece of JavaScript code.</td>
 
 </tr>
 
@@ -117,7 +117,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/web322/media/uploads/2016/08/dev-tools-6.jpg" /></td>
 
-<td>**Network Panel:** is used to get additional insights into requested and downloaded resources. Developers can start/stop the recording of a log that tracks all resources loaded including their corresponding status code, type, time (latency), size of the resource and the initiator of the request</td>
+<td><strong>Network Panel:</strong> is used to get additional insights into requested and downloaded resources. Developers can start/stop the recording of a log that tracks all resources loaded including their corresponding status code, type, time (latency), size of the resource and the initiator of the request</td>
 
 </tr>
 
@@ -125,7 +125,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/web322/media/uploads/2018/09/performance-tab-4.png" /></td>
 
-<td>**Performance Panel:** enables a tool that allows developers to record and analyze all the activity in their applications as they run. It’s the best place to start investigating perceived performance issues. This is done by recording a timeline of every event that occurs after a page loads and analyzing the corresponding FPS, CPU, and network requests.</td>
+<td><strong>Performance Panel:</strong> enables a tool that allows developers to record and analyze all the activity in their applications as they run. It’s the best place to start investigating perceived performance issues. This is done by recording a timeline of every event that occurs after a page loads and analyzing the corresponding FPS, CPU, and network requests.</td>
 
 </tr>
 
@@ -133,7 +133,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/web322/media/uploads/2018/09/memory-tab.png" /></td>
 
-<td>**Memory Panel:** provides more detailed debugging information than the timeline by enabling developers to record detailed CPU/Memory profiles such as a “JavaScript CPU Profile”, “Heap Snapshot”, “Allocating Timeline” and “Allocation Profile”.</td>
+<td><strong>Memory Panel:</strong> provides more detailed debugging information than the timeline by enabling developers to record detailed CPU/Memory profiles such as a “JavaScript CPU Profile”, “Heap Snapshot”, “Allocating Timeline” and “Allocation Profile”.</td>
 
 </tr>
 
@@ -141,7 +141,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/web322/media/uploads/2016/08/dev-tools-9.jpg" /></td>
 
-<td>**Application Panel:** (previously, the “resource” panel) allows developers to inspect and manage client-side storage, caches, and resources. This includes: key-value pairs stored in “Local Storage”, access to IndexedDB Data (a JavaScript-based object-oriented database used to store data locally), a “Web SQL” explorer (depreciated in favour of IndexedDB), as well as access to stored cookies and cache data. This is very useful in verifying that your application is storing data correctly on the client side.</td>
+<td><strong>Application Panel:</strong> (previously, the “resource” panel) allows developers to inspect and manage client-side storage, caches, and resources. This includes: key-value pairs stored in “Local Storage”, access to IndexedDB Data (a JavaScript-based object-oriented database used to store data locally), a “Web SQL” explorer (depreciated in favour of IndexedDB), as well as access to stored cookies and cache data. This is very useful in verifying that your application is storing data correctly on the client side.</td>
 
 </tr>
 
@@ -149,7 +149,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/web322/media/uploads/2016/08/dev-tools-10.jpg" /></td>
 
-<td>**Security Panel:** gives an overview of a page from a security standpoint including: Certificate verification (indicating whether the site has proven its identity with a TLS certificate), Transport Layer Security (TLS) connection (Note: TLS is often referred to by the name of it’s predecessor, SSL) and Subresource security (indicating whether the site loads insecure HTTP subresources – ie: “mixed content”).</td>
+<td><strong>Security Panel:</strong> gives an overview of a page from a security standpoint including: Certificate verification (indicating whether the site has proven its identity with a TLS certificate), Transport Layer Security (TLS) connection (Note: TLS is often referred to by the name of it’s predecessor, SSL) and Subresource security (indicating whether the site loads insecure HTTP subresources – ie: “mixed content”).</td>
 
 </tr>
 
@@ -157,7 +157,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/web322/media/uploads/2016/08/dev-tools-11.jpg" /></td>
 
-<td>**Audits Panel:** is used to analyze a page as it loads. Once a page has finished loading, the audit provides suggestions and optimizations for decreasing page load time and increase perceived (and real) responsiveness. For example, it might suggest that a developer “Remove unused CSS rules” or “Combine external JavaScript” in an effort to optimize network utilization and page performance.</td>
+<td><strong>Audits Panel:</strong> is used to analyze a page as it loads. Once a page has finished loading, the audit provides suggestions and optimizations for decreasing page load time and increase perceived (and real) responsiveness. For example, it might suggest that a developer “Remove unused CSS rules” or “Combine external JavaScript” in an effort to optimize network utilization and page performance.</td>
 
 </tr>
 
@@ -165,7 +165,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/web322/media/uploads/2016/08/dev-tools-12.jpg" /></td>
 
-<td>**Error Icon:** displays the number of errors present in the “Console Pane”. To review the errors, simply switch over to the Console pane and locate the items highlighted in red.</td>
+<td><strong>Error Icon:</strong> displays the number of errors present in the “Console Pane”. To review the errors, simply switch over to the Console pane and locate the items highlighted in red.</td>
 
 </tr>
 
@@ -173,7 +173,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/web322/media/uploads/2016/08/dev-tools-13.jpg" /></td>
 
-<td>**Customize Icon:** controls where the Developer Toolbar should be placed relative to the browser, as well as a collection of all related settings and preferences for the tool set.</td>
+<td><strong>Customize Icon:</strong> controls where the Developer Toolbar should be placed relative to the browser, as well as a collection of all related settings and preferences for the tool set.</td>
 
 </tr>
 
@@ -181,7 +181,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/web322/media/uploads/2016/08/dev-tools-14.jpg" /></td>
 
-<td>**Close Icon:** closes the Developer Toolbar.</td>
+<td><strong>Close Icon:</strong> closes the Developer Toolbar.</td>
 
 </tr>
 
@@ -218,6 +218,8 @@ In 2015, ECMAScript 6 was released and many interesting new features were introd
 *   [and many more…](http://es6-features.org/)
 
 While not all ES6 features are fully implemented in all browsers (JavaScript engines / runtimes), the main server-side runtime that we will be working in (Node.js) supports [97% of the specification](http://kangax.github.io/compat-table/es6/) and is considered production ready.
+
+<br>
 
 #### Node.js
 

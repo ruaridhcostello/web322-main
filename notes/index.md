@@ -36,7 +36,7 @@ Here, you will find the links to the weekly notes.
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week02">2 - Notes <mark>(markdown conversion in progress)</mark></a></td>
+<td><a href="/web322/notes/week02">2 - Notes <mark>(Complete)</mark></a></td>
 <td>
   Node.js Introduction:<br><br>
 <ul>
