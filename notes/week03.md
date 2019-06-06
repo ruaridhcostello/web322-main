@@ -7,11 +7,13 @@ layout: default
 
 <br>
 
-## ... <mark>Raw Markdown Conversion - Only Image Fixes Done</mark>
+## ... <mark>Raw Markdown Conversion - Only Image, Table and Header Fixes Done</mark>
 
 ### Object-Oriented JavaScript Review
 
 Now that we have our development environment all set up and are comfortable making a simple web server (with [Node.js](https://nodejs.org/en/) & [Express.js](http://expressjs.com/)), we can start making some real progress with our web applications. However, before we can dive into the deeper topics, we need to review some of the advanced Object-oriented JavaScript topics that we first discussed in WEB222.
+
+<br>
 
 ### Creating Objects (Object Literal)
 
@@ -60,6 +62,8 @@ Now both **architect1** and **architect2** are new objects that have the same pr
     console.log(architect1.name); // "Joe"
     console.log(architect2.name); // "Mary"
 
+<br>
+    
 ### Creating Objects (Function Constructor)
 
 One of the more advanced & powerful ways of creating complex objects in JavaScript is by using **“Function Constructors”** and the [“new” operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new). Essentially, we can specify how instances of each “new” object will be created by writing a function that follows a specific pattern – for example:
@@ -109,6 +113,8 @@ A few key things to note when using the above method to create objects:
 *   New “architect” objects (ie: “architect1” & “architect2”) have their own **name**, **age**, & **occupation** properties
 *   New “architect” objects do not have any methods directly, however they all refer to the same prototype (architect.prototype) which contains all of the methods. These methods can work with the correct data for each new architect object, because they are utilizing the “this” keyword.
 
+<br>
+
 ### “this” keyword
 
 As we have seen, when we create objects in JavaScript, we make regular use of the “this” keyword. This is an important concept in JavaScript, so before we move on to Prototypal Inheritance, let’s just do a quick review:
@@ -141,6 +147,8 @@ Everything looks correct and we have made proper use of the “this”, however 
     architect2.outputNameDelay(); // outputs "Mary"
 
 Now, we aren’t using the “this” keyword from within the setTimeout() function, but rather “that” from our outputNameDelay function and everything works as it should! (ie, “that” points to architect2, since it was the architect2 that invoked the outputNameDelay method).
+
+<br>
 
 ### Prototypal Inheritance
 
@@ -185,9 +193,13 @@ To see why this concept is so powerful, why don’t we add a new method to the a
 
 As you can see from above, we are able to add a new method (newMethod) to the architect prototype at any time and because all architect instances (ie: architect2) use that prototype, they automatically get access to the method!
 
+<br>
+
 ### Advanced JavaScript / ES6 Features
 
 So far, we have learned quite a bit about JavaScript; from how it handles simple and complex custom / built-in Objects to design patterns like closures, modules, callback functions, etc. However, for us to properly understand some of the examples in the upcoming weeks, we need to discuss a few advanced techniques as well as new syntax / methods from the new ES6 (ECMAScript 6) standard. An important thing to note however, is that **ES6** is **still being implemented** across desktop & mobile browsers as well as JavaScript runtimes. Most of what we will discuss will be understood by modern browsers and 100% of the topics below will be understood by Node.js. However, it is a good idea to reference the following [ES6 Compatibility Table](https://kangax.github.io/compat-table/es6/) if you are unsure whether your target browser will fully understand the feature that you wish to use.
+
+<br>
 
 ### “var” vs “let” vs “const”
 
@@ -196,71 +208,64 @@ As we know, JavaScript is a **dynamically typed language** and we declare our va
 Fortunately ES6 has introduced the [let](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let) & [const](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const) keywords to solve this problem. See the below table for a comparison of **var**,**let** & **const**
 
 <table class="table-bordered table-condensed">
-
-<tbody>
-
-<tr>
-
-<td>**[  var  ](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/var)**</td>
-
+<tbody><tr>
+<td><strong><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/var" target="_blank">&nbsp;&nbsp;var&nbsp;&nbsp;</a></strong></td>
 <td>
+<ul>
+<li>Declares a variable, optionally initializing it to a value.</li>
+<li>The scope of a variable declared with var is its current execution context, which is either the enclosing function or, for variables declared outside any function, global.
 
-*   Declares a variable, optionally initializing it to a value.
-*   The scope of a variable declared with var is its current execution context, which is either the enclosing function or, for variables declared outside any function, global.
+{% highlight javascript %}
+for(var i =0; i < 5; i++){
+  // ...
+}
 
-    for(var i =0; i < 5; i++){
-      // ...
-    }
-
-    console.log(i); // 5
+console.log(i); // 5
+{% endhighlight %}</li>
+</ul>
 
 </td>
-
 </tr>
-
 <tr>
-
-<td>**[  let  ](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let)**</td>
-
+<td><strong><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let" target="_blank">&nbsp;&nbsp;let&nbsp;&nbsp;</a></strong></td>
 <td>
+<ul>
+<li>Declares a block scope local variable, optionally initializing it to a value.</li>
+<li>The scope of a variable declared with "let" is limited to the block, statement, or expression on which it is used.
 
-*   Declares a block scope local variable, optionally initializing it to a value.
-*   The scope of a variable declared with "let" is limited to the block, statement, or expression on which it is used.
+{% highlight javascript %}
+for(let j=0; j < 5; j++){
+  // ...
+}
 
-    for(let j=0; j < 5; j++){
-      // ...
-    }
-
-    console.log(j); // ReferenceError: j is not defined
+console.log(j); // ReferenceError: j is not defined
+{% endhighlight %}</li>
+</ul>
 
 </td>
-
 </tr>
-
 <tr>
-
-<td>**[  const  ](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const)**</td>
-
+<td><strong><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const" target="_blank">&nbsp;&nbsp;const&nbsp;&nbsp;</a></strong></td>
 <td>
+<ul>
+<li>Declares an immutable block scope local variable, optionally initializing it to a value.</li>
+<li>The scope of a variable declared with "const" is limited to the block, statement, or expression on which it is used. However, the value of a variable declared with "const" cannot change through re-assignment and cannot be redeclared.
 
-*   Declares an immutable block scope local variable, optionally initializing it to a value.
-*   The scope of a variable declared with "const" is limited to the block, statement, or expression on which it is used. However, the value of a variable declared with "const" cannot change through re-assignment and cannot be redeclared.
+{% highlight javascript %}
+for(const k=0; k < 5; k++){ // TypeError: Assignment to constant variable.
+  // ...
+}
 
-    for(const k=0; k < 5; k++){ // TypeError: Assignment to constant variable.
-      // ...
-    }
-
-    console.log(k); 
-
+console.log(k);
+{% endhighlight %}</li>
+</ul>
 </td>
-
 </tr>
-
-</tbody>
-
-</table>
+</tbody></table>
 
 As we can see from the above examples, **let** & **const** behave more like variable declarations in C / C++. While still being dynamically typed, they will respect the scope in which they are declared and cannot be referenced before they are declared.
+
+<br>
 
 ### Creating Objects ("class" keyword)
 
@@ -293,6 +298,8 @@ ES6 has introduced some "syntax sugar" to allow us to create objects in a more i
     console.log(architect2.getName()); // "Mary"
 
 Notice how we specify a "constructor" function to take initialization parameters, as well as specify all of the methods within the "class" block. We are still creating objects using the method illustrated in the "Function Constructor" pattern (above), however this syntax is much more intuitive. Additionally, we can leverage the ["extends"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends) and ["super"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super) keywords to create objects which inherit from other objects easily (for a detailed example, see [this great article from medium.com](https://medium.com/ecmascript-2015/es6-classes-and-inheritance-607804080906)).
+
+<br>
 
 ### Error / Exception handling
 
@@ -378,7 +385,9 @@ Lastly, if we have some code that we would like to execute regardless of whether
 
     console.log("Alas, it cannot be done, PI remains: " + PI);
 
-##### Throwing Errors
+<br>
+
+#### Throwing Errors
 
 Now that we know how to correctly handle errors that have been thrown by the Node.js runtime environment or by other code / modules included in our solutions, why don't we try throwing our **own exceptions**? This is very straightforward and only requires the use of the **["throw"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)** keyword and (typically) an **[Error](https://nodejs.org/dist/latest-v6.x/docs/api/errors.html#errors_class_error)** Object:  
 
@@ -402,6 +411,8 @@ Now that we know how to correctly handle errors that have been thrown by the Nod
     console.log(a + " / " + b + " = " + c); // 3 / 0 = NaN
 
 Notice how the code below the "throw" statement does not get executed, and the flow of execution goes directly into the catch block. This prevents the error from propagating and ensures that it is handled immediately. As you can see, we can throw a new error whenever we detect that an error _may_ occur anywhere in our code. In the above example, we check if our second parameter (y) is zero (0) and rather than trying to do the division, we immediately throw a custom error with the message "Division by Zero!". If the function call exists in a "try" block ( as above ), the execution of the code will immediately continue in the "catch" block and we mitigate the error by setting "c" to NaN.
+
+<br>
 
 ### Promises
 
@@ -444,7 +455,9 @@ To see this in action, we can invoke the global [setTimeout](https://nodejs.org/
 
 In the above example, we can invoke the outputA() function (which will output the character "A" after a random delay between 0 & 3 seconds) and then immediately invoke the following "outputB()" and "outputC()" functions in order. Each function is said to be "non-blocking" because even though it will take some time to perform it's function (ie: output a letter to the browser), it does not stop the main flow of execution when it is invoked. Essentially, what we are doing is kickstarting 3 separate functions that will each output their value to the console after a random amount of time. When this example is executed, there is absolutely no way to know what order the functions will output their content to the browser - ie it could be "ACB", "BCA", "CAB", etc. However, what if that order was important? For example, what if one of the functions relies on the output from one of the other functions? If this were the case they would have to be executed in a specific order.
 
-##### Resolve & Then
+<br>
+
+#### Resolve & Then
 
 Fortunately, JavaScript has the notion of the **["Promise"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** that can help us solve this type of situation. Put simply, a Promise object is used for asynchronous computations (like the situation in the example above) and represents a value which may be available now, or in the future, or never. Basically, what this means is that we can place our asynchronous code inside a Promise object as a function with specific parameters ("resolve" and "reject"). When our code is complete, we invoke the ["resolve" function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve) and if our code encounters an error, we can invoke the ["reject" function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject). We can handle both of these situations later with the [.then()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) method or (in the case of an error that we wish to handle) the [.catch()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch) method. To see how this concept is implemented in practice, consider the following addition to the outputA() method from above:  
 
@@ -468,7 +481,9 @@ Fortunately, JavaScript has the notion of the **["Promise"](https://developer.mo
 
 Our "outputA()" function still behaves as it did before (outputs "A" to the console after a random period of time). However, our outputA() function now additionally returns a **new Promise** object that contains all of our asynchronous logic and its status. The container function for our logic always uses the two parameters mentioned above, ie: **resolve** and **reject**. By invoking the **resolve** method we are setting the promise into the fulfilled state, meaning that the operation completed successfully and the character "A" was successfully output to the browser. We can respond to this situation using the ["then"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) function on the returned promise object to execute some code **after** the asynchronous operation is complete! This gives us a mechanism to react to asynchronous functions that have completed successfully so that we can perform additional tasks.
 
-##### Adding Data
+<br>
+
+#### Adding Data
 
 Now that we have the Promise structure in place and are able to **"resolve"** the Promise when it has completed it's task and **"then"** execute another function using the returned Promise object (as above), we can begin to think about how to pass data from the asynchronous function to the "then" method. Fortunately, it only requires a little tweak to the above the above example to enable this functionality:  
 
@@ -492,7 +507,9 @@ Now that we have the Promise structure in place and are able to **"resolve"** th
 
 Notice how we are able to invoke the **resolve()** function with a single parameter that stores some data (in this case a string with the text "outputA resolved!"). This is typically where we would place our freshly returned data from an asynchronous call to a web service / database, etc. The reason for this is that we will have access to it as the first parameter to the anonymous function declared inside the **.then** method and this is the perfect place to process the data.
 
-##### Reject & Catch
+<br>
+
+#### Reject & Catch
 
 It is not always safe to assume that our asynchronous calls will complete successfully. What if we're in the middle of an XHR (XMLHttpRequest) request and our connection is dropped or a database connection fails? To ensure that we handle this type of scenario gracefully, we can invoke the "reject" method instead of the "resolve" method and provide a reason why our asynchronous operation failed. This causes the promise to be in a "rejected" state and the ".catch" function will be invoked, where we can gracefully handle the error. The typical syntax for handling both "then" and "catch" in a Promise is as follows:  
 
@@ -518,7 +535,9 @@ It is not always safe to assume that our asynchronous calls will complete succes
         console.log(reason);
     });
 
-##### Chaining Promises
+<br>
+
+#### Chaining Promises
 
 As we have seen, the Promise object and pattern for dealing with asynchronous code (of any kind) is extremely powerful. We are able to effectively process the result of executing an asynchronous block of code whether it completes successfully (using .resolve & .then) or fails / gives undesired results (using .reject & .catch). However, there is one last feature that we should discuss before moving on, ie: "chaining" promises. Recall, when we first began discussing promises we saw an example with 3 asynchronous functions ("outputA()", "outputB()" and "outputC()") that always completed in a different order even though they were always invoked in the same order. This could potentially cause problems if one function depended on another for data.
 
@@ -593,6 +612,8 @@ If we want to immediately exit the function and prevent further execution of the
     console.log("I will not be executed");
     // ...
 
+<br>
+
 ### Arrow Functions
 
 ES6 has introduced many new keywords, constructs, syntax and functionality to the JavaScript language (for a full list, refer back to the [Compatibility Table](https://kangax.github.io/compat-table/es6/)). We cannot possibly discuss it all here, so we must concentrate on new syntax / functionality that is likely to be encountered when learning some of the frameworks in this course (ie: Node.js / Express.js, MongoDB, etc. ).
@@ -650,7 +671,9 @@ This still simplifies things from a syntax point of view, however both methods o
     outputMessage();
     outputMessageArrow();
 
-##### Lexical "this"
+<br>
+
+#### Lexical "this"
 
 Arrow functions are great for creating simplified code that is easier to read (sometimes referred to as "syntax sugar"), however there is another very useful and slightly misleading feature that we have yet to discuss: the notion of a "lexical 'this'". Recall that when we added the "outputNameDelay" method to the architect prototype, we had to overcome the issue with "this" pointing at the incorrect object by introducing a new local variable, "that":  
 
@@ -671,7 +694,9 @@ Now, we can re-write the above function using an arrow function to achieve the s
 
 This is a typical use of arrow functions, ie to simplify a scenario in which we need to declare a function in place, often as a parameter to other functions. We don't have to concern ourselves with how "this" will behave in the new context and the added "syntax sugar" makes the operation much simpler to read and shorter to code.
 
-##### A Word of Warning
+<br>
+
+#### A Word of Warning
 
 Be careful when using arrow functions, as not every situation calls for a "lexical this". For example, when we declare methods on an object, we always want "this" to point to the current object, so "lexical this" doesn't make sense and arrow functions will actually fail to behave as expected:  
 
@@ -691,7 +716,10 @@ Be careful when using arrow functions, as not every situation calls for a "lexic
 
 In addition, arrow functions **do not** have any notion of the [arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object and also **cannot** be used as function constructors and will throw an error when using the new operator (ie: Function is not a constructor).
 
-<h3 class="lined">Sources</h3>
+<br>
+
+### Sources
+
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects" target="_blank">MDN - Working with Objects</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#Prototypal_inheritance" target="_blank">MDN - Prototypal Inheritance</a>
