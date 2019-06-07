@@ -79,7 +79,7 @@ JavaScript Concept Review:<br><br>
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week04">4 - Notes <mark>(markdown conversion in progress)</mark></a></td>
+<td><a href="/web322/notes/week04">4 - Notes <mark>(Complete)</mark></a></td>
 <td>
 Express.js Introduction:<br><br>
 <ul>
