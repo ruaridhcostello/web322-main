@@ -56,7 +56,7 @@ Here, you will find the links to the weekly notes.
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week03">3 - Notes <mark>(markdown conversion in progress)</mark></a></td>
+<td><a href="/web322/notes/week03">3 - Notes <mark>(Complete)</mark></a></td>
 <td>
 JavaScript Concept Review:<br><br>
 <ul>
