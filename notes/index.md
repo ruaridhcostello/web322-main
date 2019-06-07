@@ -210,7 +210,7 @@ Introduction to jQuery & Bootstrap Frameworks:<br><br>
 </td>
 </tr>
   <tr>
-<td><a href="/web322/notes/week12">12 - Notes <mark>(Copied from 'converted')</mark></a></td>
+<td><a href="/web322/notes/week12">12 - Notes <mark>(Coomplete)</mark></a></td>
 <td>
 Security Considerations:<br><br>
 <ul>
