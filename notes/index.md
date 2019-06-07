@@ -181,7 +181,7 @@ AJAX Review / Practical AJAX Programming:<br><br>
 </td>
 </tr>
   <tr>
-<td><a href="/web322/notes/week10">10 - Notes <mark>(markdown conversion in progress)</mark></a></td>
+<td><a href="/web322/notes/week10">10 - Notes <mark>(Complete)</mark></a></td>
 <td>
 Managing State Information:<br><br>
 <ul>
