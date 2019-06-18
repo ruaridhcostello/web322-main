@@ -3,7 +3,7 @@ title: Learning resources
 layout: default
 ---
 
-## Learning resources <mark>(NOTE: Copied from WEB700 - TODO: needs to be updated)</mark>
+## Learning Resources
 
 This page has information about and links to learning resources that you will use in this course.
 
@@ -74,6 +74,8 @@ Links to other topics (e.g. Getting started, etc.) are on that page
 * [Express Handlebars Documentation](https://www.npmjs.com/package/express-handlebars)
 
 * [Sequelize Documentation](http://docs.sequelizejs.com/)
+
+* [Mongoose Documentation](https://mongoosejs.com/docs/guide.html)
 
 <br>
 
