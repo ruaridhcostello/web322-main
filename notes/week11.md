@@ -5,10 +5,6 @@ layout: default
 
 ## WEB322 Week 11 Notes
 
-<br>
-
-## ... <mark>Raw Markdown Conversion - Only Image Fixes Done</mark>
-
 ### Introduction to jQuery & Bootstrap Frameworks
 
 ![](/web322/media/uploads/2016/08/jquery-logo.jpg)
