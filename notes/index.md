@@ -170,12 +170,10 @@ AJAX Review / Practical AJAX Programming:<br><br>
 <li>Review: What is AJAX? Why do we need it?</li>
 <li>Requesting data (JSON) on the Client Side using JavaScript
 <ul>
-<li>XMLHttpRequest Object</li>
-<li>Handling State Changes &amp; Processing the Response</li>
-<li>Updating the DOM</li>
+<li>Fetch API Introduction</li>
 </ul>
 </li>
-<li>Processing XMLHttpRequest Requests on the server and returning data</li>
+<li>Processing AJAX Requests on the server and returning data</li>
 <li>RESTful API Introduction</li>
 </ul>
 </td>
