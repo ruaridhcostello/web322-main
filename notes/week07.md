@@ -28,9 +28,9 @@ Once your app is up and running, [log into Heroku](https://id.heroku.com/login) 
 1.  Click on your application to go to the configuration screen  
       
     
-2.  At the bottom, you will see an "Add-ons" section with a textbox "Quickly add add-ons from Elements" ![Find more add ons](/web322/media/uploads/2017/02/heroku-screen1.png)
+2.  At the bottom, you will see an "Add-ons" section with a textbox "Quickly add add-ons from Elements" ![Find more add ons](/media/uploads/2017/02/heroku-screen1.png)
 
-3.  Type "Heroku Postgres" into this textbox and click the "Heroku Postgres" item that comes up:![Heroku Postgres](/web322/media/uploads/2017/02/heroku-screen4.png)
+3.  Type "Heroku Postgres" into this textbox and click the "Heroku Postgres" item that comes up:![Heroku Postgres](/media/uploads/2017/02/heroku-screen4.png)
 
 4.  This will open a dialog window showing you that "Heroku Postgres" will be added to your application. Be sure you leave the "Plan name" to **Hobby Dev - Free** and click **Provision**  
       
@@ -69,7 +69,7 @@ Once it is installed and you have opened the app, we need to configure it to con
     
     Once you have entered all of your information, hit the "Ok" button and click "Servers" in the left pane to expand your server connections. If you entered valid information for the above fields, you should see your Heroku Postgres DB Connection. Expand this item and the following **"Databases (1)"** item, and you should see your database. Expand this item, as well as the nested **"Schemas (1)"** item, followed by the **"public"** item, and you should be presented with something that looks like this:
     
-    ![heroku DB in pgAdmin](/web322/media/uploads/2017/12/Screen-Shot-2017-12-01-at-9.26.24-AM.png)
+    ![heroku DB in pgAdmin](/media/uploads/2017/12/Screen-Shot-2017-12-01-at-9.26.24-AM.png)
     
 **Success!** We will be keeping an eye on our data using this tool so leave it running in the background. Next, why don't we see if we can get our node.js server to connect to the database as well? For us to be able to connect to a relational database, we will need to use an existing module. Fortunately, **sequelize** will do exactly what we want.
 
@@ -186,11 +186,11 @@ success!
 
 It appears that Sequelize has done some of the heavy lifting for us. To confirm that the create operation was successful and that we have indeed persisted "Project1" in a new "Project" table, go back to your **pgAdmin3** application, right-click on "**Tables (0)**" and choose "Refresh". You should now see our new "Projects" table in the list!  
     
-![pgAdmin with the Projects table](/web322/media/uploads/2017/03/heroku-screen7.png)
+![pgAdmin with the Projects table](/media/uploads/2017/03/heroku-screen7.png)
 
 To view the contents of the table, **right-click** on the **"Projects"** table and select **View Data > View Top 100 Rows**. This will open a new window with a grid view that you can use to explore the data in the table:  
     
-![View Project Data in pgAdmin](/web322/media/uploads/2017/03/heroku-screen8.png)
+![View Project Data in pgAdmin](/media/uploads/2017/03/heroku-screen8.png)
 
 You will notice that there are some columns in the "Project" table that we didn't define in our "Project" Model; specifically: **id**, **createdAt** and **updatedAt**; recall:
 

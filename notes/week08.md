@@ -9,7 +9,7 @@ layout: default
 
 #### Introduction to MongoDB
 
-![MongoDB-Logo.svg](/web322/media/uploads/2016/08/MongoDB-Logo.svg_-300x82.png)  
+![MongoDB-Logo.svg](/media/uploads/2016/08/MongoDB-Logo.svg_-300x82.png)  
 
 #### What is MongoDB?
 
@@ -84,11 +84,11 @@ MongoDB should now be installed!
 
 *   Choose 'Custom' for the setup type  
 
-    ![Screenshot 2016-12-06 22.55.29](/web322/media/uploads/2016/08/Screenshot-2016-12-06-22.55.29.png)  
+    ![Screenshot 2016-12-06 22.55.29](/media/uploads/2016/08/Screenshot-2016-12-06-22.55.29.png)  
 
 *   Change the install path for windows to C:\MongoDB\Server\3.4 (or whatever version you are installing, ie C:\MongoDB\Server\x.x  
 
-    ![Screenshot 2016-12-06 22.56.55](/web322/media/uploads/2016/08/Screenshot-2016-12-06-22.56.55.png)  
+    ![Screenshot 2016-12-06 22.56.55](/media/uploads/2016/08/Screenshot-2016-12-06-22.56.55.png)  
 
 *   You can install MongoDB in the default directory but we recommend installing it in the path mentioned above if on windows.
 
@@ -126,7 +126,7 @@ Open a new terminal and execute the command:
 
 Once connected to the db with the shell, your window will look like this:
 
-![Mongo shell](/web322/media/uploads/2016/12/Screenshot-2016-12-07-20.06.53.png)  
+![Mongo shell](/media/uploads/2016/12/Screenshot-2016-12-07-20.06.53.png)  
 
 <br>
 
@@ -176,7 +176,7 @@ db.web322_companies.insert({
 
 You should get a result like the following:  
 
-![Insert result](/web322/media/uploads/2016/08/Screenshot-2016-12-13-22.58.36.png)  
+![Insert result](/media/uploads/2016/08/Screenshot-2016-12-13-22.58.36.png)  
 
 You should see the result WriteResult({ "nInserted" : 1 }). This means a write succeeded and the number of documents inserted (nInserted) was 1.  
 
@@ -202,11 +202,11 @@ Now let's take a look at the data in the database using a GUI tool.
 
 Install Robo 3T and connect to the DB with host: localhost, and port: 27017 to inspect our inserted document.  
 
-![Connect with Robo 3T](/web322/media/uploads/2017/06/robo3t-1.png)  
+![Connect with Robo 3T](/media/uploads/2017/06/robo3t-1.png)  
 
 Once connected to the server, click on the web322 database to see the collections inside it. There is currently just one collection, web322_companies. to view the documents inside this collection just double click on it and a window will open in table view with the contents. You should see your document as a row in the table with all it's properties.  
 
-![Screenshot 2016-12-13 23.35.04](/web322/media/uploads/2017/06/robo3t-2.png)
+![Screenshot 2016-12-13 23.35.04](/media/uploads/2017/06/robo3t-2.png)
 
 Now let's setup an online account with MongoDB Atlas and create our own mongodb in the cloud for use with Heroku.
 
@@ -220,21 +220,21 @@ To get started signup for an account at [https://www.mongodb.com/cloud/atlas](ht
 
 Once your account is setup, you will be taken to the start screen with a modal window suggesting you "Build my first cluster". You can close this modal window, as we will not be creating a cluster just yet. First, we want to ensure that we have selected all the free options, ie:  
 
-![](/web322/media/uploads/2019/01/Atlas-Cluster-Free-Options.png)  
+![](/media/uploads/2019/01/Atlas-Cluster-Free-Options.png)  
 
 Next, we must change the cluster name from "Cluster0" to something more recognizable, ie "SenecaWeb".
 
-![](/web322/media/uploads/2019/01/Atlas-Cluster-rename.png)  
+![](/media/uploads/2019/01/Atlas-Cluster-rename.png)  
 
 Once this is complete, we can go ahead and "Create Cluster"
 
-![](/web322/media/uploads/2019/01/Atlas-Create-Cluster.png)  
+![](/media/uploads/2019/01/Atlas-Create-Cluster.png)  
 
 Once you pass the Capcha test (proving you're human), you will be redirected to the main page for managing your clusters in MongoDB Atlas (Note: Feel free to close the "Get Started" checklist on the bottom left corner of the screen)
 
 Here, you should see a "Your cluster is being created." message. Before we proceed, we must wait for this to finish (it could be between 7-10 minutes).
 
-![](/web322/media/uploads/2019/01/Atlas-Cluster-Creation.png)  
+![](/media/uploads/2019/01/Atlas-Cluster-Creation.png)  
 
 Once your cluster has been created, you can click the "CONNECT" button. This will cause a new modal to appear, which will allow us to Whitelist IP Address to connect to the cluster, as well as to create a "MongoDB User".
 
@@ -244,7 +244,7 @@ Once your cluster has been created, you can click the "CONNECT" button. This wil
 
 Once this is complete, click the "Choose a connection method" button at the bottom of the modal window. This will bring you to a new screen allowing you to choose how you wish to "Connect to SenecaWeb":
 
-![](/web322/media/uploads/2019/01/Atlas-Connect-SenecaWeb.png)  
+![](/media/uploads/2019/01/Atlas-Connect-SenecaWeb.png)  
 
 From here, click on the "Connect Your Application" button.
 
@@ -260,15 +260,15 @@ Now that the "SenecaWeb" cluster is all set up, we can add a Database to connect
 
 To get started, click the blue "SenecaWeb" link from the "Clusters Overview" Section:
 
-![](/web322/media/uploads/2019/01/Atlas-Clusters-Overview.png)  
+![](/media/uploads/2019/01/Atlas-Clusters-Overview.png)  
 
 This will take you to a detailed view of your "SenecaWeb" cluster. From here, you will notice a "Collections" tab. Click this to open the data on all "Collections" contained in this cluster. Since we have not created any Databases yet, we will be greeted with the following message:
 
-![](/web322/media/uploads/2019/01/Atlas-Create-Database.png)  
+![](/media/uploads/2019/01/Atlas-Create-Database.png)  
 
 Go ahead and click the "Create Database" button. This will open a small modal window asking for the "Database Name" and "Collection Name". For "Database Name" enter "web322_week8" and for "Collection Name" simply enter "tbd" since we don't know what collections we will have just yet, and we cannot proceed without entering one (Note: ensure that "CAPPED COLLECTION" remains unchecked). With the data entered, click the green "Create" button. Once this is complete, you will be shown the following information under "collections":
 
-![](/web322/media/uploads/2019/01/Atlas-Collection-tbd.png)  
+![](/media/uploads/2019/01/Atlas-Collection-tbd.png)  
 
 Unfortunately, we cannot have a Database in MongoDB Atlas without a collection, so leave "tbd" there for the time being. We can remove it later.
 
@@ -639,7 +639,7 @@ var companySchema = new Schema({
 
 Remember: Your indexes are stored **in MongoDB** and will be enforced by the database. You can view your indexes that exist with Robo 3T.  
 
-![Unique Index](/web322/media/uploads/2017/06/robo3t-indexes.png)  
+![Unique Index](/media/uploads/2017/06/robo3t-indexes.png)  
 
 Let's look at the finalized code and what happens when we try to insert a company with a companyName that already exists when the companyName has a unique index.  
 

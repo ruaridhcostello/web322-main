@@ -340,11 +340,11 @@ function handleClientError(err, req, res, next) {
 
 Visual Studio Code has great debugging support for the node.js/express ecosystem. There is a tab on the left side of VS Code to open the debugger panel.
 
-![debug](/web322/media/uploads/2016/08/debug.png)
+![debug](/media/uploads/2016/08/debug.png)
 
 Clicking the debug button will open the panel and you will see a bar along the top of the panel for launching the debugger and configuring it.
 
-![launchdebug](/web322/media/uploads/2016/08/launchdebug.png)
+![launchdebug](/media/uploads/2016/08/launchdebug.png)
 
 The launcher bar has a green play button to start debugging. However, to use the debugger you will first have to configure the launch.json file by clicking the gear icon and make the _program_ property point to the main file you use to run your application.
 
@@ -368,21 +368,21 @@ In the example setup above the most important settings are the ‘type’ and �
 
 When the debugger is running you will see an orange bar in the bottom of VS Code and it will output info to the debug console.
 
-![debugrunning](/web322/media/uploads/2016/08/debugrunning.png)
+![debugrunning](/media/uploads/2016/08/debugrunning.png)
 
 Once running, any breakpoints will be active and as the code executes it will stop on the breakpoints and allow you to inspect variables and state.
 
 To place a breakpoint click on a line number in a file and a red circle will appear indicating the code execution will stop at this line when the debugger is running.
 
-![breakpoint](/web322/media/uploads/2016/08/breakpoint.png)
+![breakpoint](/media/uploads/2016/08/breakpoint.png)
 
 When the debugger is run and that line of code is hit, you will be able to inspect the state of your application while execution is paused.
 
-![inspectingdebugger](/web322/media/uploads/2016/08/inspectingdebugger.png)
+![inspectingdebugger](/media/uploads/2016/08/inspectingdebugger.png)
 
 When you are finished inspecting, you can press play to continue with execution to the next breakpoint, or stop the program with the stop button on the debugger control bar.
 
-![debuggercontrols](/web322/media/uploads/2016/08/debuggercontrols.png)
+![debuggercontrols](/media/uploads/2016/08/debuggercontrols.png)
 
 <br>
 
@@ -392,11 +392,11 @@ Chrome, Firefox, and IE all include developer tool and each of those tools has a
 
 In Firefox, you can inspect the headers from the headers tab:
 
-![networktab-headers](/web322/media/uploads/2016/08/networktab-headers.png)  
+![networktab-headers](/media/uploads/2016/08/networktab-headers.png)  
 
 And the response from the server in the response tab. The Google Chrome network tools are slightly different, however all in-browser developer toolbars essentially make the same information available.
 
-![networktab-response](/web322/media/uploads/2016/08/networktab-response.png)  
+![networktab-response](/media/uploads/2016/08/networktab-response.png)  
 
 The network tab in the dev tools is one of the core tools for debugging on the client side. You can check the returned status code, see all the api requests being made, filter by just XHR requests, examine the cookies involved in the request and response, see request and response headers, and examine the data returned from a request.
 
