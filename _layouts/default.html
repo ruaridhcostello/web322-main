@@ -27,20 +27,20 @@
             <!-- <p>{{ site.description | default: site.github.project_tagline }}</p> -->
 
             <p><img src="https://raw.githubusercontent.com/sictweb/resources/master/logo-sict-v1.png" alt="SICT" /></p>
-            <h1><a href="/web322/">WEB322</a></h1>
+            <h1><a href="/">WEB322</a></h1>
             <p>Web Programming Tools and Frameworks</p>
 
             {% assign current = page.url | downcase | split: '/' %}
 
             <!-- <p>current - {{ current[1] }}</p> -->
 
-            <!-- <a href="https://sictweb.github.io/web322/ class="btn" ">Home</a> -->
-            <a href="/web322/weekly-schedule" {% if current[1] == 'weekly-schedule' %}class='btn active'{% else %}class='btn'{% endif %}>Schedule</a>
-            <a href="/web322/notes/" {% if current[1] == 'notes' %}class='btn active'{% else %}class='btn'{% endif %}>Notes</a>
-            <a href="/web322/graded-work" {% if current[1] == 'graded-work.html' %}class='btn active'{% else %}class='btn'{% endif %}>Graded Work</a>
-            <a href="/web322/resources" {% if current[1] == 'resources.html' %}class='btn active'{% else %}class='btn'{% endif %}>Resources</a>
-            <a href="/web322/getting-started-with-heroku" {% if current[1] == 'getting-started-with-heroku.html' %}class='btn active'{% else %}class='btn'{% endif %}>Heroku Guide</a>
-            <a href="/web322/lab-instructions" {% if current[1] == 'lab-instructions.html' %}class='btn active'{% else %}class='btn'{% endif %}>MyApps Instructions</a>
+            <!-- <a href="https://sictweb.github.io/ class="btn" ">Home</a> -->
+            <a href="/weekly-schedule" {% if current[1] == 'weekly-schedule' %}class='btn active'{% else %}class='btn'{% endif %}>Schedule</a>
+            <a href="/notes/" {% if current[1] == 'notes' %}class='btn active'{% else %}class='btn'{% endif %}>Notes</a>
+            <a href="/graded-work" {% if current[1] == 'graded-work.html' %}class='btn active'{% else %}class='btn'{% endif %}>Graded Work</a>
+            <a href="/resources" {% if current[1] == 'resources.html' %}class='btn active'{% else %}class='btn'{% endif %}>Resources</a>
+            <a href="/getting-started-with-heroku" {% if current[1] == 'getting-started-with-heroku.html' %}class='btn active'{% else %}class='btn'{% endif %}>Heroku Guide</a>
+            <a href="/lab-instructions" {% if current[1] == 'lab-instructions.html' %}class='btn active'{% else %}class='btn'{% endif %}>MyApps Instructions</a>
             <a href="{{ site.github.repository_url }}" class='btn' target="_blank">Code examples</a>
             <!-- <a href="https://dps923.github.io/fall2018/weekly-schedule" {% if current[1] == 'weekly-schedule.html' %}class='btn active'{% else %}class='btn'{% endif %}>Weekly</a>
             <a href="https://dps923.github.io/fall2018/resources" {% if current[1] == 'resources.html' %}class='btn active'{% else %}class='btn'{% endif %}>Resources</a>

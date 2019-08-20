@@ -18,7 +18,7 @@ Here, you will find the links to the weekly notes.
 </thead>
 <tbody>
 <tr>
-<td><a href="/web322/notes/week01">1 - Notes</a></td>
+<td><a href="/notes/week01">1 - Notes</a></td>
 <td>
   Course Introduction:<br><br>
 <ul>
@@ -36,7 +36,7 @@ Here, you will find the links to the weekly notes.
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week02">2 - Notes</a></td>
+<td><a href="/notes/week02">2 - Notes</a></td>
 <td>
   Node.js Introduction:<br><br>
 <ul>
@@ -56,7 +56,7 @@ Here, you will find the links to the weekly notes.
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week03">3 - Notes</a></td>
+<td><a href="/notes/week03">3 - Notes</a></td>
 <td>
 JavaScript Concept Review:<br><br>
 <ul>
@@ -79,7 +79,7 @@ JavaScript Concept Review:<br><br>
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week04">4 - Notes</a></td>
+<td><a href="/notes/week04">4 - Notes</a></td>
 <td>
 Express.js Introduction:<br><br>
 <ul>
@@ -93,7 +93,7 @@ Express.js Introduction:<br><br>
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week05">5 - Notes</a></td>
+<td><a href="/notes/week05">5 - Notes</a></td>
 <td>
 Processing Forms with Express.js:<br><br>
 <ul>
@@ -110,7 +110,7 @@ Processing Forms with Express.js:<br><br>
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week06">6 - Notes</a></td>
+<td><a href="/notes/week06">6 - Notes</a></td>
 <td>
 Template Engines – Handlebars.js:<br><br>
 <ul>
@@ -136,7 +136,7 @@ Template Engines – Handlebars.js:<br><br>
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week07">7 - Notes</a></td>
+<td><a href="/notes/week07">7 - Notes</a></td>
 <td>
 Relational Database:<br><br>
 <ul>
@@ -148,7 +148,7 @@ Relational Database:<br><br>
 </td>
 </tr>
 <tr>
-<td><a href="/web322/notes/week08">8 - Notes</a></td>
+<td><a href="/notes/week08">8 - Notes</a></td>
 <td>
 MongoDB:<br><br>
 <ul>
@@ -163,7 +163,7 @@ MongoDB:<br><br>
 </td>
 </tr>
   <tr>
-<td><a href="/web322/notes/week09">9 - Notes</a></td>
+<td><a href="/notes/week09">9 - Notes</a></td>
 <td>
 AJAX Review / Practical AJAX Programming:<br><br>
 <ul>
@@ -179,7 +179,7 @@ AJAX Review / Practical AJAX Programming:<br><br>
 </td>
 </tr>
   <tr>
-<td><a href="/web322/notes/week10">10 - Notes</a></td>
+<td><a href="/notes/week10">10 - Notes</a></td>
 <td>
 Managing State Information:<br><br>
 <ul>
@@ -190,7 +190,7 @@ Managing State Information:<br><br>
 </td>
 </tr>
     <tr>
-<td><a href="/web322/notes/week11">11 - Notes</a></td>
+<td><a href="/notes/week11">11 - Notes</a></td>
 <td>
 Introduction to jQuery & Bootstrap Frameworks:<br><br>
 <ul>
@@ -208,7 +208,7 @@ Introduction to jQuery & Bootstrap Frameworks:<br><br>
 </td>
 </tr>
   <tr>
-<td><a href="/web322/notes/week12">12 - Notes</a></td>
+<td><a href="/notes/week12">12 - Notes</a></td>
 <td>
 Security Considerations:<br><br>
 <ul>
