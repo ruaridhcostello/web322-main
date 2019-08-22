@@ -248,7 +248,7 @@ Once this is complete, click the "Choose a connection method" button at the bott
 
 From here, click on the "Connect Your Application" button.
 
-Under the first option, make sure that Node.js is selected for "Driver" and "Version" is set to 3.0 or later. You should see a tab with "Connection String Only" highlighted. Select the connection string and copy it (alternatively hitting the "Copy" button). Next, paste it in a text file for now. You will notice that there's a space for <password>- simply replace this with the actual password that you created for user "dbUser" (above).</password>
+Under the first option, make sure that Node.js is selected for "Driver" and "Version" is set to 3.0 or later. You should see a tab with "Connection String Only" highlighted. Select the connection string and copy it (alternatively hitting the "Copy" button). Next, paste it in a text file for now. You will notice that there's a space for &lt;password&gt; - simply replace this with the actual password that you created for user "dbUser" (above).
 
 Once you have copied the connection string, you can close the modal window using the "Close" button located at the bottom of the modal window.
 
