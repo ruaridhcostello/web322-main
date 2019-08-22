@@ -278,7 +278,7 @@ Unfortunately, we cannot have a Database in MongoDB Atlas without a collection, 
 
 Now that we have a new Database online with MongoDB Atlas, we can update our "Standard connection string" to point to it (NOTE: This is what is used in the "mongo.connect" and "mongo.createConnection" methods mentioned below).
 
-To accomplish this, simply take your original "Standard connection string" and look for the text "mongodb.net:27017/test" - it should be in there somewhere. To connect to a specific database, simply **replace** the string "test" with the actual database name, ie: "web322_week8" (mongodb.net:27017/web322_week8).
+To accomplish this, simply take your original "Standard connection string" and look for the text "mongodb.net:27017/test" - it should be in there somewhere. To connect to a specific database, simply **replace** the string "test" with the actual database name, ie: "web322_week8".
 
 <br>
 
