@@ -264,9 +264,9 @@ To get started, click the blue "SenecaWeb" link from the "Clusters Overview" Sec
 
 This will take you to a detailed view of your "SenecaWeb" cluster. From here, you will notice a "Collections" tab. Click this to open the data on all "Collections" contained in this cluster. Since we have not created any Databases yet, we will be greeted with the following message:
 
-![](/media/uploads/2019/01/Atlas-Create-Database.png)  
+![](/media/uploads/2019/01/Atlas-Create-Database-update-1.png)  
 
-Go ahead and click the "Create Database" button. This will open a small modal window asking for the "Database Name" and "Collection Name". For "Database Name" enter "web322_week8" and for "Collection Name" simply enter "tbd" since we don't know what collections we will have just yet, and we cannot proceed without entering one (Note: ensure that "CAPPED COLLECTION" remains unchecked). With the data entered, click the green "Create" button. Once this is complete, you will be shown the following information under "collections":
+Go ahead and click the "Add my own data" button. This will open a small modal window asking for the "Database Name" and "Collection Name". For "Database Name" enter "web322_week8" and for "Collection Name" simply enter "tbd" since we don't know what collections we will have just yet, and we cannot proceed without entering one (Note: ensure that "CAPPED COLLECTION" remains unchecked). With the data entered, click the green "Create" button. Once this is complete, you will be shown the following information under "collections":
 
 ![](/media/uploads/2019/01/Atlas-Collection-tbd.png)  
 
