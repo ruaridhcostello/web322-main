@@ -75,7 +75,9 @@ app.get("/", (req, res) => {
 
 // Display the login html page
 app.get("/login", (req, res) => {
-  res.render("login", { });
+  res.render("login", {
+    layout: false // do not use the default Layout (main.hbs)
+  });
 });
 
 // The login route that adds the user to the session
@@ -85,7 +87,10 @@ app.post("/login", (req, res) => {
 
   if(username === "" || password === "") {
     // Render 'missing credentials'
-    return res.render("login", { errorMsg: "Missing credentials." });
+    return res.render("login", { 
+      errorMsg: "Missing credentials.",
+      layout: false // do not use the default Layout (main.hbs) 
+    });
   }
 
   if(username === user.username && password === user.password) {
@@ -108,7 +113,10 @@ app.post("/login", (req, res) => {
     res.redirect("/dashboard");
   } else {
     // render 'invalid username or password'
-    res.render("login", { errorMsg: "invalid username or password!"});
+    res.render("login", { 
+      errorMsg: "invalid username or password!",
+      layout: false // do not use the default Layout (main.hbs)
+    });
   }
 });
 
@@ -123,7 +131,10 @@ app.get("/logout", (req, res) => {
 // Notice the middleware 'ensureLogin' that comes before the function
 // that renders the dashboard page
 app.get("/dashboard", ensureLogin, (req, res) => {
-  res.render("dashboard", {user: req.session.user});
+  res.render("dashboard", {
+    user: req.session.user,
+    layout: false // do not use the default Layout (main.hbs)
+  });
 });
 
 // This use() will not allow requests to go beyond it

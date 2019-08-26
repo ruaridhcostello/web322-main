@@ -21,7 +21,9 @@ function onHttpStart() {
 }
 
 app.get("/", (req, res) => {
-  res.render("home");
+  res.render("home",{
+    layout: false // do not use the default Layout (main.hbs)
+  });
 });
 
 // listen on port HTTP_PORT. The default port for http is 80. We use 8080 here

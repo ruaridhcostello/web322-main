@@ -81,12 +81,18 @@ app.get("/", (req, res) => {
 
 app.get("/add-photo", (req, res) => {
   // send the html view with our form to the client
-  res.render("add-photo", { });
+  res.render("add-photo", { 
+    layout: false // do not use the default Layout (main.hbs)
+  });
 });
 
 app.post("/add-photo", upload.single("photo"), (req, res) => {
   // setup a PhotoModel object and save it
-  const locals = { message: "Your photo was uploaded successfully"};
+  const locals = { 
+    message: "Your photo was uploaded successfully",
+    layout: false // do not use the default Layout (main.hbs)
+  };
+
   const photoMetadata = new PhotoModel({
     name: req.body.name,
     email: req.body.email,
