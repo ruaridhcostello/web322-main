@@ -284,7 +284,7 @@ To accomplish this, simply take your original "Standard connection string" and l
 
 #### Quick Note: Connecting to the new Database using Robo 3T
 
-MongoDB Atlas actually has a very nice UI tool built in for managing databases and collections online (as we have seen above). However, if you wish to use Robo3T instead, please follow guide available at: [https://www.datduh.com](https://www.datduh.com/blog/2017/7/26/how-to-connect-to-mongodb-atlas-using-robo-3t-robomongo)
+MongoDB Atlas actually has a very nice UI tool built in for managing databases and collections online (as we have seen above). As a result, we do not recommend trying to connect your new Dababase on Atlas with Robo 3T (just use the web interface provided by Atlas instead).
 
 <br>
 
