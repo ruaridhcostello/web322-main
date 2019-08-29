@@ -92,7 +92,7 @@ MongoDB should now be installed!
 
 *   You can install MongoDB in the default directory but we recommend installing it in the path mentioned above if on windows.
 
-*   Lastly, ensure that the \bin directory (ie: C:\MongoDB\Server\x.x\bin [where x.x is the version installed] is [added to your PATH](https://www.computerhope.com/issues/ch000549.htm)
+*   **Lastly, ensure that the \bin directory (ie: C:\MongoDB\Server\x.x\bin [where x.x is the version installed] is [added to your PATH](https://www.computerhope.com/issues/ch000549.htm)**
 
 MongoDB should now be installed!
 
