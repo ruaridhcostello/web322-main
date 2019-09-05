@@ -65,7 +65,7 @@ Before starting this course, students should have at least a basic understanding
 
 This will bring up the Chrome “Developer Toolbar”, as seen below :
 
-![](/media/uploads/2016/08/dev-tools.jpg)
+![](/media/uploads/2016/08/dev-tools2.png)
 
 We will be working with many of these panels throughout the semester. A quick list of their functionality (from left to right, starting at the top left corner) is as follows:
 
