@@ -25,6 +25,7 @@ MongoDB has similar functionality with a few major differences.
 
 Let's look at a comparison table of features so we can become familiar with the terminology of the MongoDB world and NoSQL databases.
 
+<div class="overflow-table">
 <table class="table-bordered table-condensed" style="width:100%;">
   <thead>
     <tr><td><strong>RDBMS term</strong></td><td style="width:89%;"><strong>MongoDB term</strong></td></tr>
@@ -36,6 +37,7 @@ Let's look at a comparison table of features so we can become familiar with the 
     <tr><td>Joins</td><td>Embed data or link to another collection</td></tr>
   </tbody>
 </table>
+</div>
 
 [This page compares MySQL to MongoDB and explains when it makes sense to use one or the other or both!](https://www.mongodb.com/compare/mongodb-mysql)  
 

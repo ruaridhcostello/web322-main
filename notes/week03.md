@@ -225,6 +225,7 @@ As we know, JavaScript is a **dynamically typed language** and we declare our va
 
 Fortunately ES6 has introduced the [let](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let) & [const](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const) keywords to solve this problem. See the below table for a comparison of **var**,**let** & **const**
 
+<div class="overflow-table">
 <table class="table-bordered table-condensed">
 <tbody><tr>
 <td><strong><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/var" target="_blank">&nbsp;&nbsp;var&nbsp;&nbsp;</a></strong></td>
@@ -280,6 +281,7 @@ console.log(k);
 </td>
 </tr>
 </tbody></table>
+</div>
 
 As we can see from the above examples, **let** & **const** behave more like variable declarations in C / C++. While still being dynamically typed, they will respect the scope in which they are declared and cannot be referenced before they are declared.
 

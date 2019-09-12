@@ -52,6 +52,7 @@ All the other common HTTP verbs are supported as well. POST, PUT, DELETE, etc. Y
 
 Here are some of the commonly used application properties and methods you will typically make use of.
 
+<div class="overflow-table">
 <table class="table-bordered table-condensed table-striped" style="width:100%;">
 <thead>
 <tr>
@@ -98,6 +99,7 @@ Here are some of the commonly used application properties and methods you will t
 </tr>
 
 </tbody></table>
+</div>
 
 <br>
 
@@ -108,6 +110,7 @@ The req object represents the object that contains all the information and metad
 There are several ways to send data from the client to the server. Four of the more common ways are: send a POST request with data in the body of the request, send data in cookies, send the data in the url, or send the data in the query string.  
 Here is a table of the common properties and methods used on the request object (req).
 
+<div class="overflow-table">
 <table class="table-bordered table-condensed table-striped" style="width:100%;">
 <thead>
 <tr>
@@ -138,6 +141,7 @@ Here is a table of the common properties and methods used on the request object 
 </tr>
 </tbody>
 </table>
+</div>
 
 <br>
 
@@ -147,6 +151,7 @@ The response object represents the object that contains all the information and 
 
 Here is a table of the common properties and methods used on the response object (res).
 
+<div class="overflow-table">
 <table class="table-bordered table-condensed table-striped" style="width:100%;">
 <thead>
 <tr>
@@ -189,6 +194,7 @@ Here is a table of the common properties and methods used on the response object
 </tr>
 </tbody>
 </table>
+</div>
 
 <br>
 
@@ -281,6 +287,7 @@ Middleware in Express refers to functions that can execute in the ‘middle’ o
 
 There are 5 types of middleware:
 
+<div class="overflow-table">
 <table class="table-bordered table-condensed table-striped" style="width:100%;">
 <thead>
 <tr>
@@ -311,6 +318,7 @@ There are 5 types of middleware:
 </tr>
 </tbody>
 </table>
+</div>
 
 <br>
 

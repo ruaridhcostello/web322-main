@@ -89,6 +89,7 @@ One of the most valuable features provided by jQuery is it's comprehensive and p
 
 Some common selectors that jQuery gives us are:
 
+<div class="overflow-table">
 <table class="table-bordered table-condensed" style="width:100%; margin-bottom:20px;">
 <tbody><tr><th style="width:1000px">Selector</th><th style="width: 70%">Description</th></tr>
 <tr><td><a href="https://api.jquery.com/all-selector/" target="_blank">$( "*" )</a></td><td><strong>All Selector:</strong> Selects all elements</td></tr>
@@ -104,6 +105,7 @@ Some common selectors that jQuery gives us are:
 <tr><td colspan="2"><strong>For a full list of the <em>60+</em> selector types</strong>, refer to: <a href="https://api.jquery.com/category/selectors/" target="_blank">https://api.jquery.com/category/selectors</a></td></tr>
 
 </tbody></table>
+</div>
 
 <br>
 
@@ -179,6 +181,7 @@ $(document).ready(function () {
 
 Now that we know how to select elements from the DOM and wire events, it is important to discuss how we can actually **update** the DOM. We have seen this in the examples above using the [.css()](http://api.jquery.com/css/) and [.append()](http://api.jquery.com/append/), however jQuery provides a host of other methods to modify the DOM, including:
 
+<div class="overflow-table">
 <table class="table-bordered table-condensed" style="width:100%; margin-bottom:20px;">
 <tbody><tr><th style="width:1000px">Property / Method</th><th style="width: 70%">Description</th></tr>
 <tr><td><a href="http://api.jquery.com/jquery/#jQuery-html-attributes" target="_blank">$('<element>', {})</element></a></td><td>Create a new element by specifying a string defining a single, standalone, HTML element (e.g. &lt;div/&gt; or &lt;div&gt;&lt;/div&gt;), followed by an optional object consisting of attributes, events, and methods to call on the newly-created element.</td></tr>
@@ -196,6 +199,7 @@ Now that we know how to select elements from the DOM and wire events, it is impo
 <tr><td colspan="2"><strong>For a full list of the <em>40+</em> properties / methods</strong> used for DOM manipulation, refer to: <a href="https://api.jquery.com/category/manipulation/" target="_blank">http://api.jquery.com/category/manipulation</a></td></tr>
 
 </tbody></table>
+</div>
 
 #### Using AJAX
 
@@ -350,12 +354,14 @@ To implement this in our example from above, we simply add three (3) columns in 
 
 If we want to be more specific with how the grids appear at each viewport size, we can use one or more of the following [class prefixes](https://getbootstrap.com/docs/3.3/css/#grid-options) on each row (* represents number of columns):
 
+<div class="overflow-table">
 <table class="table-bordered table-condensed" style="width:100%; margin-bottom:20px;">
 <tbody><tr><td style="width:1000px">.col-xs-*</td><td style="width: 70%">Extra small devices - Phones ( &lt; 768px )</td></tr>
 <tr><td>.col-sm-*</td><td>Small devices - Tablets ( ≥ 768px )</td></tr>
 <tr><td>.col-md-*</td><td>Medium devices - Desktops ( ≥ 992px )</td></tr>
 <tr><td>.col-lg-*</td><td>Large devices - Desktops ( ≥ 1200px )</td></tr>
 </tbody></table>
+</div>
 
 <br>
 

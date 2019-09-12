@@ -48,6 +48,7 @@ Let's first discuss the typical HTML elements used in an HTML form and look at s
 Let's make a small form right here on this page that "submits" the data and writes to the console after attempting to submit. Our form will be responsible for creating a new user for a site that asks for a username to use, email address, name, password, and a radio button that asks if they would like to be subscribed to a monthly newsletter.
 
 <form onsubmit="console.log('form Submitted'); return false;">
+<div class="overflow-table">
 <table style="border: 1px dashed #cdcdcd;padding:6px;">
 <tbody>
 <tr>
@@ -85,6 +86,7 @@ Let's make a small form right here on this page that "submits" the data and writ
 </tr>
 </tbody>
 </table>
+</div>
 </form>
 
 The code for this form looks like this:
