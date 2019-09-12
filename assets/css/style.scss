@@ -112,4 +112,8 @@ footer {
   .overflow-table{
     max-width: 100%;
     overflow-x: scroll;
+
+    td{
+      font-size: 1em !important;
+    }
   }
