@@ -9,6 +9,7 @@ Here, you will find the links to the weekly notes.
 
 <br>
 
+<div class="overflow-table">
 <table>
 <thead>
 <tr>
@@ -230,3 +231,4 @@ Course Review:<br><br>
 </tr>
 </tbody>
 </table>
+</div>

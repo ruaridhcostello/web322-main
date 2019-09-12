@@ -108,3 +108,8 @@ footer {
   figure.highlight{
     margin-left: 0;
   }
+
+  .overflow-table{
+    max-width: 100%;
+    overflow-x: scroll;
+  }

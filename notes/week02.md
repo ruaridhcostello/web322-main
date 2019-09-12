@@ -35,7 +35,7 @@ node hello.js
 Regarding the code that we wrote, it’s very simple; however we have made an important assumption: that we have access to a global **“console”** object. In Node.js we have access to [a number of global objects / variables](https://nodejs.org/api/globals.html) in addition to [the built-in objects that are built into the JavaScript language](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects). Some of the Node.js Globals that we will be using include:
 
 
-
+<div class="overflow-table">
 <table class="table-bordered table-condensed top-20 bottom-20" style="width:100%;">
 <tbody>
 <tr>
@@ -144,6 +144,7 @@ var checkMaximum = function () {
 </td></tr>
 </tbody>
 </table>
+</div>
 
 
 Now that we have written and executed our very first program with JavaScript using Node.js – why don’t we try another example. This time, lets add some user input. Recall when we first discussed JavaScript in the previous course, we did not capture user input using JavaScript, but instead relied on explicitly setting test values at the top of our programs. This allowed us to have specific control over the type of input we were testing. However, it might be interesting to deal with “live data” in a pure JS environment and fortunately for us, we have access to the extensive collection of [modules](https://nodejs.org/api/modules.html) that come bundled with Node.js – more specifically, we have access to the [readline](https://nodejs.org/api/readline.html#readline_readline) module, which can be used for this purpose, for example:  
@@ -166,6 +167,7 @@ Notice the first line of our code invokes the global **require()** function whic
 
 Node also includes a number of other extremely useful core [“modules”](https://nodejs.org/api/modules.html#modules_modules), including:
 
+<div class="overflow-table">
 <table class="table-bordered table-condensed top-20 bottom-20" style="width:100%;">
 <tbody>
 <tr>
@@ -217,6 +219,7 @@ The url utility module provides methods for parsing and working with a url. You 
 </tr>
 </tbody>
 </table>
+</div>
 
 <br>
 
@@ -280,6 +283,7 @@ All npm packages that you install locally for your application will be installed
 
 Here are the most common npm commands you will use:
 
+<div class="overflow-table">
 <table class="table-bordered table-condensed top-20 bottom-20" style="width:100%;">
 
 <tbody>
@@ -328,6 +332,7 @@ EX: npm install express</td>
 </tbody>
 
 </table>
+</div>
 
 <br>
 

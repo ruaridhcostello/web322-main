@@ -69,6 +69,7 @@ This will bring up the Chrome “Developer Toolbar”, as seen below :
 
 We will be working with many of these panels throughout the semester. A quick list of their functionality (from left to right, starting at the top left corner) is as follows:
 
+<div class="overflow-table">
 <table>
 
 <tbody>
@@ -188,6 +189,7 @@ We will be working with many of these panels throughout the semester. A quick li
 </tbody>
 
 </table>
+</div>
 
 <br>
 
@@ -301,6 +303,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 
 1.  An HTTP method that describes the action to be performed:  
 
+    <div class="overflow-table">
     <table>
 
     <thead>
@@ -391,6 +394,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
     </tbody>
 
     </table>
+    </div>
 
 2.  The request target (this can vary between the different HTTP methods) – for example, this can be:<br><br>
     *   An absolute path, optionally followed by a ‘?’ and a query string. This is the most common form, called origin form, and is used with GET, POST, HEAD, and OPTIONS methods, for example:
@@ -443,6 +447,7 @@ The start line of an HTTP response, called the status line, contains the followi
 1.  The protocol version, usually **HTTP/1.1**.<br><br>
 2.  A [status code](http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml) beginning with 1, 2, 3, 4 or 5 that provides information such as the success or failure of the request:  
 
+    <div class="overflow-table">
     <table>
     <thead>
     <tr>
@@ -487,6 +492,7 @@ The start line of an HTTP response, called the status line, contains the followi
     </p></td></tr>
     </tbody>
     </table>
+    </div>
 
 3.  A status text, purely informational, that is a textual short description of the status code. This helps HTTP messages be more human-readable, for example:<br><br>
     *   **HTTP/1.1 404 Not Found**
