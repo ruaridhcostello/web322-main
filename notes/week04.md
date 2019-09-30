@@ -310,11 +310,18 @@ There are 5 types of middleware:
 </tr>
 <tr>
 <td><a href="http://expressjs.com/en/guide/using-middleware.html#middleware.built-in" target="_blank">Built in middleware</a></td>
-<td>Starting with Expres 4.x there is no more built in middleware except the static middleware for serving static files. we mentioned how to use the express.static() middleware above in the serving static files section.</td>
+<td>
+<p>In the latest version of Express, there are three built-in middleware functions (the latter two, available only in Express 4.16.0 and above):</p>
+  <ul>
+    <li><a href="http://expressjs.com/en/4x/api.html#express.static">express.static</a> - Mentioned in the “serving static files” section</li>
+    <li><a href="http://expressjs.com/en/4x/api.html#express.json">express.json</a> - Used to parse incoming requests with JSON payloads.</li>
+    <li><a href="http://expressjs.com/en/4x/api.html#express.urlencoded">express.urlencoded</a> - Used to parse incoming requests with URL-encoded payloads (typically form POST submissions)</li>
+  </ul>
+</td>
 </tr>
 <tr>
 <td><a href="http://expressjs.com/en/guide/using-middleware.html#middleware.third-party" target="_blank">Third party middleware</a></td>
-<td>With express 4.x, previously included middleware that did common things like handle cookies, parse the body of a form submission, or handle file uploads, have been moved to third party middleware packages. This way you can add them as you need them and reduce bloat in your system. If you’re never going to handle file uploads, why have middleware loaded? <a href="http://expressjs.com/en/resources/middleware.html" target="_blank">A great list of some of the most popular third party middleware is available here.</a></td>
+<td>With express 4.x, previously included middleware that did common things like handle cookies, or handle file uploads, have been moved to third party middleware packages. This way you can add them as you need them and reduce bloat in your system. If you’re never going to handle file uploads, why have middleware loaded? <a href="http://expressjs.com/en/resources/middleware.html" target="_blank">A great list of some of the most popular third party middleware is available here.</a></td>
 </tr>
 </tbody>
 </table>
