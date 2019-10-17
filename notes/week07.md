@@ -25,9 +25,9 @@ To get started, we need to **add a Postgre database (DB)** to a new (or existing
 
 Once your app is up and running, [log into Heroku](https://id.heroku.com/login) and find your application on the dashboard - it should have an automatically generated name, like "cryptic-garden-34394". Next, follow the steps to set up your free Postgres database!
 
-1.  Click on your application to go to the configuration screen  
+1.  Click on your application to go to the resources screen  
       
-    
+
 2.  At the bottom, you will see an "Add-ons" section with a textbox "Quickly add add-ons from Elements" ![Find more add ons](/media/uploads/2017/02/heroku-screen1.png)
 
 3.  Type "Heroku Postgres" into this textbox and click the "Heroku Postgres" item that comes up:![Heroku Postgres](/media/uploads/2017/02/heroku-screen4.png)
@@ -38,7 +38,7 @@ Once your app is up and running, [log into Heroku](https://id.heroku.com/login) 
 5.  This will create an item (link) in your "Add-ons" section with the label: **"Heroku Postgres :: Database"**. Click this link to go to the page for your new Postgres Database instance!  
       
     
-6.  Scroll down to the "Administration" section and click the "View Credentials" button on the right side of the page in the "Database Credentials" section. This will expand a section that lists all of the credentials that you will use when connecting to this database.  
+6.  Click the "settings" tab, which will reveal a "View Credentials" button on the right side of the page. This will expand a section that lists all of the credentials that you will use when connecting to this database.  
       
     
 7.  Write down the following information for: **Host**, **Database**, **User**, **Port**, **Password**. Note: You can always log back on to Heroku to see these credentials if you forget them.
@@ -65,7 +65,7 @@ Once it is installed and you have opened the app, we need to configure it to con
     | **(Connection Tab) Maintenance database** | Enter your randomly generated Heroku Postgres Database name here                                       |
     | **(Connection Tab) Username**             | Enter your randomly generated Heroku Postgres Database user name here                                  |
     | **(Connection Tab) Password**             | Enter your randomly generated Heroku Postgres Database password here                                   |
-    | **(Advanced Tab) DB restriction**         | Under the "Advanced" tab in the "DB Restriction" field, enter your Heroku Postgres Database name       |
+    | **(Advanced Tab) DB restriction**         | Under the "Advanced" tab in the "DB Restriction" field, enter your Heroku Postgres Database ß       |
     
     Once you have entered all of your information, hit the "Ok" button and click "Servers" in the left pane to expand your server connections. If you entered valid information for the above fields, you should see your Heroku Postgres DB Connection. Expand this item and the following **"Databases (1)"** item, and you should see your database. Expand this item, as well as the nested **"Schemas (1)"** item, followed by the **"public"** item, and you should be presented with something that looks like this:
     
