@@ -379,12 +379,12 @@ sequelize.sync().then(function () {
         lName: "Odin"
     }).then(function(){ console.log("Kyler Odin created")});
 
-        Name.create({
+    Name.create({
         fName: "Grier",
         lName: "Garrick"
     }).then(function(){ console.log("Grier Garrick created")});
 
-        Name.create({
+    Name.create({
         fName: "Kolby",
         lName: "Greyson"
     }).then(function(){ console.log("Kolby Greyson created")});
