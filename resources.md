@@ -73,7 +73,7 @@ Links to other topics (e.g. Getting started, etc.) are on that page
 
 * [Express Handlebars Documentation](https://www.npmjs.com/package/express-handlebars)
 
-* [Sequelize Documentation](http://docs.sequelizejs.com/)
+* [Sequelize Documentation](https://sequelize.org/master/)
 
 * [Mongoose Documentation](https://mongoosejs.com/docs/guide.html)
 
