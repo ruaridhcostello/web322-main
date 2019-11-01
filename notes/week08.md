@@ -572,7 +572,7 @@ We use the schema object to update vs an instance of a model like we did with sa
 ```javascript
 Company.update(
 { ... query ... },
-{ $set { ... fields to set ... } },
+{ $set: { ... fields to set ... } },
 { multi: true|false }) 
 .exec();
 
