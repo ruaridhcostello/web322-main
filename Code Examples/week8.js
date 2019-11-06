@@ -75,7 +75,7 @@ app.get("/", (req, res) => {
     });
 
     // send the html view with our form to the client
-    res.render("week8", { photos : photos, hasPhotos: !!photos.length });
+    res.render("week8", { photos : photos, hasPhotos: !!photos.length, layout: false });
   });
 });
 
