@@ -174,7 +174,7 @@ This schedule is subject to change. Students will be informed of any schedule ch
 
 <tr>
 <td>11</td>
-<td><ul><li>Introduction to Postgres / Sequelize ORM</li></ul></td>
+<td><ul><li>Introduction to jQuery & Bootstrap Frameworks</li></ul></td>
 <td>
 <ul>
 <li>Test 5
