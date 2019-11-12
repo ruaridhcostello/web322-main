@@ -211,7 +211,7 @@ Recently, we have learned how to make an AJAX request using the [Fetch API](http
 ```javascript
 fetch("https://reqres.in/api/users", {
     method: "POST",
-    body: JSON.stringify({ user: "John Doe", job: "unknown" }),
+    body: JSON.stringify({ name: "John Doe", job: "unknown" }),
     hdeaders: {
         "Content-Type": "application/json"
     }
