@@ -201,42 +201,33 @@ Now that we know how to select elements from the DOM and wire events, it is impo
 </tbody></table>
 </div>
 
+<br>
+
 #### Using AJAX
 
-AJAX is rapidly becoming one of the most important technologies in web programming. AJAX enables single-page applications and more streamlined user interfaces for working with data. Recall (from week 9), creating an AJAX request with data and working with the response involved the following code (at minimum):
+Recently, we have learned how to make an AJAX request using the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), for example:
+
 
 ```javascript
-let httpRequest = new XMLHttpRequest();
-
-httpRequest.open('POST', 'https://httpbin.org/post');
-
-// set the Request Header and send the request
-httpRequest.setRequestHeader("Content-Type", "application/json");
-httpRequest.send(JSON.stringify({ user: "John Doe", job: "unknown" }));
-
-httpRequest.onreadystatechange = function(){
-    // check the current value of the readyState & status properties
-    // if successful, process the data
-    if (httpRequest.readyState === 4) { // The request has completed ("done")
-        if (httpRequest.status === 200) {  // We successfully recieved the response
-            // Create object jsData from the JSON received in responseText
-            let jsData = JSON.parse(httpRequest.responseText);
-            // render it in the console
-            console.log(jsData);
-        }else{
-            console.log("error: " + httpRequest.statusText);
-        }
+fetch("https://reqres.in/api/users", {
+    method: "POST",
+    body: JSON.stringify({ user: "John Doe", job: "unknown" }),
+    hdeaders: {
+        "Content-Type": "application/json"
     }
-}
+})
+.then(response => response.json())
+.then(json => { console.log(json); })
+.catch(err => { console.log(err); });
 ```
 
-jQuery provides a much cleaner, cross-browser and backwards compatible approach with it's [$.ajax()](http://api.jquery.com/jquery.ajax/) method:
+jQuery provides a similar approach using the [$.ajax()](http://api.jquery.com/jquery.ajax/) method.  This was extremely popular before the methodology to make AJAX calls was standardized across browsers. To make the same request as above, we can use the following code in jQuery: 
 
 ```javascript
 $.ajax({
-    url: "https://httpbin.org/post",
+    url: "https://reqres.in/api/users",
     type: "POST",
-    data: JSON.stringify({ user: "John Doe", job: "unknown" }),
+    data: JSON.stringify({ name: "John Doe", job: "unknown" }),
     contentType: "application/json"
 })
 .done(function (data) {
@@ -246,7 +237,10 @@ $.ajax({
     console.log("error: " + err.statusText);
 });
 ```
-<br>
+
+**NOTE**: The 'fail' method callback used above will execute if the AJAX request status code includes a 400 series error, while the 'catch' method (used when using fetch()) will not.  
+
+<br><br>
 
 ### Bootstrap Framework
 
