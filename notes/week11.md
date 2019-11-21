@@ -252,7 +252,7 @@ The Bootstrap framework is a set of **JavaScript** & **CSS** files that simplify
 
 #### Including Bootstrap in our Projects
 
-Like jQuery, to incorporate Bootstrap into our projects, we simply need to add some external files to our views and we can begin using it right away. As with any external JavaScript or CSS files, we can choose to either [download the files](http://getbootstrap.com/getting-started/#download) to our local project, or use a CDN (content delivery network).
+Like jQuery, to incorporate Bootstrap into our projects, we simply need to add some external files to our views and we can begin using it right away. As with any external JavaScript or CSS files, we can choose to either [download the files](https://getbootstrap.com/docs/3.4/getting-started/#download) to our local project, or use a CDN (content delivery network).
 
 It is important to note that Bootstrap **depends on jQuery** for it's interactive components, so if we wish to use anything beyond the CSS features of the Bootstrap framework, we must include jQuery as well:
 
