@@ -433,10 +433,22 @@ Another important "component" that Bootstrap provides is a set of classes to [re
 
 It is important to note that the classes used above (ie: ".btn", ".btn-primary", "btn-success", etc) can also be used on the following types of elements:
 
-*   **hyperlinks:** <a class="btn btn-default" href="#" role="button">Link</a>
-*   **button elements:** <button class="btn btn-default" type="submit">Button</button>
-*   **input type="button" elements:** <input class="btn btn-default" type="button" value="Input">
-*   **input type="submit" elements:** <input class="btn btn-default" type="submit" value="Submit">
+*   **hyperlinks:** 
+```html
+<a class="btn btn-default" href="#" role="button">Link</a>
+```
+*   **button elements:** 
+```html
+<button class="btn btn-default" type="submit">Button</button>
+```
+*   **input type="button" elements:**
+```html
+<input class="btn btn-default" type="button" value="Input">
+```
+*   **input type="submit" elements:**
+```html
+<input class="btn btn-default" type="submit" value="Submit">
+```
 
 <br>
 
