@@ -365,7 +365,7 @@ Sometimes our design requires columns to be "offset" from the left of the grid. 
 
 ![](/media/uploads/2017/07/grid-md-4-offset.png)  
 
-```javascript
+```html
 <div class="container">
     <div class="row">
         <div class="col-md-4">.col-md-4</div>
