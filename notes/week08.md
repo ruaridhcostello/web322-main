@@ -194,23 +194,7 @@ You'll get a result like:
 
 You'll notice it's the same as the document you inserted with the added field of "_id". Every document in MongoDB gets an _id property by default. These are **globally unique** to the entire database and probably even the world! So no need to worry about _id conflicts anytime you do a find by the _id!  
 
-Now let's take a look at the data in the database using a GUI tool.  
-
-<br>
-
-#### Tools
-
-**RoboMongo (Robo 3T)** is an open source project that is free to use and [available to download for Windows, Mac, and Linux](https://robomongo.org/download).
-
-Install Robo 3T and connect to the DB with host: localhost, and port: 27017 to inspect our inserted document.  
-
-![Connect with Robo 3T](/media/uploads/2017/06/robo3t-1.png)  
-
-Once connected to the server, click on the web322 database to see the collections inside it. There is currently just one collection, web322_companies. to view the documents inside this collection just double click on it and a window will open in table view with the contents. You should see your document as a row in the table with all it's properties.  
-
-![Screenshot 2016-12-13 23.35.04](/media/uploads/2017/06/robo3t-2.png)
-
-Now let's setup an online account with MongoDB Atlas and create our own mongodb in the cloud for use with Heroku.
+Now let's setup an online account with MongoDB Atlas and create our own mongodb in the cloud for use with Heroku. 
 
 <br>
 
