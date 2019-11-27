@@ -157,7 +157,7 @@ MongoDB:<br><br>
 <li>Configuring a NoSQL Database (MongoDB)</li>
 <li>Downloading / installing MongoDB Driver (module) for Node</li>
 <li>Queries</li>
-<li>Tools – Robo 3T (Robomongo) </li>
+<li>MongoDB Atlas</li>
 <li>Mongoose.js</li>
 <li>Schema, indexes</li>
 </ul>

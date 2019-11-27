@@ -268,12 +268,6 @@ To accomplish this, simply take your original "Standard connection string" and l
 
 <br>
 
-#### Quick Note: Connecting to the new Database using Robo 3T
-
-MongoDB Atlas actually has a very nice UI tool built in for managing databases and collections online (as we have seen above). As a result, we do not recommend trying to connect your new Dababase on Atlas with Robo 3T (just use the web interface provided by Atlas instead).
-
-<br>
-
 #### Mongoose.js
 
 When we work with MongoDB in node, we won't work directly with the MongoDB driver. Instead we will use a popular open source module that wraps up the Mongo driver and provides extra functionality for declaring schemas/models, validating documents on save, having virtual properties on a model, and instance and static methods on a model object.  
@@ -623,9 +617,9 @@ var companySchema = new Schema({
 });
 ```
 
-Remember: Your indexes are stored **in MongoDB** and will be enforced by the database. You can view your indexes that exist with Robo 3T.  
+Remember: Your indexes are stored **in MongoDB** and will be enforced by the database.
 
-![Unique Index](/media/uploads/2017/06/robo3t-indexes.png)  
+<br>
 
 Let's look at the finalized code and what happens when we try to insert a company with a companyName that already exists when the companyName has a unique index.  
 
@@ -711,13 +705,12 @@ As you can see MongoDB threw back an error (E11000 duplicate key error). This is
 
 #### Week 8 example
 
-The week 8 example explores connecting to a mongoDB database and saving records for metadata about a photo upload. It allows the owner to upload a photo, add a name, email, and caption to the photo, and save it. The photo itself will be written to the file system and the supporting data about the photo will be saved in a document in the web322_week8_photos collection. Try it out with a local install of MongoDB, inspect the data with Robo 3T, and then try creating a MongoDB Atlas account and connecting your MongoDB Atlas db to your week8 example running on Heroku.
+The week 8 example explores connecting to a mongoDB database and saving records for metadata about a photo upload. It allows the owner to upload a photo, add a name, email, and caption to the photo, and save it. The photo itself will be written to the file system and the supporting data about the photo will be saved in a document in the web322_week8_photos collection. Try it out with a local install of MongoDB and then try creating a MongoDB Atlas account and connecting your MongoDB Atlas db to your week8 example running on Heroku.
 
 <br>
 
 ### Sources
 
 *   [MongoDB official documentation](https://docs.mongodb.com/manual/)
-*   [RoboMongo (Robo 3T) download](https://robomongo.org/download)
 *   [Mongoose documentation](http://mongoosejs.com/docs/guide.html)
 *   [MongoDB Cheat Sheet](https://dhodgin.wordpress.com/2016/11/20/mongodb-shell-cheat-sheet-for-v3-4/)
