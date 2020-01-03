@@ -561,37 +561,36 @@ NOTE: For complex queries (ie: ["greater than"](https://docs.mongodb.com/manual/
 
 <br>
 
-#### update()
+#### updateOne() / updateMany()
 
 We use the schema object to update vs an instance of a model like we did with save(). update() takes 3 arguments: the query to select which documents to update, the fields to set for the documents that match the query (see [update operators](https://docs.mongodb.com/manual/reference/operator/update/), ie: [$set](https://docs.mongodb.com/manual/reference/operator/update/set/), [$push](https://docs.mongodb.com/manual/reference/operator/update/push/) and [$addToSet](https://docs.mongodb.com/manual/reference/operator/update/addToSet/) ), and an option for if you want to update multiple matching documents or only the first match.  
 
 ```javascript
-Company.update(
-{ ... query ... },
-{ $set: { ... fields to set ... } },
-{ multi: true|false }) 
-.exec();
+Company.updateOne( // can also use updateMany to update multiple documents at once
+  { ... query ... },
+  { $set: { ... fields to set ... } }
+).exec();
 
 Example:
-Company.update({ companyName: "The Kwik-E-Mart"},
-{ $set: { employeeCount: 4 } },
-{ multi: false })
-.exec();
+Company.updateOne(
+  { companyName: "The Kwik-E-Mart"},
+  { $set: { employeeCount: 3 } }
+).exec();
 ```
 
 NOTE: You may receive a depreciation warning when executing the above code, ie: "collection.update is deprecated. Use updateOne, updateMany". If this is the case, do not use the "multi" option to determine whether or not multiple documents should be updated, simply use use **updateOne** (to update a single document) or **updateMany** (to update multiple documents).  
 
 <br>
 
-#### remove()
+#### deleteOne() / deleteMany()
 
 ```javascript
-Company.remove({ ... query ... })
+Company.deleteOne({ ... query ... }) // can also use deleteMany to delete multiple documents at once
 .exec()
 .then();
 
 Example:
-Company.remove({ companyName: "The Kwik-E-Mart" })
+Company.deleteOne({ companyName: "The Kwik-E-Mart" })
 .exec()
 .then(() => {
   // removed company
@@ -601,8 +600,6 @@ Company.remove({ companyName: "The Kwik-E-Mart" })
   console.log(err);
 });
 ```
-
-NOTE: You may receive a depreciation warning when executing the above code, ie: "collection.remove is deprecated. Use deleteOne, deleteMany, or bulkWrite instead.".
 
 <br>
 
