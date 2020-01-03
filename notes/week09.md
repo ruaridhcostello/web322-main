@@ -88,7 +88,7 @@ If we wish to handle a situation where the fetch fails, we can always add a catc
 
 ```javascript
 fetch("https://reqres.in/api/unknown/23").then(response =>{
-    // return a rejected promise with the status code of the response wasn't "ok"
+    // return a rejected promise with the status code of the response if it wasn't "ok"
     return (response.ok) ? response.json() : Promise.reject(response.status); 
 }).then(json => {
     console.log(json);
