@@ -51,7 +51,7 @@ fetch(myRequest).then(function(response) {
     console.log(json); // here is the parsed JSON response 
 });
 ```
-    
+
 <br>
 
 #### AJAX: The Fetch API (Compressed)
@@ -77,6 +77,23 @@ fetch('https://reqres.in/api/users/')
 .then(response => response.json())
 .then(json => {
     console.log(json);   
+});
+```
+
+<br>
+
+#### Handling Responses with an "Error" Status
+
+If we wish to handle a situation where the fetch fails, we can always add a catch statement at the end of the above code.  However, it is important to note that if the response itself was successful (ie a connnection was made and a response was returned), then the "catch" callback code will not be executed *even if* the response status code indicates an error, ie 500 or 404.  To handle these situations, we can leverage a method on the response object callded "ok" (see: [response.ok](https://developer.mozilla.org/en-US/docs/Web/API/Response/ok)) which will be true if the status code of the response was in the **200 range**.  Practically speaking, it can be used like this:
+
+```javascript
+fetch("https://reqres.in/api/unknown/23").then(response =>{
+    // return a rejected promise with the status code if the response wasn't "ok"
+    return (response.ok) ? response.json() : Promise.reject(response.status); 
+}).then(json => {
+    console.log(json);
+}).catch(err => {
+    console.log(err);
 });
 ```
 
