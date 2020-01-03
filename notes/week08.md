@@ -477,6 +477,24 @@ Instead of using **"connect"**, we instead use **"createConnection"** and save t
 
 <br>
 
+**Connection Warnings**
+
+Depending on the version of mongoose that you're using, you may encounter warnings such as: 
+
+`DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.` 
+
+or
+
+ `DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.`.  
+
+ To resolve these,  simply add the suggested options to an object and pass them in as the 2nd parameter to your connect / createConnection method, ie:
+
+```javascript
+let db1 = mongoose.createConnection("Your connection string here", {useNewUrlParser: true, useUnifiedTopology: true});
+```
+
+<br>
+
 #### The rest of the CRUD
 
 Now that we've discussed find, let's talk about the other functions used with mongoose to do the rest of the CRUD functionality. Here are some examples of other find methods, inserting, updating, and removing documents.
