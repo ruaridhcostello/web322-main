@@ -81,9 +81,9 @@ function showFunctionClosures() {
     console.log("count(): " + count());
     console.log("count(): " + count());
 
-    function architect(setName, setAge) {
-        var name = setName;
-        var age = setAge;
+    function architect(inName, inAge) {
+        var name = inName;
+        var age = inAge;
         var occupation = "architect";
         return {
             setName: function (newName) { name = newName },
@@ -123,9 +123,9 @@ function showFunctionConstructor() {
     // execute the "objectMethod" on the new object
     console.log("myObject.objectMethod(): " + myObject.objectMethod());
 
-    function architect(setName, setAge) {
-        this.name = setName;
-        this.age = setAge;
+    function architect(inName, inAge) {
+        this.name = inName;
+        this.age = inAge;
         this.occupation = "architect";
     }
 
@@ -148,9 +148,9 @@ function showThisKeyword() {
     console.log("'this' Keyword");
     console.log("-----------------------\n");
 
-    function architect(setName, setAge) {
-        this.name = setName;
-        this.age = setAge;
+    function architect(inName, inAge) {
+        this.name = inName;
+        this.age = inAge;
         this.occupation = "architect";
     }
 
@@ -186,9 +186,9 @@ function showPrototypalInheritance() {
     console.log("Prototypal Inheritance");
     console.log("-----------------------\n");
 
-    function architect(setName, setAge) {
-        this.name = setName;
-        this.age = setAge;
+    function architect(inName, inAge) {
+        this.name = inName;
+        this.age = inAge;
         this.occupation = "architect";
     }
 
@@ -375,9 +375,9 @@ function showLexicalThis() {
     console.log("'Lexical This' with Arrow Functions");
     console.log("-----------------------\n");
 
-    function architect(setName, setAge) {
-        this.name = setName;
-        this.age = setAge;
+    function architect(inName, inAge) {
+        this.name = inName;
+        this.age = inAge;
         this.occupation = "architect";
     }
 
