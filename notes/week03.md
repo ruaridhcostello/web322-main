@@ -98,9 +98,9 @@ We can define the methods of the new object in either the function (using this.f
 To illustrate this concept, why don’t we recreate our “architect” object using this method:
 
 ```javascript
-function architect(setName, setAge){
-    this.name = setName;
-    this.age = setAge;
+function architect(inName, inAge){
+    this.name = inName;
+    this.age = inAge;
     this.occupation = "architect";
 }
 
@@ -188,9 +188,9 @@ From the above code, it is clear that the “architect2” instance does not act
 To see why this concept is so powerful, why don’t we add a new method to the architect prototype **after** we create our architect1 & architect2 instances:  
 
 ```javascript
-function architect(setName, setAge){
-    this.name = setName;
-    this.age = setAge;
+function architect(inName, inAge){
+    this.name = inName;
+    this.age = inAge;
     this.occupation = "architect";
 }
 
@@ -294,9 +294,9 @@ ES6 has introduced some "syntax sugar" to allow us to create objects in a more i
 ```javascript
 class architect{
 
-    constructor(setName, setAge){
-        this.name = setName;
-        this.age = setAge;
+    constructor(inName, inAge){
+        this.name = inName;
+        this.age = inAge;
         this.occupation = "architect";
     }
 
