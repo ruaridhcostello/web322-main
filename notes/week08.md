@@ -234,7 +234,7 @@ Once this is complete, click the "Choose a connection method" button at the bott
 
 From here, click on the "Connect Your Application" button.
 
-Under the first option, make sure that Node.js is selected for "Driver" and "Version" is set to 3.0 or later. You should see a tab with "Connection String Only" highlighted. Select the connection string and copy it (alternatively hitting the "Copy" button). Next, paste it in a text file for now. You will notice that there's a space for &lt;password&gt; - simply replace this with the actual password that you created for user "dbUser" (above).
+Under the first option, make sure that Node.js is selected for "Driver" and "Version" is set to 3.6 or later. Select the connection string and copy it (alternatively hitting the "Copy" button). Next, paste it in a text file for now. You will notice that there's a space for &lt;password&gt; - simply replace this with the actual password that you created for user "dbUser" (above).
 
 Once you have copied the connection string, you can close the modal window using the "Close" button located at the bottom of the modal window.
 
@@ -262,9 +262,9 @@ Unfortunately, we cannot have a Database in MongoDB Atlas without a collection, 
 
 #### Updating the connection string to point to our new "web322_week8" database.
 
-Now that we have a new Database online with MongoDB Atlas, we can update our "Standard connection string" to point to it (NOTE: This is what is used in the "mongo.connect" and "mongo.createConnection" methods mentioned below).
+Now that we have a new Database online with MongoDB Atlas, we can update our *connection string* to point to it (NOTE: This is what is used in the "mongo.connect" and "mongo.createConnection" methods mentioned below).
 
-To accomplish this, simply take your original "Standard connection string" and look for the text "mongodb.net:27017/test" - it should be in there somewhere. To connect to a specific database, simply **replace** the string "test" with the actual database name, ie: "web322_week8".
+To accomplish this, simply take your original *connection string* and look for the text &lt;dbname&gt;. To connect to a specific database, simply **replace** the string &lt;dbname&gt; with the actual database name, ie: **web322_week8**.
 
 <br>
 
