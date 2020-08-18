@@ -539,7 +539,7 @@ Company.find({ companyName: "The Kwik-E-Mart"})
   // companies will be an array of objects.
   // Each object will represent a document that matched the query
 
-  // pull the data (exclusively)
+  // Convert the mongoose documents into plain JavaScript objects
   companies = companies.map(value => value.toObject());
 
 });
@@ -559,7 +559,7 @@ Company.find({ companyName: "The Kwik-E-Mart"}, "address phone")
   // companies will be an array of objects.
   // Each object will represent a document that matched the query
 
-  // pull the data (exclusively)
+  // Convert the Mongoose documents into plain JavaScript objects
   companies = companies.map(value => value.toObject());
 });
 ```
@@ -569,11 +569,11 @@ For complex queries (ie: ["greater than"](https://docs.mongodb.com/manual/refere
 **Note:** You will notice that in our "then" callback function(s), we have line:
 
 ```js
-// pull the data (exclusively)
+// Convert the Mongoose documents into plain JavaScript objects
 companies = companies.map(value => value.toObject());
 ```
 
-This is to ensure that our "companies" object contains the returned data (only) and nothing else. 
+This is to ensure that our returned "companies" Mongoose documents are converted to plain JavaScript objects. 
 
 <br>
 
