@@ -538,6 +538,10 @@ Company.find({ companyName: "The Kwik-E-Mart"})
 .then((companies) => {
   // companies will be an array of objects.
   // Each object will represent a document that matched the query
+
+  // pull the data (exclusively)
+  companies = companies.map(value => value.toObject());
+
 });
 ```
 
@@ -554,10 +558,22 @@ Company.find({ companyName: "The Kwik-E-Mart"}, "address phone")
 .then((companies) => {
   // companies will be an array of objects.
   // Each object will represent a document that matched the query
+
+  // pull the data (exclusively)
+  companies = companies.map(value => value.toObject());
 });
 ```
 
-NOTE: For complex queries (ie: ["greater than"](https://docs.mongodb.com/manual/reference/operator/query/gt/), ["in"](https://docs.mongodb.com/manual/reference/operator/query/in/), ["or"](https://docs.mongodb.com/manual/reference/operator/query/or/), etc, etc.) see the [Mongoose Query Guide](https://mongoosejs.com/docs/queries.html) and the MongoDB documentation under [Query and Projection Operators](https://docs.mongodb.com/manual/reference/operator/query/)  
+For complex queries (ie: ["greater than"](https://docs.mongodb.com/manual/reference/operator/query/gt/), ["in"](https://docs.mongodb.com/manual/reference/operator/query/in/), ["or"](https://docs.mongodb.com/manual/reference/operator/query/or/), etc, etc.) see the [Mongoose Query Guide](https://mongoosejs.com/docs/queries.html) and the MongoDB documentation under [Query and Projection Operators](https://docs.mongodb.com/manual/reference/operator/query/)
+
+**Note:** You will notice that in our "then" callback function(s), we have line:
+
+```js
+// pull the data (exclusively)
+companies = companies.map(value => value.toObject());
+```
+
+This is to ensure that our "companies" object contains the returned data (only) and nothing else. 
 
 <br>
 
