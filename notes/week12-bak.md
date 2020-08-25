@@ -202,9 +202,7 @@ If we wish to encrypt a plain text password (ie: "myPassword123"), we can use [b
 
 ```javascript    
 // Encrypt the plain text: "myPassword123"
-bcrypt.genSalt(10)  // Generate a "salt" using 10 rounds
-.then(salt=>bcrypt.hash("myPassword123",salt)) // use the generated "salt" to encrypt the password: "myPassword123"
-.then(hash=>{
+ bcrypt.hash("myPassword123", 10).then(hash=>{ // Hash the password using a Salt that was generated using 10 rounds
     // TODO: Store the resulting "hash" value in the DB
 })
 .catch(err=>{
