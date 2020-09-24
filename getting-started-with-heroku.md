@@ -55,14 +55,18 @@ The best thing - **getting started is free!** - This is where we come in:
 
 1.  Open **Visual Studio Code** and Open your "helloworld" folder by clicking on the "Explorer" icon in the top left (it looks like two files) to expand the left "Explorer" pane. You should see an "Open Folder" button - click this and select to your newly created "helloworld" folder.  
 
-1.  You should now see an empty "HELLOWORLD" folder in the sidebar. To begin building our app within this folder we have to issue a few commands in Visual Studio Code's "integrated terminal". To open this use the keyboard shortcut (ctrl + `` ` ``) or select "View" -> "integrated terminal" from the top menu.  
+1.  You should now see an empty "HELLOWORLD" folder in the sidebar. 
+
+1.  The first step is to create your **server.js** file in your helloworld folder either by right-clicking underneath HELLOWORLD in the Explorer pane and choosing "new file", or by clicking the new file icon next to HELLOWORLD. Name this file **server.js**  
+
+1.  Next, to begin building our app within this folder we have to issue a few commands in Visual Studio Code's "integrated terminal". To open this use the keyboard shortcut (ctrl + `` ` ``) or select "View" -> "integrated terminal" from the top menu.  
 
 1.  In the (now visible) integrated terminal, type the command **npm init** and enter the following information:  
 
     * Press enter for name (use the default)
     * Press enter for version (use the default)
     * Press enter for description (use the default)
-    * enter **server.js** for entry point:
+    * Press enter for entry point (use the default)
     * Press enter for test command (use the default)
     * Press enter for git repository (use the default)
     * Press enter for keywords (use the default)
@@ -73,8 +77,6 @@ The best thing - **getting started is free!** - This is where we come in:
 1.  This will create a package.json file under your helloworld folder. This will help us manage our dependencies later on and is always the first step creating node.js applications.  
 
 1.  Next, we must retrieve the **express** module using npm. Execute the following command from within the terminal: **npm install express** - this will create a **node_modules** folder with our new express module as well as update our **package.json** file with our dependency!  
-
-1.  The next step is to create your **server.js** file in your helloworld folder either by right-clicking underneath HELLOWORLD in the Explorer pane and choosing "new file", or by clicking the new file icon next to HELLOWORLD. Name this file **server.js**  
 
 1.  You should now be editing your **server.js** file. Enter the following code:
 
