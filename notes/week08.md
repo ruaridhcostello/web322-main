@@ -274,7 +274,7 @@ When we work with MongoDB in node, we won't work directly with the MongoDB drive
 
 Installing mongoose is easy when you have node installed. Just use npm install to grab it.
 
-<pre>npm install mongoose --save</pre>
+<pre>npm install mongoose</pre>
 
 This will save it to your package.json file and allow you to require it and start building model files and working with documents.
 

@@ -106,7 +106,7 @@ We will break down the project to add client sessions handling into 4 parts:
 We will need to npm install the client-sessions library and –save it to the package.json file
 
 ```bash
-npm install client-sessions --save
+npm install client-sessions
 ```
 
 Then we just have to “require” it in our server file.

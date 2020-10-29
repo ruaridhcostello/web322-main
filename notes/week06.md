@@ -155,14 +155,14 @@ In order to set this up correctly and get express to understand the file above, 
 1.  The first thing that we need to do is download / install the Handlebars.js package using NPM. Open a terminal in Visual Studio Code (ctrl + \` or View -> Integrated Terminal) and make sure that your working directory is somewhere within your project and run the command
 
     ```bash
-    npm install --save express-handlebars
+    npm install express-handlebars
     ```
     
     This will install the "handlebars" package in the same way that we installed the "express" package and update the dependencies in our package.json file:
     ```json
     "dependencies": {
         "express": "^4.14.0",
-        "express-handlebars": "^3.0.0"
+        "express-handlebars": "^5.2.0"
     }
     ```
     

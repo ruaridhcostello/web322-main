@@ -80,13 +80,13 @@ Once it is installed and you have opened the app, we need to configure it to con
 Like all modules in node.js, we will have to use **Node Package Manager (npm)** to acquire the module from the online package collection. With your application folder open in Visual Studio Code, open the **integrated terminal** and enter the command
 
 ```bash
-npm install sequelize --save
+npm install sequelize
 ```
 
 followed by the command:  
     
 ```bash
-npm install pg pg-hstore --save
+npm install pg pg-hstore
 ```
 
 This will add both the **sequelize** and the **pg / pg-hstore** modules to our node\_modules folder, as well as add their names & version numbers to our package.json file under "dependencies".

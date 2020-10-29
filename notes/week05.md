@@ -338,7 +338,7 @@ app.post("/register-user", upload.single("photo"), (req, res) => {
 1.  Download the "body-parser" module via npm:
 
     ```bash   
-    npm install body-parser --save 
+    npm install body-parser 
     ```
     
 2.  Add the "body-parser" dependency using the require() function:
