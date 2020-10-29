@@ -65,7 +65,7 @@ Once it is installed and you have opened the app, we need to configure it to con
     | **(Connection Tab) Maintenance database** | Enter your randomly generated Heroku Postgres Database name here                                       |
     | **(Connection Tab) Username**             | Enter your randomly generated Heroku Postgres Database user name here                                  |
     | **(Connection Tab) Password**             | Enter your randomly generated Heroku Postgres Database password here                                   |
-    | **(Advanced Tab) DB restriction**         | Under the "Advanced" tab in the "DB Restriction" field, enter your Heroku Postgres Database ß       |
+    | **(Advanced Tab) DB restriction**         | Under the "Advanced" tab in the "DB Restriction" field, enter your Heroku Postgres Database name       |
     
     Once you have entered all of your information, hit the "Ok" button and click "Servers" in the left pane to expand your server connections. If you entered valid information for the above fields, you should see your Heroku Postgres DB Connection. Expand this item and the following **"Databases (1)"** item, and you should see your database. Expand this item, as well as the nested **"Schemas (1)"** item, followed by the **"public"** item, and you should be presented with something that looks like this:
     
