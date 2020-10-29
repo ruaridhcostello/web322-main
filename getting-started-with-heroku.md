@@ -45,7 +45,11 @@ The best thing - **getting started is free!** - This is where we come in:
 
 *   Next, we need the **"Heroku CLI"** - a command line interface to our Heroku account. This can be [downloaded here](https://devcenter.heroku.com/articles/heroku-cli#download-and-install). Proceed to the page and download the Heroku CLI for your operating system.  **NOTE**: If you're using Visual Studio Code with MyApps, Heroku can be installed using the command: "npm install -g heroku" from the Integrated Terminal.
 
-*   Next, install the Heroku CLI with the default settings. Once this is complete, you can verify that it is installed correctly by once again opening a command prompt / terminal and issuing the command **heroku \-\-version**. This should output something like: heroku-cli/5.6.18-9f6df83 ( ... ) go1.7.5\. If it does not output the installed version of the Heroku CLI, then something is wrong and it is not installed correctly.  
+*   Next, install the Heroku CLI with the default settings. Once this is complete, you can verify that it is installed correctly by once again opening a command prompt / terminal and issuing the command **heroku \-\-version**. This should output something like: heroku-cli/5.6.18-9f6df83 ( ... ) go1.7.5\. If it does not output the installed version of the Heroku CLI, then something is wrong and it is not installed correctly. 
+    
+    **NOTE** If you're on Windows (using PowerShell) and are unable to execute the heroku command successfully, try executing the [Set-ExecutionPolicy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy) command with the following flags:
+
+    ```Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser```
 
 <br>
 
@@ -115,7 +119,15 @@ The best thing - **getting started is free!** - This is where we come in:
 
 1.  We're getting close, but not quite done yet - we need to issue one more command: **git push heroku master** - this command pushes the content of our local git repo to our new app on Heroku!  
 
-1.  To verify that this is working correctly, visit that new url that you received when creating the new app (it should still be in the integrated terminal - you just have to scroll up). You should see the text **Hello World!** from our server.js file.  
+1.  To verify that this is working correctly, visit that new url that you received when creating the new app (it should still be in the integrated terminal - you just have to scroll up). You should see the text **Hello World!** from our server.js file in the browser. 
+    
+    **NOTE:** You may want to take a look at the log files for your heroku app. These will include all of your console.log statements in your server.js file as well as other useful items.
+
+    To see the log, execute the command:
+
+    `heroku logs --tail`
+
+    from the integrated terminal.  This will show you the latest log statements as well as leave the session open so that you can see the logs in real time as your app runs.  This can help with debugging your deployed app.
 
 **Congratulations!** you have published your first Node.js application online. We will continue to do this throughout the semester so this process will become very familiar. If you would like to see your application in the Heroku dashboard, you can log into Heroku here: [https://id.heroku.com/login](https://id.heroku.com/login). You should see your newly created app waiting for you - click on it to see information about the application including recent activity, metrics, app settings, resources, etc.
 
