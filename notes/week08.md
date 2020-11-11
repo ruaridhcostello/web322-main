@@ -594,8 +594,6 @@ Company.updateOne(
 ).exec();
 ```
 
-NOTE: You may receive a depreciation warning when executing the above code, ie: "collection.update is deprecated. Use updateOne, updateMany". If this is the case, do not use the "multi" option to determine whether or not multiple documents should be updated, simply use use **updateOne** (to update a single document) or **updateMany** (to update multiple documents).  
-
 <br>
 
 #### deleteOne() / deleteMany()
