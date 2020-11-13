@@ -55,7 +55,7 @@ app.set("view engine", ".hbs");
 app.use(express.static("./week8-assets/"));
 
 // connect to your mongoDB database
-mongoose.connect(connectionString);
+mongoose.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // log when the DB is connected
 mongoose.connection.on("open", () => {
@@ -63,7 +63,7 @@ mongoose.connection.on("open", () => {
 });
 
 app.get("/", (req, res) => {
-  PhotoModel.find()
+  PhotoModel.find().lean()
   .exec()
   .then((photos) => {
     // underscore ( _ ) is a common library full of utility methods you can use
