@@ -610,7 +610,7 @@ Since our WEB322 app has been making extensive use of the Bootstrap form classes
 
 To get started using Bootstrap forms, you really only need to remember three classes: **form-group**, **form-control** and **control-label** (used to highlight the label when ["Validation States"](https://getbootstrap.com/docs/3.3/css/#forms-control-validation) are applied to the parent element). From the Bootstrap documentation:
 
-> "Individual form controls automatically receive some global styling. All textual <input>, <textarea>, and <select> elements with **.form-control** are set to **width: 100%;** by default. Wrap labels and controls in **.form-group** for optimum spacing."
+> "Individual form controls automatically receive some global styling. All textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; elements with **.form-control** are set to **width: 100%;** by default. Wrap labels and controls in **.form-group** for optimum spacing."
 
 ![](/media/uploads/2017/07/bootstrap-simple-form.png)
 
