@@ -190,21 +190,6 @@ Managing State Information:<br><br>
 </ul>
 </td>
 </tr>
-
-  <tr>
-<td><a href="/notes/week11">11 - Notes</a></td>
-<td>
-Security Considerations:<br><br>
-<ul>
-<li>HTTPS</li>
-<li>Letsencypt.org, free https certificates forever</li>
-<li>Password Encryption, bcrypt.js</li>
-</ul>
-</td>
-</tr>
-
-<!-- NOTE: Week 12 is used for normal Schedule (ie: Not 6-1-6)
-
     <tr>
 <td><a href="/notes/week11">11 - Notes</a></td>
 <td>
@@ -235,7 +220,7 @@ Security Considerations:<br><br>
 </td>
 </tr>
 
--->
+
 </tbody>
 </table>
 </div>
