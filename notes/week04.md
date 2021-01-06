@@ -359,9 +359,11 @@ To place a breakpoint, click just to the left of a line number in a file and a r
 
 ![breakpoint](/media/uploads/2016/08/breakpoint.png)
 
-Next, you will notice that there is a tab on the left side of VS Code to open the debugger panel.  Click this after you have placed your breakpoints within your code.
+Next, you will notice that there is a tab on the left side of VS Code.
 
 ![debug](/media/uploads/2016/08/debug2.png)
+
+Click this after you have placed your breakpoints within your code to open the "debugger" panel.
 
 From here, click on the first option "Run and Debug" - this will open a menu prompting you to "Select Environment".  Since we're using Node.js, choose the "Node.js (preview)" option.  You will see that the "Debug Console" has opened up, showing that our server is indeed running.  
 
