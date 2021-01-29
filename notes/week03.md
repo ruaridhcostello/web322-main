@@ -808,6 +808,6 @@ In addition, arrow functions **do not** have any notion of the [arguments](https
 
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects" target="_blank">MDN - Working with Objects</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#Prototypal_inheritance" target="_blank">MDN - Prototypal Inheritance</a>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#Prototypal_inheritance" target="_blank">MDN - Prototypal Inheritance</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference" target="_blank">JavaScript Reference</a></li>
 </ul>
