@@ -264,7 +264,7 @@ Unfortunately, we cannot have a Database in MongoDB Atlas without a collection, 
 
 Now that we have a new Database online with MongoDB Atlas, we can update our *connection string* to point to it (NOTE: This is what is used in the "mongo.connect" and "mongo.createConnection" methods mentioned below).
 
-To accomplish this, simply take your original *connection string* and look for the text &lt;dbname&gt;. To connect to a specific database, simply **replace** the string &lt;dbname&gt; with the actual database name, ie: **web322_week8**.
+To accomplish this, simply take your original *connection string* and look for the text **myFirstDatabase**. To connect to a specific database, simply **replace** the string **myFirstDatabase** with the actual database name, ie: **web322_week8**.
 
 <br>
 
