@@ -447,7 +447,7 @@ Using Mongoose, it is also possible to have [multiple connections](https://mongo
 // ...
 
 let pass1 = encodeURIComponent("pa$$word1"); // this step is needed if there are special characters in your password, ie "$"
-let db1 = mongoose.createConnection(`mongodb://dbUser:${pass1}@senecaweb-shard-00-00-abcde.mongodb.net:27017,senecaweb-shard-00-01-abcde.mongodb.net:27017,senecaweb-shard-00-02-abcde.mongodb.net:27017/db1?ssl=true&replicaSet=SenecaWeb-shard-0&authSource=admin&retryWrites=true`);
+let db1 = mongoose.createConnection(`mongodb+srv://dbUser:${pass1}@cluster0.0abc1.mongodb.net/db1?retryWrites=true&w=majority`);
 
 // verify the db1 connection
 
@@ -462,7 +462,7 @@ db1.once('open', ()=>{
 // ...
 
 let pass2 = encodeURIComponent("pa$$word2"); // this step is needed if there are special characters in your password, ie "$"
-let db2 = mongoose.createConnection(`mongodb://dbUser:${pass2}@senecaweb-shard-00-00-abcde.mongodb.net:27017,senecaweb-shard-00-01-abcde.mongodb.net:27017,senecaweb-shard-00-02-abcde.mongodb.net:27017/db2?ssl=true&replicaSet=SenecaWeb-shard-0&authSource=admin&retryWrites=true`)
+let db2 = mongoose.createConnection(`mongodb+srv://dbUser:${pass2}@cluster0.2def3.mongodb.net/db2?retryWrites=true&w=majority`)
 
 // ...
 
