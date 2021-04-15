@@ -103,7 +103,8 @@ var sequelize = new Sequelize('database', 'user', 'password', {
     port: 5432,
     dialectOptions: {
         ssl: { rejectUnauthorized: false }
-    }
+    },
+    query: { raw: true }
 });
 
 sequelize
@@ -147,7 +148,8 @@ var sequelize = new Sequelize('database', 'user', 'password', {
     port: 5432,
     dialectOptions: {
         ssl: { rejectUnauthorized: false }
-    }
+    },
+    query: { raw: true }
 });
 
 // Define a "Project" model
@@ -406,10 +408,7 @@ sequelize.sync().then(function () {
     // return all first names only
     Name.findAll({ 
         attributes: ['fName']
-    }).then(function(data){
-        // pull the data (exclusively)
-        data = data.map(value => value.dataValues);
-        
+    }).then(function(data){        
         console.log("All first names");
         for(var i =0; i < data.length; i++){
             console.log(data[i].fName);
@@ -423,9 +422,6 @@ sequelize.sync().then(function () {
             id: 2
         }
     }).then(function(data){
-        // pull the data (exclusively)
-        data = data.map(value => value.dataValues);
-
         console.log("All first names where id == 2");
         for(var i =0; i < data.length; i++){
             console.log(data[i].fName);
@@ -439,16 +435,6 @@ Here, we are once again using a reference to our "Name" model. This time we are 
 
 Lastly, we can also specify an [order](https://sequelize.org/master/manual/querying.html#ordering) that the returned data should be in. In the above example, we are not concerned with the order, however in the below "Putting it All Together" example, we wish to order the output by "id" (accomplished by setting the **order:** parameter to **\['id'\]**)
 
-**Note:** You will notice that in our "then" callback function(s), we have line:
-
-```js
-// pull the data (exclusively)
-data = data.map(value => value.dataValues);
-```
-
-This is to ensure that our "data" object contains the returned data (only) and nothing else.
-
-
 <br>
 
 #### Update
@@ -457,7 +443,6 @@ To **update** existing names in our **Name** table, we can use the following cod
 
 ```javascript
 sequelize.sync().then(function () {
-
     // update User 2's last name to "James"
     // NOTE: this also updates the "updatedAt field"
     Name.update({
