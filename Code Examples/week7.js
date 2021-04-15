@@ -7,8 +7,6 @@ const bodyParser = require("body-parser");
 const HTTP_PORT = process.env.PORT || 8080;
 const WEEK7ASSETS = "./week7-assets/";
 
-
-
 // call this function after the http server starts listening for requests
 function onHttpStart() {
   console.log("Express http server listening on: " + HTTP_PORT);
@@ -28,12 +26,13 @@ app.use(express.static(WEEK7ASSETS));
 
 // define the connection to our Postgres instance 
 const sequelize = new Sequelize("database", "user", "password", {
-  host: "host",
-  dialect: "postgres",
-  port: 5432,
-  dialectOptions: {
-    ssl: { rejectUnauthorized: false }
-  }
+    host: "host",
+    dialect: "postgres",
+    port: 5432,
+    dialectOptions: {
+      ssl: { rejectUnauthorized: false }
+    },
+    query: { raw: true }
 });
 
 // Define our Models - "Name"
@@ -48,8 +47,6 @@ app.get("/", (req, res) => {
     Name.findAll({
         order: ["id"]
     }).then((data) => {
-        // pull the data (exclusively)
-        data = data.map(value => value.dataValues);
         // render the "viewTable" view with the data
         res.render("viewTable", {
         data: data,
