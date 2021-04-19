@@ -45,159 +45,6 @@ Queries are still queries, and primary/foreign keys can still be called the same
 
 <br>
 
-#### Installing MongoDB locally
-
-Lets get MongoDB installed locally. It should take about 5-10 minutes.
-
-#### OSX
-
-*   [Download the latest version of MongoDB for OSX. Get the 64 bit community version with SSL support.](https://www.mongodb.com/download-center#community)
-
-*   Extract the .tgz file
-
-*   Copy the extracted folder (mongodb-osx-x86_64-x.x.x) into your Applications folder
-
-*   Create a .bash_profile file (note: the version of mongoDB maybe different (ie: change x86_64-x.x.x to whatever version you are using):
-
-```bash
-$ cd ~
-$ pwd
-/Users/userName
-$ touch .bash_profile
-$ open -a TextEdit .bash_profile
-
-export PATH="/Applications/mongodb-osx-x86_64-x.x.x/bin:$PATH"
-  
-##restart terminal
-
-$ mongo -version
-MongoDB shell version: x.x.x
-```
-
-MongoDB should now be installed!
-
-#### Windows
-
-[Download the latest version of MongoDB for Windows. Get the 64 bit community version with SSL support.](https://www.mongodb.com/download-center#community)
-
-*   Run the installer
-
-*   Agree to the terms and click next
-
-*   Choose 'Custom' for the setup type  
-
-    ![Screenshot 2016-12-06 22.55.29](/media/uploads/2016/08/Screenshot-2016-12-06-22.55.29.png)  
-
-*   Change the install path for windows to C:\MongoDB\Server\3.4 (or whatever version you are installing, ie C:\MongoDB\Server\x.x  
-
-    ![Screenshot 2016-12-06 22.56.55](/media/uploads/2016/08/Screenshot-2016-12-06-22.56.55.png)  
-
-*   You can install MongoDB in the default directory but we recommend installing it in the path mentioned above if on windows.
-
-*   **Lastly, ensure that the \bin directory (ie: C:\MongoDB\Server\x.x\bin [where x.x is the version installed] is [added to your PATH](https://www.computerhope.com/issues/ch000549.htm)**
-
-MongoDB should now be installed!
-
-<br>
-
-#### Running the MongoDB Server
-
-Now we want to try running the server and issuing commands in the shell.
-
-*   Create a new directory for your mongoDB database (called db) - this can be anywhere: why don't we use the Desktop?
-
-*   Open a terminal window and enter the command:  
-
-    <pre>mongod --dbpath ~/Desktop/db</pre>
-
-    (or if you're on Windows, provide the absolute path (ie: **mongod --dbpath C:\users\username\Desktop\db)**  
-
-*   This will get the "mongoDB" database engine running
-
-<br>
-
-#### Connecting to the MongoDB shell
-
-Now that we know how to run MongoDB at anytime, we will learn how to connect to the db through the shell and see how we can issue commands. We will create a web322 database, add a collection for companies, and insert one company into the collection.
-
-With mongod running, we will now run "mongo" to connect to the running server process.  
-
-Open a new terminal and execute the command:
-
-<pre>mongo</pre>
-
-Once connected to the db with the shell, your window will look like this:
-
-![Mongo shell](/media/uploads/2016/12/Screenshot-2016-12-07-20.06.53.png)  
-
-<br>
-
-#### Databases, Collections, and Documents
-
-Now that we are connected to the shell, we can start working with some commands and data. For this example you will see in the shell console that it says:
-
-<pre>WARNING: Access control is not enabled for the database.</pre>
-
-This is letting you know you have not setup any user credentials to log in to the db with. This is OK for now, your database server is running locally on your computer. No one will be able to connect to your database outside your computer yet. In a real production or development environment, we would enable authentication to the database. This is outside the scope of this course.
-
-Now it's time to try out some commands.  
-
-Let's show the databases currently on the server
-
-<pre>show dbs</pre>
-
-We can see that there are 2 databases built in and available from a fresh install: admin and local. We won't be using either of these databases in this course.  
-
-When we want to create a new database we just have to simply tell the shell we want to use that database and it will automatically create it if it doesn't exist. Try this command out.
-
-<pre>use web322</pre>
-
-Now we can run show dbs again and you will see it still doesn't exist. This is because mongodb will only actually create the db and any collections required once you start inserting data. So let's insert a company to a web322_companies collection!  
-
-Let's decide on what a company JSON object would look like to decide what fields we want for the document we are about to insert. Some obvious ones we might want are a company name, phone number, address, and country. Let's start with that.
-
-```bash
-{
-  companyName: "The Leftorium",
-  phone: "416-555-2424",
-  address: "80 The Pond Rd, Toronto, ON",
-  country: "Canada"
-}
-```
-
-Ok, we've decided on what a company record will look like for now. Let's go ahead and insert this company into the web322_companies collection...
-
-```bash
-db.web322_companies.insert({
-    companyName: "The Leftorium",
-    phone: "416-555-2424",
-    address: "80 The Pond Rd, Toronto, ON",
-    country: "Canada"
-  })
-```
-
-You should get a result like the following:  
-
-![Insert result](/media/uploads/2016/08/Screenshot-2016-12-13-22.58.36.png)  
-
-You should see the result WriteResult({ "nInserted" : 1 }). This means a write succeeded and the number of documents inserted (nInserted) was 1.  
-
-We can do a quick query to look at the record from the shell with the following command:
-
-<pre>db.web322_companies.find()</pre>
-
-You'll get a result like:  
-
-```
-{ "_id" : ObjectId("5850c358dbf675a87f27a456"), "companyName" : "The Leftorium", "phone" : "416-555-2424", "address" : "80 The Pond Rd, Toronto, ON", "country" : "Canada" }
-```
-
-You'll notice it's the same as the document you inserted with the added field of "_id". Every document in MongoDB gets an _id property by default. These are **globally unique** to the entire database and probably even the world! So no need to worry about _id conflicts anytime you do a find by the _id!  
-
-Now let's setup an online account with MongoDB Atlas and create our own mongodb in the cloud for use with Heroku. 
-
-<br>
-
 #### Setting up a MongoDB Atlas account
 
 MongoDB Atlas is an online service that hosts MongoDB in the cloud. You can sign up for a free account to use in this course with your Heroku account.
@@ -208,7 +55,7 @@ Once your account is setup, you will be taken to the start screen with a modal w
 
 ![](/media/uploads/2019/01/Atlas-Cluster-Free-Options.png)  
 
-Next, we must change the cluster name from "Cluster0" to something more recognizable, ie "SenecaWeb".
+Next, we should change the cluster name from "Cluster0" to something more recognizable, ie "SenecaWeb".
 
 ![](/media/uploads/2019/01/Atlas-Cluster-rename.png)  
 
@@ -232,11 +79,11 @@ Once this is complete, click the "Choose a connection method" button at the bott
 
 ![](/media/uploads/2019/01/Atlas-Connect-SenecaWeb.png)  
 
-From here, click on the "Connect Your Application" button.
+From here, click on the "**Connect Your Application**" button.
 
 Under the first option, make sure that Node.js is selected for "Driver" and "Version" is set to 3.6 or later. Select the connection string and copy it (alternatively hitting the "Copy" button). Next, paste it in a text file for now. You will notice that there's a space for &lt;password&gt; - simply replace this with the actual password that you created for user "dbUser" (above).
 
-Once you have copied the connection string, you can close the modal window using the "Close" button located at the bottom of the modal window.
+Once you have **copied the connection string** (we will need this for our code below), you can close the modal window using the "Close" button located at the bottom of the modal window.
 
 <br>
 
@@ -270,7 +117,7 @@ To accomplish this, simply take your original *connection string* and look for t
 
 #### Mongoose.js
 
-When we work with MongoDB in node, we won't work directly with the MongoDB driver. Instead we will use a popular open source module that wraps up the Mongo driver and provides extra functionality for declaring schemas/models, validating documents on save, having virtual properties on a model, and instance and static methods on a model object.  
+When we work with MongoDB in node, we won't work directly with the MongoDB driver. Instead we will use a popular open source module that wraps up the Mongo driver and provides extra functionality, such as: "providing a straight-forward, schema-based solution to model your application data as well as including built-in type casting, validation, query building, business logic hooks and more, out of the box".
 
 Installing mongoose is easy when you have node installed. Just use npm install to grab it.
 
@@ -280,21 +127,27 @@ This will save it to your package.json file and allow you to require it and star
 
 <br>
 
-#### Querying MongoDB with Mongoose in Node.js
-
-Now that we have mongoose installed we can start looking at how the basic CRUD operations work (note: the examples in this lecture are based on Mongoose version 4).
-
-Let's start with an example app that will make use of at least one route for each of the main CRUD operations: Create, Read, Update, Delete. In Mongoose we use the functions: save(), find(), update(), and remove().  
-
-Let's define a simple schema for the "company" objects mentioned earlier in the lecture:
-
-<br>
-
 ### Setting up a schema
+
+Before we look at how to establish a connection to our MongoDB Atlas DB and work with the data using Mongoose, let's first determine the type of data that we wish to store.  For example, let's say that our application requires "company" information to be persisted.  Each "company" used by our system can be represented using the following properties (ie, its "shape"), as illustrated below for "The Kwik-E-Mart": 
+
+```js
+{
+  companyName: "The Kwik-E-Mart",
+  address: "Springfield",
+  phone: "212-842-4923",
+  employeeCount: 3,
+  country: "U.S.A"
+}
+```
+
+To begin working with "companies" like this in our database using Mongoose, the first step is to create a "[schema](https://mongoosejs.com/docs/guide.html#definition)".
 
 #### Company schema
 
-For our company we will want at a minimum a company name, address, phone number, employee count, and country, to match the structure of the company object we have already inserted. MongoDB will automatically include the _id field, so we don't need it in our schema (all documents inserted get an _id field by default). The previous document did not have an employee count so we will make sure the default for the count is 0 if this field does not exist on a document. The next time a document is saved which has missing fields that the schema supports, any defaults will be applied.
+From the documentation: "Everything in Mongoose starts with a Schema. Each schema maps to a MongoDB collection and defines the shape of the documents within that collection".  So, for us to work with a specific collection in our MongoDB database, we must first define a "schema", which defines the structure of the documents to be added to the collection (as well as to provide other features such as ["validators"](https://mongoosejs.com/docs/validation.html#validation), etc.). 
+
+To represent the above company data as a Mongoose Schema, we can use the following code:
 
 ```javascript
 var mongoose = require("mongoose");
@@ -313,23 +166,21 @@ var companySchema = new Schema({
 var Company = mongoose.model("web322_companies", companySchema);
 ```
 
-A schema is like a blueprint for a document that will be saved in the DB. It's somewhat like a class or struct definition in other languages you are used to. We are defining the fields that can exist on a document for this collection, and setting their expected [types](http://mongoosejs.com/docs/schematypes.html), default values, and sometimes if they are required, or have an index on them.  
+Essentially, a schema is like a blueprint for a document that will be saved in the DB. Here, we define the fields that can exist on a document for this collection, and setting their expected [types](http://mongoosejs.com/docs/schematypes.html), default values, and sometimes if they are required, or have an index on them.  
 
-In the above, we have defined a Company schema, with 5 properties as discussed, and set their [types](http://mongoosejs.com/docs/schematypes.html) appropriately. The employee count is not just a simple number, we also want to include a default value of 0 of the count field is not supplied. Using defaults where it makes sense to have them is good practice.  
+In the above code, we have defined a Company schema with 5 properties as discussed, and set their [types](http://mongoosejs.com/docs/schematypes.html) appropriately. The employee count is not just a simple number, we also want to include a default value of 0 of the count field is not supplied. Using defaults where it makes sense to have them is good practice.  
 
 The last line of code tells mongoose to register this schema (companySchema) as a model and connect it to the web322_companies collection (Note: the "web322_companies" collection will be automatically created if it doesn't exist yet). We can then use the Company variable to make queries against this collection and insert, update, or remove documents from the Company model.
 
-Now let's add a second company to the database using mongoose in node.js instead of the mongo shell.  
-
-Here is a simple app you can run with node.js and it will insert another company to the db.
+With this in mind, let's go ahead and add "The Kwik-E-Mart" to the database using Mongoose.  
 
 ```javascript
 // require mongoose and setup the Schema
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-// connect to the localhost mongo running on default port 27017
-mongoose.connect("mongodb://localhost/web322");
+// connect to Your MongoDB Atlas Database
+mongoose.connect("Your connection string here");
 
 // define the company schema
 var companySchema = new Schema({
@@ -367,7 +218,9 @@ kwikEMart.save((err) => {
 });
 ```
 
-Now we can add a findOne() call to find this company using mongoose. Modify the save call in the code above to look like this:  
+Now we can add a findOne() call to find this company using Mongoose. 
+
+Modify the save call in the code above to look like the following: 
 
 ```javascript
 // save the company
@@ -393,6 +246,11 @@ kwikEMart.save((err) => {
     }   
 });
 ```
+
+**NOTE** If you examine the output, you will notice that the data returned includes two extra fields, added by default to our document:
+
+* _id: A unique [ObjectID](https://docs.mongodb.com/manual/reference/bson-types/#std-label-objectid)
+* _v: The [versionKey](https://mongoosejs.com/docs/guide.html#versionKey)
 
 <br>
 
@@ -657,8 +515,8 @@ Let's look at the finalized code and what happens when we try to insert a compan
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-// connect to the localhost mongo running on default port 27017
-mongoose.connect("mongodb://localhost/web322");
+// connect to Your MongoDB Atlas Database
+mongoose.connect("Your connection string here");
 
 // define the company schema
 var companySchema = new Schema({
