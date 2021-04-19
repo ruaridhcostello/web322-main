@@ -103,7 +103,7 @@ Processing Forms with Express.js:<br><br>
 <ul>
 <li>HTTP Post &amp; Urlencoded data</li>
 <li>Content-Type in POST header &amp; enctype in HTML forms</li>
-<li>body-parser module (urlencoded form data)</li>
+<li>Handling urlencoded form data</li>
 <li>Multer module (multipart form data – file uploads)</li>
 </ul>
 </li>

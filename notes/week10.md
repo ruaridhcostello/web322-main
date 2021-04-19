@@ -114,7 +114,6 @@ Then we just have to “require” it in our server file.
 ```javascript
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 const clientSessions = require("client-sessions");
 
@@ -125,7 +124,7 @@ const HTTP_PORT = process.env.PORT || 8080;
 
 #### Step 2: Create a middleware function to setup client-sessions.
 
-Now we need to register clientSessions as a middleware and configure it, as well as register handlebars as a view rendering engine and bodyParser to handle our application/x-www-form-urlencoded POST data.
+Now we need to register clientSessions as a middleware and configure it, as well as register handlebars as a view rendering engine and express.urlencoded() to handle our application/x-www-form-urlencoded POST data.
 
 ```javascript
 // Register handlerbars as the rendering engine for views
@@ -145,7 +144,7 @@ app.use(clientSessions({
 }));
 
 // Parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
 ```
 
 <br>
