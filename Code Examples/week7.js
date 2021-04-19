@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const exphbs = require("express-handlebars");
 const Sequelize = require("sequelize");
-const bodyParser = require("body-parser");
 
 const HTTP_PORT = process.env.PORT || 8080;
 const WEEK7ASSETS = "./week7-assets/";
@@ -12,8 +11,8 @@ function onHttpStart() {
   console.log("Express http server listening on: " + HTTP_PORT);
 }
 
-// instruct the app to use the "bodyparser" middleware
-app.use(bodyParser.urlencoded({ extended: true }));
+// instruct the app to use the "express.urlencoded" middleware
+app.use(express.urlencoded({ extended: true }));
 
 // instruct the app to use express handlebars for the view engine with the .hbs extension
 app.set("views", WEEK7ASSETS);

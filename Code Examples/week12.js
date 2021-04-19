@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 const clientSessions = require("client-sessions");
 const fs = require("fs");
@@ -66,7 +65,7 @@ app.use(clientSessions({
 }));
 
 // Parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
 
 // Setup a route on the 'root' of the url to redirect to /login
 app.get("/", (req, res) => {
