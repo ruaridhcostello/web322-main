@@ -160,11 +160,11 @@ Click the icon to the left of the url bar like before to examine the self signed
 
 _Warning in Firefox_
 
-![](/media/uploads/2017/07/ff-cert-error.png)
+![Certificate Error in Firefox](/media/uploads/2017/07/ff-cert-error.png)
 
 _Warning in Chrome_
 
-![](/media/uploads/2017/07/chrome-cert-error.png)
+![Certificate Error in Chrome](/media/uploads/2017/07/chrome-cert-error.png)
 
 Now, after accepting or adding an exception for the warning you should see your login page under https and be able to login with the same credentials as we used in week 10.
 

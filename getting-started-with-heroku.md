@@ -5,7 +5,7 @@ layout: default
 
 ## Getting Started with Heroku
 
-![](/media/uploads/2017/02/heroku-logo-300x100.png)
+![Heroku Logo](/media/uploads/2017/02/heroku-logo-300x100.png)
 
 The main server environment that we will be using in WEB322 is **Heroku**. From their website:
 
