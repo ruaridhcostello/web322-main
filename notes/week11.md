@@ -407,7 +407,7 @@ To incorporate an icon using Bootstrap's Glyphicons (often used in <button> elem
 
 #### Buttons
 
-Another important "component" that Bootstrap provides is a set of classes to [render buttons](https://getbootstrap.com/docs/3.3/css/#buttons). There is no escaping the need for buttons, whether they're hyperlinks ( <a>...</a> ), buttons ( <button>...</button> ) or input type=submit / button buttons ( <input type="submit" />). Once again, Bootstrap comes to the rescue with a set of classes to create consistent, clean buttons:  
+Another important "component" that Bootstrap provides is a set of classes to [render buttons](https://getbootstrap.com/docs/3.3/css/#buttons). There is no escaping the need for buttons, whether they're hyperlinks ( &lt;a&gt;...&lt;/a&gt; ), buttons ( &lt;button&gt;...&lt;/button&gt; ) or input type=submit / button buttons ( &lt;input type="submit" /&gt;). Once again, Bootstrap comes to the rescue with a set of classes to create consistent, clean buttons:  
 
 ![Button Colours](/media/uploads/2017/07/bootstrap-buttons.png)  
 
