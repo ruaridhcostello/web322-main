@@ -273,7 +273,7 @@ Add this code to the previous example just before the first app.get route handle
 
 Now we can put images or css files in the /static folder, and link to them from our website. In week 6 we will cover templating and this will come in handy when we start working with html templates.
 
-Try adding an image to the static folder, and including it in an <img> element for the main route response.
+Try adding an image to the static folder, and including it in an &lt;img&gt; element for the main route response.
 
 <br>
 
