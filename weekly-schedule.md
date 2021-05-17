@@ -14,6 +14,9 @@ This schedule is subject to change. Students will be informed of any schedule ch
 <br>
 
 <div class="wide-table">
+
+<!-- Regular Schedule 
+
 <table>
 <thead>
 <tr>
@@ -210,6 +213,199 @@ This schedule is subject to change. Students will be informed of any schedule ch
 
 </tbody>
 </table>
+
+-->
+
+<table>
+<thead>
+<tr>
+<th>Week</th>
+<th>Topic theme &amp; coverage</th>
+<th>Task Assigned</th>
+<th>Due</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>
+<ul>
+<li>Course Introduction</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Assignment&nbsp;1<br />(5%)</li>
+</ul>
+</td>
+<td></td>
+</tr>
+
+<tr>
+<td>2</td>
+  <td><ul><li>Node.js Introduction</li></ul></td>
+<td>
+<ul>
+<li>Assignment&nbsp;2<br />(9%)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Assignment&nbsp;1</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>3</td>
+  <td><ul><li>JavaScript Concept Review</li></ul></td>
+<td>
+<ul>
+<li>Test 1
+<br />(Weeks 1-2)<br />(10%)</li>
+</ul>
+</td>
+<td></td>
+</tr>
+
+<tr>
+<td>4</td>
+  <td><ul><li>Express.js Introduction</li></ul></td>
+<td>
+<ul>
+<li>Assignment&nbsp;3<br />(9%)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Assignment&nbsp;2</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><ul><li>Processing Forms with Express.js</li></ul></td>
+<td>
+<ul>
+<li>Test 2
+<br />(Weeks 3-4)<br />(10%)</li>
+</ul>
+</td>
+<td></td>
+</tr>
+
+<tr>
+<td>6</td>
+  <td><ul><li>Template Engines – Handlebars.js</li></ul></td>
+<td>
+<ul>
+<li>Assignment&nbsp;4<br />(9%)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Assignment&nbsp;3</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td colspan="4">
+<br />
+<strong>Study Break - No Classes</strong>
+<br />
+<br />
+</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><ul><li>Relational Database</li></ul></td>
+<td>
+<ul>
+<li>Test 3
+<br />(Weeks 5-6)<br />(10%)</li>
+</ul>
+</td>
+<td></td>
+</tr>
+
+
+
+<tr>
+<td>8</td>
+<td><ul><li>MongoDB</li></ul></td>
+<td>
+<ul>
+<li>Assignment&nbsp;5<br />(9%)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Assignment&nbsp;4</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><ul><li>AJAX Review / Practical AJAX Programming</li></ul></td>
+<td>
+<ul>
+<li>Test 4
+<br />(Weeks 7-8)<br />(10%)</li>
+</ul>
+</td>
+<td></td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><ul><li>Managing State Information</li></ul></td>
+<td>
+<ul>
+<li>Assignment&nbsp;6<br />(9%)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Assignment&nbsp;5</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td><ul><li>Security Considerations</li></ul></td>
+<td>
+<ul>
+<li>Test 5
+<br />(Weeks 9-10)<br />(10%)</li>
+</ul>
+</td>
+<td></td>
+</tr>
+
+<tr>
+<td>12</td>
+  <td><ul><li>Course Review</li></ul></td>
+<td><ul>
+<li>Test 6
+<br />(Week 11)<br />(10%)</li>
+</ul></td>
+<td>
+<ul>
+<li>Assignment&nbsp;6</li>
+</ul>
+</td>
+</tr>
+
+
+</tbody>
+</table>
+
+
 </div>
 <br />
 
