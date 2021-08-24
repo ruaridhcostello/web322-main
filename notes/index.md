@@ -11,7 +11,7 @@ Here, you will find the links to the weekly notes.
 
 <div class="overflow-table">
 
-<!-- Regular Schedule
+
 <table>
 <thead>
 <tr>
@@ -226,7 +226,7 @@ Security Considerations:<br><br>
 </tbody>
 </table>
 
--->
+<!-- 6 - 1 - 6 Schedule 
 
 <table>
 <thead>
@@ -424,4 +424,6 @@ Security Considerations:<br><br>
 
 </tbody>
 </table>
+
+-->
 </div>

@@ -15,7 +15,7 @@ This schedule is subject to change. Students will be informed of any schedule ch
 
 <div class="wide-table">
 
-<!-- Regular Schedule 
+
 
 <table>
 <thead>
@@ -214,7 +214,7 @@ This schedule is subject to change. Students will be informed of any schedule ch
 </tbody>
 </table>
 
--->
+<!-- 6 - 1 - 6 Schedule 
 
 <table>
 <thead>
@@ -405,7 +405,7 @@ This schedule is subject to change. Students will be informed of any schedule ch
 </tbody>
 </table>
 
-
+-->
 </div>
 <br />
 
