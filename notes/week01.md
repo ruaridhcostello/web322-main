@@ -19,7 +19,7 @@ Throughout this course, we will be working almost exclusively in the following e
 
 #### Visual Studio Code
 
-[![Visual_Studio_2012_logo_and_wordmark](/media/uploads/2016/05/Visual_Studio_2012_logo_and_wordmark-300x51.png)](http://code.visualstudio.com)
+[![Visual_Studio_2012_logo_and_wordmark](/web322/media/uploads/2016/05/Visual_Studio_2012_logo_and_wordmark-300x51.png)](http://code.visualstudio.com)
 
 “Visual Studio Code is an open-source (free) streamlined code editor with support for development operations like debugging, task running and version control. It aims to provide just the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to fuller featured IDEs”. Visual Studio Code also runs on Mac OS X, Linux and Windows operating systems, which will provide the class with a single unified environment to work in regardless of a student’s choice of laptop or home computer. Some of the noteworthy features of Visual Studio Code Include:  
 
@@ -53,7 +53,7 @@ Visual Studio Code has integrated [Git](https://www.atlassian.com/git/) support 
 
 #### Modern Web Browser
 
-[![Chrome Logo](/media/uploads/2016/08/chrome-logo.png)](https://www.google.com/chrome/browser) [![Firefox Logo](/media/uploads/2016/08/firefox-logo.png)](https://www.mozilla.org/en-US/firefox/new/)  
+[![Chrome Logo](/web322/media/uploads/2016/08/chrome-logo.png)](https://www.google.com/chrome/browser) [![Firefox Logo](/web322/media/uploads/2016/08/firefox-logo.png)](https://www.mozilla.org/en-US/firefox/new/)  
 A modern web browser such as Google Chrome or Mozilla Firefox will be used regularly throughout this course. Internet Explorer 11 / Edge will work as well, as it supports a similar set of development tools, however due to it’s lack of plugins / addons and cross-platform support it’s not as highly recommended. All screenshots and development examples used throughout this course have been taken in Google Chrome.
 
 **Browser Developer Toolbar**
@@ -65,7 +65,7 @@ Before starting this course, students should have at least a basic understanding
 
 This will bring up the Chrome “Developer Toolbar”, as seen below :
 
-![Dev Toolbar](/media/uploads/2016/08/dev-tools2.png)
+![Dev Toolbar](/web322/media/uploads/2016/08/dev-tools2.png)
 
 We will be working with many of these panels throughout the semester. A quick list of their functionality (from left to right, starting at the top left corner) is as follows:
 
@@ -76,7 +76,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr >
 
-<td width="20%"><img src="/media/uploads/2016/08/dev-tools-1.jpg" alt="Element Inspector" /></td>
+<td width="20%"><img src="/web322/media/uploads/2016/08/dev-tools-1.jpg" alt="Element Inspector" /></td>
 
 <td><strong>Element Inspector:</strong> Select an element in the page to inspect it; this will cause the Developer Tools (Devtools) to switch to the “Elements” panel and highlight the rendered source code (HTML) responsible for displaying the item. This will also cause the “Styles” panel (on the right) to highlight all current CSS applied to the element</td>
 
@@ -84,7 +84,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr>
 
-<td><img src="/media/uploads/2016/08/dev-tools-2.jpg" alt="Device Toolbar Toggle" /></td>
+<td><img src="/web322/media/uploads/2016/08/dev-tools-2.jpg" alt="Device Toolbar Toggle" /></td>
 
 <td><strong>Device Toolbar Toggle:</strong> Toggles the “device toolbar” on and off. This allows the developer to select a device and manually enter the pixel dimensions of the screen and scale of the page. This is useful for ensuring that the page looks correct in a variety of devices</td>
 
@@ -92,7 +92,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr>
 
-<td><img src="/media/uploads/2016/08/dev-tools-3.jpg" alt="Elements Panel" /></td>
+<td><img src="/web322/media/uploads/2016/08/dev-tools-3.jpg" alt="Elements Panel" /></td>
 
 <td><strong>Elements Panel:</strong> Shows a view of the current page’s Document Object Model (DOM) tree as HTML. Selecting a given node (element) will highlight it in the page and show it’s applied CSS in the “Styles” panel. Developers can also modify this element and corresponding CSS (“Styles” panel) live and see the results directly in the browser. Important Note: The HTML shown in this panel isn’t necessarily the source code of the page, as it will show elements and attributes that have been dynamically added after the page is loaded. Changes to the HTML/CSS/JavaScript in this mode will not save to the source file.</td>
 
@@ -100,7 +100,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr>
 
-<td><img src="/media/uploads/2016/08/dev-tools-4.jpg" alt="Console Panel" /></td>
+<td><img src="/web322/media/uploads/2016/08/dev-tools-4.jpg" alt="Console Panel" /></td>
 
 <td><strong>Console Panel:</strong> shows a JavaScript console pane. JavaScript calls to “console.log()” will show the resultant text in this window. Additionally, all JavaScript errors will show up in this location in red. Developers can also write small JavaScript code snippets to be executed immediately within the context of the page.</td>
 
@@ -108,7 +108,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr>
 
-<td><img src="/media/uploads/2016/08/dev-tools-5.jpg" alt="Sources Panel" /></td>
+<td><img src="/web322/media/uploads/2016/08/dev-tools-5.jpg" alt="Sources Panel" /></td>
 
 <td><strong>Sources Panel:</strong> shows a list of all items included in the page (ie: all images, CSS, JavaScript, etc) and their corresponding locations of origin. Developers can click on an item to show it’s contents in the middle (preview) panel. If the selected item is a JavaScript file, developers can (in the “debugger” panel) set breakpoints and watch variables to help identify and debug a misbehaving piece of JavaScript code.</td>
 
@@ -116,7 +116,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr>
 
-<td><img src="/media/uploads/2016/08/dev-tools-6.jpg" alt="Network Panel" /></td>
+<td><img src="/web322/media/uploads/2016/08/dev-tools-6.jpg" alt="Network Panel" /></td>
 
 <td><strong>Network Panel:</strong> is used to get additional insights into requested and downloaded resources. Developers can start/stop the recording of a log that tracks all resources loaded including their corresponding status code, type, time (latency), size of the resource and the initiator of the request</td>
 
@@ -124,7 +124,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr>
 
-<td><img src="/media/uploads/2018/09/performance-tab-4.png" alt="Performance Panel" /></td>
+<td><img src="/web322/media/uploads/2018/09/performance-tab-4.png" alt="Performance Panel" /></td>
 
 <td><strong>Performance Panel:</strong> enables a tool that allows developers to record and analyze all the activity in their applications as they run. It’s the best place to start investigating perceived performance issues. This is done by recording a timeline of every event that occurs after a page loads and analyzing the corresponding FPS, CPU, and network requests.</td>
 
@@ -132,7 +132,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr>
 
-<td><img src="/media/uploads/2018/09/memory-tab.png" alt="Memory Panel" /></td>
+<td><img src="/web322/media/uploads/2018/09/memory-tab.png" alt="Memory Panel" /></td>
 
 <td><strong>Memory Panel:</strong> provides more detailed debugging information than the timeline by enabling developers to record detailed CPU/Memory profiles such as a “JavaScript CPU Profile”, “Heap Snapshot”, “Allocating Timeline” and “Allocation Profile”.</td>
 
@@ -140,7 +140,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr>
 
-<td><img src="/media/uploads/2016/08/dev-tools-9.jpg" alt="Application Panel" /></td>
+<td><img src="/web322/media/uploads/2016/08/dev-tools-9.jpg" alt="Application Panel" /></td>
 
 <td><strong>Application Panel:</strong> (previously, the “resource” panel) allows developers to inspect and manage client-side storage, caches, and resources. This includes: key-value pairs stored in “Local Storage”, access to IndexedDB Data (a JavaScript-based object-oriented database used to store data locally), a “Web SQL” explorer (depreciated in favour of IndexedDB), as well as access to stored cookies and cache data. This is very useful in verifying that your application is storing data correctly on the client side.</td>
 
@@ -148,7 +148,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr>
 
-<td><img src="/media/uploads/2016/08/dev-tools-10.jpg" alt="Security Panel" /></td>
+<td><img src="/web322/media/uploads/2016/08/dev-tools-10.jpg" alt="Security Panel" /></td>
 
 <td><strong>Security Panel:</strong> gives an overview of a page from a security standpoint including: Certificate verification (indicating whether the site has proven its identity with a TLS certificate), Transport Layer Security (TLS) connection (Note: TLS is often referred to by the name of it’s predecessor, SSL) and Subresource security (indicating whether the site loads insecure HTTP subresources – ie: “mixed content”).</td>
 
@@ -156,7 +156,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr>
 
-<td><img src="/media/uploads/2016/08/dev-tools-11.jpg" alt="Audits Panel" /></td>
+<td><img src="/web322/media/uploads/2016/08/dev-tools-11.jpg" alt="Audits Panel" /></td>
 
 <td><strong>Audits Panel:</strong> is used to analyze a page as it loads. Once a page has finished loading, the audit provides suggestions and optimizations for decreasing page load time and increase perceived (and real) responsiveness. For example, it might suggest that a developer “Remove unused CSS rules” or “Combine external JavaScript” in an effort to optimize network utilization and page performance.</td>
 
@@ -164,7 +164,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr>
 
-<td><img src="/media/uploads/2016/08/dev-tools-12.jpg" alt="Error Icon" /></td>
+<td><img src="/web322/media/uploads/2016/08/dev-tools-12.jpg" alt="Error Icon" /></td>
 
 <td><strong>Error Icon:</strong> displays the number of errors present in the “Console Pane”. To review the errors, simply switch over to the Console pane and locate the items highlighted in red.</td>
 
@@ -172,7 +172,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr>
 
-<td><img src="/media/uploads/2016/08/dev-tools-13.jpg" alt="Customize Icon" /></td>
+<td><img src="/web322/media/uploads/2016/08/dev-tools-13.jpg" alt="Customize Icon" /></td>
 
 <td><strong>Customize Icon:</strong> controls where the Developer Toolbar should be placed relative to the browser, as well as a collection of all related settings and preferences for the tool set.</td>
 
@@ -180,7 +180,7 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <tr>
 
-<td><img src="/media/uploads/2016/08/dev-tools-14.jpg" alt="Close Icon" /></td>
+<td><img src="/web322/media/uploads/2016/08/dev-tools-14.jpg" alt="Close Icon" /></td>
 
 <td><strong>Close Icon:</strong> closes the Developer Toolbar.</td>
 
@@ -201,7 +201,7 @@ Additionally, we will cover a number of topics surrounding the following technol
 
 #### JavaScript (ES5 & ES6)
 
-![Javascript Logo](/media/uploads/2016/12/javascript-logo.png)
+![Javascript Logo](/web322/media/uploads/2016/12/javascript-logo.png)
 
 A huge focus of this course will be on JavaScript. In fact – JavaScript will be the only official programming language that we will be studying in this course. While we will be interacting with HTML5 and CSS3, neither is considered a “programming language” in the same way that C, C++ or JavaScript is. HTML5 and CSS3 are instead considered markup languages and style sheet languages respectfully – that is, they describe presentation, whereas programming languages describe function. Regardless, we will be focusing exclusively on JavaScript and how a number of very sophisticated tools and frameworks can help us create efficient and functional web applications.
 
@@ -225,7 +225,7 @@ While not all ES6 features are fully implemented in all browsers (JavaScript eng
 
 #### Node.js
 
-[![Node Logo](/media/uploads/2016/08/node-logo.jpg)](https://nodejs.org)
+[![Node Logo](/web322/media/uploads/2016/08/node-logo.jpg)](https://nodejs.org)
 
 At it’s core, Node.js is an open-source, cross-platform JavaScript runtime environment built on Chrome’s V8 JavaScript engine. It is typically used for developing server-side and networking applications and has recently exploded as the go-to application framework for many real-time web applications. This is largely due to it’s event-driven, non-blocking I/O model which ensures that the main thread of execution is not kept waiting for slow I/O operations (ie: stopping and waiting for a database query to complete). Some major companies using it include Paypal, eBay, GoDaddy, Heroku, Microsoft, Shutterstock, Uber, Wikia just to name a few.
 
@@ -240,7 +240,7 @@ Node.js also has an expansive package ecosystem accessible via it’s Node Packa
 
 #### jQuery
 
-[![jQuery Logo](/media/uploads/2016/08/jquery-logo.jpg)](https://jquery.com)
+[![jQuery Logo](/web322/media/uploads/2016/08/jquery-logo.jpg)](https://jquery.com)
 
 “jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.”
 
@@ -250,7 +250,7 @@ Back in 2006 when jQuery was initially released – we didn’t have the same le
 
 #### PostgreSQL
 
-[![PostgreSQL Logo](/media/uploads/2017/03/postgres-sql-image.png)](https://www.postgresql.org/)
+[![PostgreSQL Logo](/web322/media/uploads/2017/03/postgres-sql-image.png)](https://www.postgresql.org/)
 
 From the PostgreSQL site, [postgresql.org](https://www.postgresql.org):
 
@@ -260,7 +260,7 @@ From the PostgreSQL site, [postgresql.org](https://www.postgresql.org):
 
 #### MongoDB
 
-[![MongoDB Logo](/media/uploads/2016/08/MongoDB-Logo.svg_.png)](https://www.mongodb.com/)
+[![MongoDB Logo](/web322/media/uploads/2016/08/MongoDB-Logo.svg_.png)](https://www.mongodb.com/)
 
 MongoDB is another open-source database that we will be exploring in this course. However, unlike MySQL MongoDB is classified as a “NoSQL” database and stores its data in JSON like format rather than in tables with fixed columns. The term NoSQL comes from “Not only SQL” and is intended to mean that it is a type of database system that can store data in non traditional tabular and relational format. It is because of this that NoSQL is quickly becoming a popular alternative to traditional Relational Databases (RDBMS).
 
@@ -272,7 +272,7 @@ We will be exploring how we can leverage NoSQL (MongoDB) to make data management
 
 As we discovered in WEB222, the Internet is the global system of interconnected computer networks that use the Internet protocol suite (TCP/IP) to connect network-enabled devices around the world. We discussed the client/server model and how the client (web browser) makes structured requests for data on the server, which then responds with data (HTML, CSS, Javascript, etc.). This is known as the request/response model and (at it’s most basic level) it consists of a web browser asking the web server to send it a web page and the server sending back the page. The browser then takes care of parsing the HTML and displaying the page:
 
-![Client-Server Model](/media/uploads/2016/08/client-server.jpg)  
+![Client-Server Model](/web322/media/uploads/2016/08/client-server.jpg)  
 ([https://www.safaribooksonline.com/library/view/learning-php-mysql/9781491906910/ch01.html](https://www.safaribooksonline.com/library/view/learning-php-mysql/9781491906910/ch01.html))
 
 Powering this transaction is a protocol called HTTP (Hypertext Transfer Protocol), which defines a stateless request/response protocol that operates by exchanging messages across a reliable connection. An HTTP “client” (ie: web browser) is a program that establishes a connection to a server for the purpose of sending one or more HTTP requests. An HTTP “server” is a program that accepts connections in order to service HTTP requests by sending HTTP responses.
@@ -290,7 +290,7 @@ Both HTTP requests and responses share a similar structure and are composed of:
 *   A blank line indicating that all meta-information for the request has been sent.
 *   An optional body that contains data associated with the request (like the content of an HTML form), or the document associated with a response. The presence of the body and its size is defined by the start-line and the HTTP headers.
 
-![HTTP Message](/media/uploads/2016/08/HTTPMsgStructure.jpg)  
+![HTTP Message](/web322/media/uploads/2016/08/HTTPMsgStructure.jpg)  
 ([https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages))
 
 <br>
@@ -425,7 +425,7 @@ There are [numerous request headers available](http://www.iana.org/assignments/m
 *   **General headers:** apply to the message as a whole.
 *   **Entity headers:** apply to the body of the request (Note: there is no such header transmitted when there is no body in the request).
 
-![HTTP Request Header](/media/uploads/2016/08/HTTPRequestsHeader.jpg)  
+![HTTP Request Header](/web322/media/uploads/2016/08/HTTPRequestsHeader.jpg)  
 ([https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages))
 
 <br>
@@ -509,7 +509,7 @@ There are [numerous response headers available](http://www.iana.org/assignments/
 *   **Entity headers:** apply to the body of the response (Note: there is no such header transmitted when there is no body in the response).
 *   **Response headers**: give additional information about the server that don’t fit in the status line.
 
-![HTTP Response Header](/media/uploads/2016/08/HTTP_Response_headers.jpg)  
+![HTTP Response Header](/web322/media/uploads/2016/08/HTTP_Response_headers.jpg)  
 ([https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages))
 
 <br>
