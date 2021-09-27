@@ -624,5 +624,4 @@ From the Heroku website in your account, you can view the logs of your app and y
 
 *   [https://nodejs.org](https://nodejs.org)
 *   [https://developer.mozilla.org](https://developer.mozilla.org)
-*   [https://docs.nodejitsu.com](https://docs.nodejitsu.com)
 *   [Package.json documentation](https://docs.npmjs.com/getting-started/using-a-package.json)
