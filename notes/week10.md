@@ -128,7 +128,7 @@ Now we need to register clientSessions as a middleware and configure it, as well
 
 ```javascript
 // Register handlerbars as the rendering engine for views
-app.engine(".hbs", exphbs({ extname: ".hbs" }));
+app.engine(".hbs", exphbs.engine({ extname: ".hbs" }));
 app.set("view engine", ".hbs");
 
 // Setup the static folder that static resources can load from
