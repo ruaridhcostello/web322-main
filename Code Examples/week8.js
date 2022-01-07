@@ -3,7 +3,6 @@ const express = require("express");
 const app = express();
 const multer = require("multer");
 const path = require("path");
-const _ = require ("underscore");
 const fs = require("fs");
 const exphbs = require("express-handlebars");
 const mongoose = require("mongoose");
@@ -66,12 +65,12 @@ app.get("/", (req, res) => {
   PhotoModel.find().lean()
   .exec()
   .then((photos) => {
-    // underscore ( _ ) is a common library full of utility methods you can use
-    // to make certain tasks a lot easier on yourself. Here we use underscore to
-    // loop through the photos and and for each photo, set the uploadDate to a 
-    // more user friendly date format. http://underscorejs.org/#each
-    _.each(photos, (photo) => {
-      photo.uploadDate = new Date(photo.createdOn).toDateString();
+
+    // Here we use loop through the photos and and for each photo, set the uploadDate to a 
+    // more user friendly date format.
+
+    photos.forEach((photo) => {
+         photo.uploadDate = new Date(photo.createdOn).toDateString();
     });
 
     // send the html view with our form to the client
