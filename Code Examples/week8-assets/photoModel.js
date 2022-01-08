@@ -2,9 +2,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-// use bluebird promise library with mongoose
-mongoose.Promise = require("bluebird");
-
 // define the photo schema
 const photoSchema = new Schema({
   "filename": {

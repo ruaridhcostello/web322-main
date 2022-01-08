@@ -13,9 +13,6 @@ const HTTP_PORT = process.env.PORT || 8080;
 const config = require("./week8-assets/config");
 const connectionString = config.database_connection_string;
 
-// use bluebird promise library with mongoose
-mongoose.Promise = require("bluebird");
-
 // call this function after the http server starts listening for requests
 function onHttpStart() {
   console.log("Express http server listening on: " + HTTP_PORT);
