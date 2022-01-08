@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // instruct the app to use express handlebars for the view engine with the .hbs extension
 app.set("views", WEEK7ASSETS);
-app.engine(".hbs", exphbs({ extname: ".hbs" }));
+app.engine(".hbs", exphbs.engine({ extname: ".hbs" }));
 app.set("view engine", ".hbs");
 
 // Setup the static folder that static resources can load from

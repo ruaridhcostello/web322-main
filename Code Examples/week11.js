@@ -8,7 +8,7 @@ const WEEK11ASSETS = "./week11-assets/";
 
 // Register handlerbars as the rendering engine for views
 app.set("views", WEEK11ASSETS);
-app.engine(".hbs", exphbs({ extname: ".hbs" }));
+app.engine(".hbs", exphbs.engine({ extname: ".hbs" }));
 app.set("view engine", ".hbs");
 
 // Setup the static folder that static resources can load from

@@ -49,7 +49,7 @@ function ensureLogin(req, res, next) {
 
 // Register handlerbars as the rendering engine for views
 app.set("views", WEEK12ASSETS);
-app.engine(".hbs", exphbs({ extname: ".hbs" }));
+app.engine(".hbs", exphbs.engine({ extname: ".hbs" }));
 app.set("view engine", ".hbs");
 
 // Setup the static folder that static resources can load from
