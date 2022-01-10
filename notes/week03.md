@@ -194,10 +194,10 @@ function architect(inName, inAge){
     this.occupation = "architect";
 }
 
-architect.prototype.setName = function(newName){this.name = newName},
-architect.prototype.setAge = function(newAge){this.age = newAge},
-architect.prototype.getName = function(){return this.name},
-architect.prototype.getAge = function(){return this.age}
+architect.prototype.setName = function(newName){this.name = newName};
+architect.prototype.setAge = function(newAge){this.age = newAge};
+architect.prototype.getName = function(){return this.name};
+architect.prototype.getAge = function(){return this.age};
 
 var architect1 = new architect("Joe", 34);
 var architect2 = new architect("Mary", 49);
@@ -294,21 +294,24 @@ ES6 has introduced some "syntax sugar" to allow us to create objects in a more i
 ```javascript
 class architect{
 
-    constructor(inName, inAge){
-        this.name = inName;
-        this.age = inAge;
-        this.occupation = "architect";
+    name = ""; // default value of "" for name
+    age = 0; // default value of 0 for age
+    occupation = "architect"; // default value of "architect" for occupation
+  
+    constructor(setName, setAge){
+        this.name = setName;
+        this.age = setAge;
     }
-
+  
     setName(newName){this.name = newName}
-
+  
     setAge(newAge){this.age = newAge}
-
+  
     getName(){return this.name;}
-
+  
     getAge(){return this.age;}
-
-}
+  
+  }
 
 var architect1 = new architect("Joe", 34);
 var architect2 = new architect("Mary", 49);
@@ -319,7 +322,9 @@ console.log(architect1.getName()); // "Joe"
 console.log(architect2.getName()); // "Mary"
 ```
 
-Notice how we specify a "constructor" function to take initialization parameters, as well as specify all of the methods within the "class" block. We are still creating objects using the method illustrated in the "Function Constructor" pattern (above), however this syntax is much more intuitive. Additionally, we can leverage the ["extends"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends) and ["super"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super) keywords to create objects which inherit from other objects easily (for a detailed example, see [this great article from medium.com](https://medium.com/ecmascript-2015/es6-classes-and-inheritance-607804080906)).
+Notice how we specify the properties (with default values), a "constructor" function to take initialization parameters, as well as specify all of the methods within the "class" block. We are still creating objects using the method illustrated in the "Function Constructor" pattern (above), however this syntax is much more intuitive. Additionally, we can leverage the ["extends"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends) and ["super"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super) keywords to create objects which inherit from other objects easily (for a detailed example, see [this great article from medium.com](https://medium.com/ecmascript-2015/es6-classes-and-inheritance-607804080906)).
+
+**NOTE**: By default, the properties are declared as "public".  To create "private" properties / methods, simply use the "#" prefix for their identifier (see: ["Private class features"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields#private_instance_fields) for more information).
 
 <br>
 
