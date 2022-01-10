@@ -219,7 +219,7 @@ In 2015, ECMAScript 6 was released and many interesting new features were introd
 *   [Modules](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules)
 *   [and many more…](http://es6-features.org/)
 
-While not all ES6 features are fully implemented in all browsers (JavaScript engines / runtimes), the main server-side runtime that we will be working in (Node.js) supports [97% of the specification](http://kangax.github.io/compat-table/es6/) and is considered production ready.
+While not all ES6 features are fully implemented in all browsers (JavaScript engines / runtimes), the main server-side runtime that we will be working in (Node.js) supports [98% of the specification](http://kangax.github.io/compat-table/es6/) and is considered production ready.
 
 <br>
 
