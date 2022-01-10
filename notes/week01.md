@@ -158,7 +158,10 @@ We will be working with many of these panels throughout the semester. A quick li
 
 <td><img src="/media/uploads/2016/08/dev-tools-11.jpg" alt="Audits Panel" /></td>
 
-<td><strong>Audits Panel:</strong> is used to analyze a page as it loads. Once a page has finished loading, the audit provides suggestions and optimizations for decreasing page load time and increase perceived (and real) responsiveness. For example, it might suggest that a developer “Remove unused CSS rules” or “Combine external JavaScript” in an effort to optimize network utilization and page performance.</td>
+<td><strong>Audits Panel:</strong> is used to analyze a page as it loads. Once a page has finished loading, the audit provides suggestions and optimizations for decreasing page load time and increase perceived (and real) responsiveness. For example, it might suggest that a developer “Remove unused CSS rules” or “Combine external JavaScript” in an effort to optimize network utilization and page performance.
+<br><br>
+<strong>NOTE</strong>: As of Chrome 83, the "Audits" panel is now the "Lighthouse" panel (see: <a href="https://developer.chrome.com/blog/new-in-devtools-83/#lighthouse">https://developer.chrome.com/blog/new-in-devtools-83/#lighthouse</a>).
+</td>
 
 </tr>
 
