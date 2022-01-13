@@ -23,7 +23,7 @@ To incorporate the jQuery library into our assignments, we simply need to add a 
 
 ```html
 <head>
-    <script src="/js/lib/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="/js/lib/jQuery/jquery-3.6.0.min.js"></script>
     <!-- ... -->
 </head>
 ```
@@ -32,7 +32,7 @@ If we wanted to use the same version from the CDN, we would use the following co
 
 ```html
 <head>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- ... -->
 </head>
 ```
@@ -45,7 +45,7 @@ Now that we have the jQuery library correctly added to our view, we should add a
 
 ```html
 <head>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
     <!-- ... -->
 </head>
@@ -246,7 +246,7 @@ $.ajax({
 
 ![Bootstrap Logo](/media/uploads/2017/07/bootstrap-5-e1499300485358.png)
 
-The Bootstrap framework is a set of **JavaScript** & **CSS** files that simplify the design of complex layouts & UI/UX functionality. It is often used as a starting point for modern websites, given its clean design patterns and unobtrusive JavaScript components. Bootstrap also has excellent [documentation](https://getbootstrap.com/docs/3.3/getting-started/), making it simple for developers to prototype web apps quickly and efficiently. It is for these reasons that it's been so widely adopted by the industry as the de facto starting point when building everything from simple static sites to complex web applications.
+The Bootstrap framework is a set of **JavaScript** & **CSS** files that simplify the design of complex layouts & UI/UX functionality. It is often used as a starting point for modern websites, given its clean design patterns and unobtrusive JavaScript components. Bootstrap also has excellent [documentation](https://getbootstrap.com/docs/3.4/getting-started/), making it simple for developers to prototype web apps quickly and efficiently. It is for these reasons that it's been so widely adopted by the industry as the de facto starting point when building everything from simple static sites to complex web applications.
 
 <br>
 
@@ -262,7 +262,7 @@ Using a **local copy** - typically installed in "/lib/bootstrap":
 <head>
     <link rel="stylesheet"  href="/lib/bootstrap/css/bootstrap.min.css">
     <!-- it is common to place the .js files at the end of the <body> tag as well -->
-    <script src="/js/lib/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="/js/lib/jQuery/jquery-3.6.0.min.js"></script>
     <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
     <!-- ... -->
 </head>
@@ -272,10 +272,10 @@ Using a **CDN**:
 
 ```html
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <!-- it is common to place the .js files at the end of the <body> tag as well -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <!-- ... -->
 </head>
 ```
@@ -284,7 +284,7 @@ Using a **CDN**:
 
 #### Responsive Grid System
 
-Arguably one of the best features of the Bootstrap framework is it's [Responsive Grid System](https://getbootstrap.com/docs/3.3/css/#grid). CSS Grid systems have risen in popularity in recent years because they allow designers to easily create visually pleasing, clean layouts without manually fiddling with floats, margins, padding, flexbox, etc. Additionally, if a "responsive" grid system is used correctly, it can be very simple to create layouts that **also** conform to responsive design principles. Recall: responsive design can be defined as:
+Arguably one of the best features of the Bootstrap framework is it's [Responsive Grid System](https://getbootstrap.com/docs/3.4/css/#grid). CSS Grid systems have risen in popularity in recent years because they allow designers to easily create visually pleasing, clean layouts without manually fiddling with floats, margins, padding, flexbox, etc. Additionally, if a "responsive" grid system is used correctly, it can be very simple to create layouts that **also** conform to responsive design principles. Recall: responsive design can be defined as:
 
 > ![Responsive Sizing](/media/uploads/2017/07/responsive-design-illustration.jpg)  
 >   
@@ -346,7 +346,7 @@ To implement this in our example from above, we simply add three (3) columns in 
 
 #### Viewport Specific Configurations
 
-If we want to be more specific with how the grids appear at each viewport size, we can use one or more of the following [class prefixes](https://getbootstrap.com/docs/3.3/css/#grid-options) on each row (* represents number of columns):
+If we want to be more specific with how the grids appear at each viewport size, we can use one or more of the following [class prefixes](https://getbootstrap.com/docs/3.4/css/#grid-options) on each row (* represents number of columns):
 
 <div class="overflow-table">
 <table class="table-bordered table-condensed" style="width:100%; margin-bottom:20px;">
@@ -381,19 +381,19 @@ Sometimes our design requires columns to be "offset" from the left of the grid. 
 </div>
 ```
 
-**Note:** As a final (but important) note about responsive design; Bootstrap also has created some **[Responsive Utility Classes](https://getbootstrap.com/docs/3.3/css/#responsive-utilities)** that enable the visibility of elements to be toggled depending on each device size (ie: xs, sm, md, lg). Using these utilities in conjunction with the responsive grid system (as illustrated above), it is possible to implement a complex, responsive layout without writing any extra CSS to manage the configuration across device sizes!
+**Note:** As a final (but important) note about responsive design; Bootstrap also has created some **[Responsive Utility Classes](https://getbootstrap.com/docs/3.4/css/#responsive-utilities)** that enable the visibility of elements to be toggled depending on each device size (ie: xs, sm, md, lg). Using these utilities in conjunction with the responsive grid system (as illustrated above), it is possible to implement a complex, responsive layout without writing any extra CSS to manage the configuration across device sizes!
 
 <br>
 
 #### Components
 
-Bootstrap comes with a wide range of [reusable components](https://getbootstrap.com/docs/3.3/components/) to help implement your design. They are all widely used, however there is only enough time to discuss the most interesting/important ones today:
+Bootstrap comes with a wide range of [reusable components](https://getbootstrap.com/docs/3.4/components/) to help implement your design. They are all widely used, however there is only enough time to discuss the most interesting/important ones today:
 
 <br>
 
 #### Glyphicons
 
-Bootstrap comes bundled with the premium icon font [Glyphicons](https://getbootstrap.com/docs/3.3/components/#glyphicons). Most modern web apps use icons to help the usability of their application, for example a "magnifying glass" ( ) for searching, or a "floppy disk" ( ) to indicate saving. As a way to offer the icons in as flexible a manner as possible (rendered "cleanly" at any size), special web fonts where introduced that contain the icons. This is where Glyphicons comes in - it is essentially a font that contains a large range of icons that we can use in our application. Since it is a font (represented as a vector), we can size the icon up or down depending on our needs using the "font-size" property, without any loss of quality:  
+Bootstrap comes bundled with the premium icon font [Glyphicons](https://getbootstrap.com/docs/3.4/components/#glyphicons). Most modern web apps use icons to help the usability of their application, for example a "magnifying glass" ( ) for searching, or a "floppy disk" ( ) to indicate saving. As a way to offer the icons in as flexible a manner as possible (rendered "cleanly" at any size), special web fonts where introduced that contain the icons. This is where Glyphicons comes in - it is essentially a font that contains a large range of icons that we can use in our application. Since it is a font (represented as a vector), we can size the icon up or down depending on our needs using the "font-size" property, without any loss of quality:  
 ![Glyphicon Sizing](/media/uploads/2017/07/icon-font.png)  
 ( img src: [http://glyphicons.com](http://glyphicons.com/) )
 
@@ -407,7 +407,7 @@ To incorporate an icon using Bootstrap's Glyphicons (often used in <button> elem
 
 #### Buttons
 
-Another important "component" that Bootstrap provides is a set of classes to [render buttons](https://getbootstrap.com/docs/3.3/css/#buttons). There is no escaping the need for buttons, whether they're hyperlinks ( &lt;a&gt;...&lt;/a&gt; ), buttons ( &lt;button&gt;...&lt;/button&gt; ) or input type=submit / button buttons ( &lt;input type="submit" /&gt;). Once again, Bootstrap comes to the rescue with a set of classes to create consistent, clean buttons:  
+Another important "component" that Bootstrap provides is a set of classes to [render buttons](https://getbootstrap.com/docs/3.4/css/#buttons). There is no escaping the need for buttons, whether they're hyperlinks ( &lt;a&gt;...&lt;/a&gt; ), buttons ( &lt;button&gt;...&lt;/button&gt; ) or input type=submit / button buttons ( &lt;input type="submit" /&gt;). Once again, Bootstrap comes to the rescue with a set of classes to create consistent, clean buttons:  
 
 ![Button Colours](/media/uploads/2017/07/bootstrap-buttons.png)  
 
@@ -481,7 +481,7 @@ While the buttons rendered above look good and match Bootstrap's default style, 
 
 #### Dropdown Buttons
 
-There are a few more interesting things that we can do to work with buttons (ie: setting ["active" state](https://getbootstrap.com/docs/3.3/css/#buttons-active), ["disabled" state](https://getbootstrap.com/docs/3.3/css/#buttons-disabled) & creating [block level buttons](https://getbootstrap.com/docs/3.3/css/#buttons-sizes)), however one of the coolest (and most useful) button treatments that Bootstrap provides is the "dropdown button":  
+There are a few more interesting things that we can do to work with buttons (ie: setting ["active" state](https://getbootstrap.com/docs/3.4/css/#buttons-active), ["disabled" state](https://getbootstrap.com/docs/3.4/css/#buttons-disabled) & creating [block level buttons](https://getbootstrap.com/docs/3.4/css/#buttons-sizes)), however one of the coolest (and most useful) button treatments that Bootstrap provides is the "dropdown button":  
 
 ![Button Dropdown](/media/uploads/2017/07/bootstrap-btn-dropdown.png)  
 
@@ -504,7 +504,7 @@ There are a few more interesting things that we can do to work with buttons (ie:
 
 #### Navigation Bar
 
-Almost every website you visit or web app you use will feature some sort of **navigation bar**. Users depend on this to navigate through your app and explore all of the features/information available. Bootstrap has it's own [responsive navigation bar](https://getbootstrap.com/docs/3.3/components/#navbar-default) that is highly customizable and works very nicely on mobile devices. To get started, let's create a navigation bar with a "Brand" (space for a logo) and three (3) navigation links, the first of which is "active" (selected) - this would represent the current page / view:  
+Almost every website you visit or web app you use will feature some sort of **navigation bar**. Users depend on this to navigate through your app and explore all of the features/information available. Bootstrap has it's own [responsive navigation bar](https://getbootstrap.com/docs/3.4/components/#navbar-default) that is highly customizable and works very nicely on mobile devices. To get started, let's create a navigation bar with a "Brand" (space for a logo) and three (3) navigation links, the first of which is "active" (selected) - this would represent the current page / view:  
 
 **Full Navigation Bar**  
 
@@ -606,9 +606,9 @@ If we wish to add more or less links, we can add/remove them here. Additionally,
 
 #### Forms
 
-Since our WEB322 app has been making extensive use of the Bootstrap form classes, we will be sticking with a simple example - for a more in-depth description of the Bootstrap form classes, refer to the official documentation here: [https://getbootstrap.com/docs/3.3/css/#forms](https://getbootstrap.com/docs/3.3/css/#forms).
+Since our WEB322 app has been making extensive use of the Bootstrap form classes, we will be sticking with a simple example - for a more in-depth description of the Bootstrap form classes, refer to the official documentation here: [https://getbootstrap.com/docs/3.4/css/#forms](https://getbootstrap.com/docs/3.4/css/#forms).
 
-To get started using Bootstrap forms, you really only need to remember three classes: **form-group**, **form-control** and **control-label** (used to highlight the label when ["Validation States"](https://getbootstrap.com/docs/3.3/css/#forms-control-validation) are applied to the parent element). From the Bootstrap documentation:
+To get started using Bootstrap forms, you really only need to remember three classes: **form-group**, **form-control** and **control-label** (used to highlight the label when ["Validation States"](https://getbootstrap.com/docs/3.4/css/#forms-control-validation) are applied to the parent element). From the Bootstrap documentation:
 
 > "Individual form controls automatically receive some global styling. All textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; elements with **.form-control** are set to **width: 100%;** by default. Wrap labels and controls in **.form-group** for optimum spacing."
 
@@ -642,13 +642,13 @@ To get started using Bootstrap forms, you really only need to remember three cla
 
 #### Bootstrap JavaScript (jQuery) Components
 
-Due to time constraints, it is impossible to discuss all of the fantastic [Bootstrap JavaScript Components](https://getbootstrap.com/docs/3.3/javascript/) and how they work in detail. However, we will provide some examples for the more interesting/useful ones. If you are seriously interested in using Bootstrap in your projects, the above link is a "must-read". Please note that like the other Bootstrap components, the code used below is largely boilerplate and there is little room for configuration out of the box - simply follow the pattern of elements and CSS classes and the Bootstrap framework will take care of the rest.
+Due to time constraints, it is impossible to discuss all of the fantastic [Bootstrap JavaScript Components](https://getbootstrap.com/docs/3.4/javascript/) and how they work in detail. However, we will provide some examples for the more interesting/useful ones. If you are seriously interested in using Bootstrap in your projects, the above link is a "must-read". Please note that like the other Bootstrap components, the code used below is largely boilerplate and there is little room for configuration out of the box - simply follow the pattern of elements and CSS classes and the Bootstrap framework will take care of the rest.
 
 <br>
 
 #### Dismissible Alerts
 
-[Dismissible Alerts](https://getbootstrap.com/docs/3.3/javascript/#alerts) in Bootstrap are simply small divs that provide a temporary message to the user, ie: "Warning: your session will time out in 2 minutes". We often do not want to clutter the user interface with these alerts, so Bootstrap has included functionality to allow users to "dissmiss" the alert (by pressing a close ("x") button). Additionally alerts can be given a different colour depending on the kind of alert, including: red ("alert-danger"), yellow ("alert-warning"), blue ("alert-info") and green ("alert-success"):  
+[Dismissible Alerts](https://getbootstrap.com/docs/3.4/javascript/#alerts) in Bootstrap are simply small divs that provide a temporary message to the user, ie: "Warning: your session will time out in 2 minutes". We often do not want to clutter the user interface with these alerts, so Bootstrap has included functionality to allow users to "dismiss" the alert (by pressing a close ("x") button). Additionally alerts can be given a different colour depending on the kind of alert, including: red ("alert-danger"), yellow ("alert-warning"), blue ("alert-info") and green ("alert-success"):  
 
 ![Bootstrap Alert](/media/uploads/2017/07/alerts.png)
 
@@ -686,7 +686,7 @@ Due to time constraints, it is impossible to discuss all of the fantastic [Boots
 
 #### Tabs
 
-Tabs are an extremely common user-interface component. They have been used in these notes (see Week 7 - "Putting it All Together") and play a significant role in optimizing space on a screen for categorized information. Using jQuery, the Bootstrap framework has created a standard HTML pattern that we can leverage to create a functioning [tab control](https://getbootstrap.com/docs/3.3/javascript/#tabs) without writing a single line of JavaScript!
+Tabs are an extremely common user-interface component. They have been used in these notes (see Week 7 - "Putting it All Together") and play a significant role in optimizing space on a screen for categorized information. Using jQuery, the Bootstrap framework has created a standard HTML pattern that we can leverage to create a functioning [tab control](https://getbootstrap.com/docs/3.4/javascript/#tabs) without writing a single line of JavaScript!
 
 Once again the following code is largely boilerplate out of the box. As long as we follow the predefined structure, our tabs will function properly.  
 
@@ -743,7 +743,7 @@ Even though the tabs are fairly standard, we do have some configuration options 
 
 #### Modal Window
 
-The ["modal window"](https://getbootstrap.com/docs/3.3/javascript/#modals) is one of the most important components in the list and you will find yourself needing it on every project. Essentially, a modal window is a custom in-page popup window that blocks the background content from being clicked on / interacted with. You will often see login/registration forms, chat windows, forms to edit table row data, etc. placed in modal windows.
+The ["modal window"](https://getbootstrap.com/docs/3.4/javascript/#modals) is one of the most important components in the list and you will find yourself needing it on every project. Essentially, a modal window is a custom in-page popup window that blocks the background content from being clicked on / interacted with. You will often see login/registration forms, chat windows, forms to edit table row data, etc. placed in modal windows.
 
 The Bootstrap implementation is very clean and easy to use - it also has the bonus of ensuring that the generated modal windows are "responsive" and will not break the view or cause excessive scrolling when accessed on a mobile device. The following code is a simple example of how a modal window is defined and how it can be "wired up" to be opened by clicking a button.
 
