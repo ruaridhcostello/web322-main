@@ -40,13 +40,13 @@ Regarding the code that we wrote, it’s very simple; however we have made an im
 <tbody>
 <tr>
 <td valign="top">
-<strong><a href="https://nodejs.org/api/console.html" target="_blank">Console</a></strong>
+<strong><a href="https://nodejs.org/api/console.html#console" target="_blank">Console</a></strong>
 </td>
 <td>
 The console object provides a simple debugging console that is similar to the JavaScript console mechanism provided by web browsers.<br>
 <br>Some of the key methods that we will be using are:<p></p>
 <ul>
-<li><a href="https://nodejs.org/api/console.html#console_console_log_data" target="_blank">console.log()</a></li>
+<li><a href="https://nodejs.org/api/console.html#consolelogdata-args" target="_blank">console.log()</a></li>
 <li><a href="https://nodejs.org/api/console.html#console_console_time_label" target="_blank">console.time()</a> / <a href="https://nodejs.org/api/console.html#console_console_timeend_label" target="_blank">console.timeEnd()</a></li>
 <li><a href="https://nodejs.org/api/console.html#console_console_dir_obj_options" target="_blank">console.dir()</a></li>
 </ul>
@@ -57,17 +57,17 @@ The console object provides a simple debugging console that is similar to the Ja
 <strong><a href="https://nodejs.org/api/process.html#process_process" target="_blank">Process</a></strong>
 </td>
 <td>
-The process object is a global instance of the <a href="https://nodejs.org/api/events.html#events_class_eventemitter" target="_blank">EventEmitter</a> class that provides information about, and control over, the current Node.js process. It exposes many properties, methods and events related to controlling system interactions.<br>
+The process object is a global instance of the <a href="https://nodejs.dev/learn/the-nodejs-event-emitter" target="_blank">EventEmitter</a> class that provides information about, and control over, the current Node.js process. It exposes many properties, methods and events related to controlling system interactions.<br>
 <br>Some of the key elements that we will be using are:<p></p>
 <ul>
-<li>Methods: process.on() (see: <a href="https://nodejs.org/api/events.html#events_emitter_on_eventname_listener" target="_blank">eventEmitter.on()</a> &amp; <a href="https://nodejs.org/api/process.html#process_process_events" target="_blank">process events</a>), <a href="https://nodejs.org/api/process.html#process_process_abort" target="_blank">process.abort()</a>, <a href="https://nodejs.org/api/process.html#process_process_kill_pid_signal">process.kill()</a>, <a href="https://nodejs.org/api/process.html#process_process_exit_code" target="_blank">process.exit()</a></li>
+<li>Methods: process.on(), <a href="https://nodejs.org/api/process.html#processabort" target="_blank">process.abort()</a>, <a href="https://nodejs.org/api/process.html#process_process_kill_pid_signal">process.kill()</a>, <a href="https://nodejs.org/api/process.html#process_process_exit_code" target="_blank">process.exit()</a></li>
 <li>Properties: <a href="https://nodejs.org/api/process.html#process_process_stdin">process.stdin</a>, <a href="https://nodejs.org/api/process.html#process_process_stdout">process.stdout</a>, <a href="https://nodejs.org/api/process.html#process_process_stderr">process.stderr</a>, <a href="https://nodejs.org/api/process.html#process_process_pid" target="_blank">process.pid</a>, <a href="https://nodejs.org/api/process.html#process_process_env" target="_blank">process.env</a></li>
 <li>Events: <a href="https://nodejs.org/api/process.html#process_event_beforeexit" target="_blank">beforeExit</a>, <a href="https://nodejs.org/api/process.html#process_event_exit" target="_blank">Exit</a>, <a href="https://nodejs.org/api/process.html#process_event_uncaughtexception" target="_blank">uncaughtException</a></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td valign="top"><strong><a href="https://nodejs.org/api/globals.html#globals_dirname" target="_blank">__dirname</a></strong></td>
+<td valign="top"><strong><a href="https://nodejs.org/api/modules.html#__dirname" target="_blank">__dirname</a></strong></td>
 <td>The name of the directory that the currently executing script resides in.<br>
 <br>For example: if our .js file is located in /Users/pcrawford/ex1.js:<p></p>
 
@@ -79,7 +79,7 @@ console.log(__dirname);
 </td>
 </tr>
 <tr>
-<td valign="top"><strong><a href="https://nodejs.org/api/globals.html#globals_filename" target="_blank">__filename</a></strong></td>
+<td valign="top"><strong><a href="https://nodejs.org/api/modules.html#__filename" target="_blank">__filename</a></strong></td>
 <td>The filename of the code being executed. This is the resolved absolute path of this code file.<br>
 <br>For example: if our .js file is located in /Users/pcrawford/ex1.js:<p></p>
 
@@ -91,7 +91,7 @@ console.log(__filename);
 </td>
 </tr>
 <tr>
-<td valign="top"><strong><a href="https://nodejs.org/api/timers.html#timers_settimeout_callback_delay_arg" target="_blank">setTimeout()</a></strong></td>
+<td valign="top"><strong><a href="https://nodejs.org/en/docs/guides/timers-in-node/#when-i-say-so-execution-settimeout" target="_blank">setTimeout()</a></strong></td>
 <td>This function will execute a piece of code (function) after a certain delay.  It accepts 3 parameters:<p></p>
 <ul>
 <li><strong>callback</strong> Function: The function to call when the timer elapses.</li>
@@ -110,7 +110,7 @@ setTimeout(function(){
 </td>
 </tr>
 <tr>
-<td valign="top"><strong><a href="https://nodejs.org/api/timers.html#timers_setinterval_callback_delay_arg" target="_blank">setInterval()</a></strong></td>
+<td valign="top"><strong><a href="https://nodejs.org/en/docs/guides/timers-in-node/#infinite-loop-execution-setinterval" target="_blank">setInterval()</a></strong></td>
 <td>This function will execute a piece of code (function) after a certain delay and continue to call it repeatedly.  It accepts 3 parameters (below) and returns a <a href="https://nodejs.org/api/timers.html#timers_class_timeout" target="_blank">timeout</a> object<p></p>
 <ul>
 <li><strong>callback</strong> Function: The function to call when the timer elapses.</li>
@@ -139,7 +139,7 @@ var checkMaximum = function () {
 </td>
 </tr>
 <tr>
-<td valign="top"><strong><a href="https://nodejs.org/api/globals.html#globals_require" target="_blank">require()</a></strong></td>
+<td valign="top"><strong><a href="https://nodejs.org/api/modules.html#requireid" target="_blank">require()</a></strong></td>
 <td>The require function is the easiest way to include modules that exist in separate files. The basic functionality of require is that it reads a javascript file, executes the file, and then proceeds to return the exports object.  More about modules and the require() function discussed below.<br>
 </td></tr>
 </tbody>
@@ -281,7 +281,7 @@ Node Package Manager (npm for short), is installed by default when you install n
 
 All npm packages that you install locally for your application will be installed in a node_modules folder in your project folder.
 
-Here are the most common npm commands you will use:
+While there are over 60 "npm" [commands available](https://docs.npmjs.com/cli/commands), the ones that we will most commonly use in this course are as follows:
 
 <div class="overflow-table">
 <table class="table-bordered table-condensed top-20 bottom-20" style="width:100%;">
@@ -290,7 +290,7 @@ Here are the most common npm commands you will use:
 
 <tr>
 
-<td><strong>npm install [Module Name]</strong>  
+<td><strong><a href="https://docs.npmjs.com/cli/v8/commands/npm-install" target="_blank">npm install [Module Name]</a></strong>  
 EX: npm install express</td>
 
 <td>install is used to install a package from the npm repository so that you can use it with your application. EX: var express = require(“express”);</td>
@@ -299,7 +299,7 @@ EX: npm install express</td>
 
 <tr>
 
-<td width="200"><strong>npm uninstall [module name]</strong></td>
+<td width="200"><strong><a href="https://docs.npmjs.com/cli/v8/commands/npm-uninstall" target="_blank">npm uninstall [module name]</a></strong></td>
 
 <td>uninstall does exactly what you would think, it uninstalls a module from the node_modules folder and your application will no longer be able to require() it.</td>
 
@@ -307,7 +307,7 @@ EX: npm install express</td>
 
 <tr>
 
-<td><strong>npm init</strong></td>
+<td><strong><a href="https://docs.npmjs.com/cli/v8/commands/npm-init" target="_blank">npm init</a></strong></td>
 
 <td>create a new package.json file for a fresh application. More on this part later.</td>
 
@@ -315,7 +315,7 @@ EX: npm install express</td>
 
 <tr>
 
-<td><strong>npm prune</strong></td>
+<td><strong><a href="https://docs.npmjs.com/cli/v8/commands/npm-prune" target="_blank">npm prune</a></strong></td>
 
 <td>The prune command will look through your package.json file and remove any npm modules that are installed that are not required for your project. More on this part later.</td>
 
@@ -323,7 +323,7 @@ EX: npm install express</td>
 
 <tr>
 
-<td><strong>npm list</strong></td>
+<td><strong><a href="https://docs.npmjs.com/cli/v8/commands/npm-ls" target="_blank">npm list</a></strong></td>
 
 <td>Show a list of all packages installed for use by this application.</td>
 
@@ -364,7 +364,7 @@ How are you going to make sure everyone has the **same version** of all those pa
 
 And lastly, how are you going to handle updating a package and making sure everyone else on your project updates as well?
 
-Well that’s where the package.json file comes in.
+This is where the package.json file comes in.
 
 The package.json file is a listing of all the packages your application requires and also which versions are required. It provides a simple way for newcomers to your project to get started easily and stay up to date when packages get updated.
 
