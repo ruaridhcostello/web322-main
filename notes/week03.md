@@ -294,11 +294,11 @@ ES6 has introduced some "syntax sugar" to allow us to create objects in a more i
 ```javascript
 class architect{
 
-    name = ""; // default value of "" for name
-    age = 0; // default value of 0 for age
+    name;
+    age;
     occupation = "architect"; // default value of "architect" for occupation
   
-    constructor(setName, setAge){
+    constructor(setName = "", setAge = 0){ // handle missing parameters
         this.name = setName;
         this.age = setAge;
     }
