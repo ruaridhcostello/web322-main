@@ -288,7 +288,7 @@ var BlogEntry = sequelize.define('BlogEntry', {
 
 #### Model Relationships / Associations
 
-As we know from our work in earlier semesters, tables (models) can be **related** using foreign key relationships / [associations](https://sequelize.org/master/class/lib/associations/base.js~Association.html). For example, say we have a table of **Users** and a table of **Tasks**, where each User could have **1 ore more** Tasks. To enforce this relationship, we would add an additional column on the Tasks table as a foreign-key to the Users table, since 1 or more Tasks could belong to a specific user. For example, "Task 1", "Task 2" and "Task 3" could all belong to "User 1", whereas "Task 4" and "Task 5" may belong to "User 2".
+As we know from our work in earlier semesters, tables (models) can be **related** using foreign key relationships / [associations](https://sequelize.org/master/class/lib/associations/base.js~Association.html). For example, say we have a table of **Users** and a table of **Tasks**, where each User could have **1 or more** Tasks. To enforce this relationship, we would add an additional column on the Tasks table as a foreign-key to the Users table, since 1 or more Tasks could belong to a specific user. For example, "Task 1", "Task 2" and "Task 3" could all belong to "User 1", whereas "Task 4" and "Task 5" may belong to "User 2".
 
 Using Sequelize models, we can easily define this relationship using the [hasMany()](https://sequelize.org/master/class/lib/associations/has-many.js~HasMany.html) method on our User model (since "User has many Task(s)"), for example:
 
