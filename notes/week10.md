@@ -288,7 +288,7 @@ Now we can create the login.hbs and dashboard.hbs files in the /views folder
   <h3>Hello {% raw %}{{user.username}}{% endraw %}</h3>
   <p>Welcome to your dashboard</p>
   <p>Here is the information we have on file for you:</p>
-  <h4>username: {{user.username}}</h4>
+  <h4>username: {% raw %}{{user.username}}{% endraw %}</h4>
   <h4>email: {% raw %}{{user.email}}{% endraw %}</h4>
   <a href="/logout">Logout</a>
 </body>
