@@ -65,17 +65,15 @@ JavaScript Concept Review:<br><br>
 <ul>
 <li>Object Oriented JavaScript Review:
 <ul>
-<li>Custom Objects using Object Literal Notation &amp; Function Constructors</li>
-<li>Error handling with try / catch / finally &amp; throw</li>
-<li>Prototypal Inheritance</li>
+<li>Custom Objects using Object Literal Notation &amp; Classes</li>
 </ul>
 </li>
 <li>Advanced JavaScript / ES6 Features:
 <ul>
-<li>Promises</li>
 <li>“var” vs “let” vs “const”</li>
-<li>“class” keyword</li>
-<li>“this” keyword &amp; arrow functions (lexical “this”)</li>
+<li>Error handling with try / catch / finally &amp; throw</li>
+<li>Promises</li>
+<li>Arrow functions (lexical “this”)</li>
 </ul>
 </li>
 </ul>
