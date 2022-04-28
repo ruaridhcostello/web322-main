@@ -1,6 +1,4 @@
 // NOTES
-// There is no notion of a "server" in any of the below code, so this example
-// is meant to run locally (in the integrated terminal) without a server
 // to run this example, simply type "node week3.js" into the terminal
 
 // Uncomment each function to see the example:
@@ -10,10 +8,7 @@
 /////////////////////
 
 //showObjectLiteralNotation();
-//showFunctionClosures();
-//showFunctionConstructor();
-//showThisKeyword();
-//showPrototypalInheritance();
+//showClassKeyword();
 //showVarLetConst();
 //showExceptionHandling();
 //showChainingPromises();
@@ -56,83 +51,24 @@ function showObjectLiteralNotation() {
 
 }
 
-function showFunctionClosures() {
+function showClassKeyword(){
 
     console.log("\n-----------------------");
-    console.log("Function Closures");
+    console.log("Class Keyword");
     console.log("-----------------------\n");
-
-    function counter() {
-        var localCounter = 0; // declare "localCounter" within the "counter()" function scope
-
-        return function () { // return a new function that references "localCounter"
-            localCounter++; // increment it by 1
-            return localCounter; // return the value of "localcounter"
-        };
-
-    }
-
-    // call the counter() function and get a reference to the new function
-    var count = counter();
-
-    // call the new function
-
-    console.log("count(): " + count());
-    console.log("count(): " + count());
-    console.log("count(): " + count());
-
-    function architect(inName, inAge) {
-        var name = inName;
-        var age = inAge;
-        var occupation = "architect";
-        return {
-            setName: function (newName) { name = newName },
-            setAge: function (newAge) { age = newAge },
-            getName: function () { return name },
-            getAge: function () { return age }
+    
+    class architect{
+        constructor(setName, setAge){
+            this.name = setName;
+            this.age = setAge;
+            this.occupation = "architect";
         }
+
+        setName(newName){ this.name = newName }
+        setAge(newAge){ this.age = newAge }
+        getName(){ return this.name }
+        getAge(){ return this.age }
     }
-
-    var architect1 = architect("Joe", 34);
-    var architect2 = architect("Mary", 49);
-
-    console.log("architect1.name: " + architect1.name);
-
-    console.log("architect1.getName(): " + architect1.getName());
-    console.log("architect2.getName(): " + architect2.getName());
-}
-
-function showFunctionConstructor() {
-
-    console.log("\n-----------------------");
-    console.log("Function Constructor");
-    console.log("-----------------------\n");
-
-    // Declare a function to initialize our "new" object with
-    // properties (ie: "objectProperty")
-    function myObjectInitializer(initialVal) {
-        this.objectProperty = initialVal;
-    }
-
-    // add methods (ie: "objectMethod") to the myObjectInitializer function prototype
-    myObjectInitializer.prototype.objectMethod = function () { return this.objectProperty };
-
-    // create a new object and initialize the objectProperty with the value "Hello"
-    var myObject = new myObjectInitializer("Hello");
-
-    // execute the "objectMethod" on the new object
-    console.log("myObject.objectMethod(): " + myObject.objectMethod());
-
-    function architect(inName, inAge) {
-        this.name = inName;
-        this.age = inAge;
-        this.occupation = "architect";
-    }
-
-    architect.prototype.setName = function (newName) { this.name = newName };
-    architect.prototype.setAge = function (newAge) { this.age = newAge };
-    architect.prototype.getName = function () { return this.name };
-    architect.prototype.getAge = function () { return this.age };
 
     var architect1 = new architect("Joe", 34);
     var architect2 = new architect("Mary", 49);
@@ -140,71 +76,6 @@ function showFunctionConstructor() {
     console.log("architect1.name: " + architect1.name);
     console.log("architect1.getName()): " + architect1.getName());
     console.log("architect2.getName(): " + architect2.getName());
-}
-
-function showThisKeyword() {
-
-    console.log("\n-----------------------");
-    console.log("'this' Keyword");
-    console.log("-----------------------\n");
-
-    function architect(inName, inAge) {
-        this.name = inName;
-        this.age = inAge;
-        this.occupation = "architect";
-    }
-
-    architect.prototype.setName = function (newName) { this.name = newName };
-    architect.prototype.setAge = function (newAge) { this.age = newAge };
-    architect.prototype.getName = function () { return this.name };
-    architect.prototype.getAge = function () { return this.age };
-
-    var architect1 = new architect("Joe", 34);
-    var architect2 = new architect("Mary", 49);
-
-    architect.prototype.outputNameDelay = function () {
-        setTimeout(function () {
-            console.log(this.name);
-        }, 1000);
-    }
-
-    architect2.outputNameDelay();
-
-    architect.prototype.outputNameDelayFixed = function () {
-        var that = this;
-        setTimeout(function () {
-            console.log(that.name);
-        }, 1000);
-    };
-
-    architect2.outputNameDelayFixed();
-}
-
-function showPrototypalInheritance() {
-
-    console.log("\n-----------------------");
-    console.log("Prototypal Inheritance");
-    console.log("-----------------------\n");
-
-    function architect(inName, inAge) {
-        this.name = inName;
-        this.age = inAge;
-        this.occupation = "architect";
-    }
-
-    architect.prototype.setName = function (newName) { this.name = newName },
-        architect.prototype.setAge = function (newAge) { this.age = newAge },
-        architect.prototype.getName = function () { return this.name },
-        architect.prototype.getAge = function () { return this.age }
-
-    var architect1 = new architect("Joe", 34);
-    var architect2 = new architect("Mary", 49);
-
-    architect.prototype.newMethod = function () {
-        return "Hello: " + this.name;
-    };
-
-    console.log("architect2.newMethod(): " + architect2.newMethod());
 }
 
 function showVarLetConst() {
@@ -374,24 +245,29 @@ function showLexicalThis() {
     console.log("\n-----------------------");
     console.log("'Lexical This' with Arrow Functions");
     console.log("-----------------------\n");
+    
+    class architect{
+        constructor(setName, setAge){
+            this.name = setName;
+            this.age = setAge;
+            this.occupation = "architect";
+        }
 
-    function architect(inName, inAge) {
-        this.name = inName;
-        this.age = inAge;
-        this.occupation = "architect";
+        setName(newName){ this.name = newName }
+        setAge(newAge){ this.age = newAge }
+        getName(){ return this.name }
+        getAge(){ return this.age }
+        outputNameDelay() {
+            setTimeout(() => { console.log(this.name); }, 1000);
+        };
     }
-
-    architect.prototype.setName = function (newName) { this.name = newName };
-    architect.prototype.setAge = function (newAge) { this.age = newAge };
-    architect.prototype.getName = function () { return this.name };
-    architect.prototype.getAge = function () { return this.age };
-
+    
     var architect1 = new architect("Joe", 34);
     var architect2 = new architect("Mary", 49);
 
-    architect.prototype.outputNameDelay = function () {
-        setTimeout(() => { console.log(this.name); }, 1000);
-    };
+    console.log("architect1.name: " + architect1.name);
+    console.log("architect1.getName()): " + architect1.getName());
+    console.log("architect2.getName(): " + architect2.getName());
 
     architect2.outputNameDelay();
 }
