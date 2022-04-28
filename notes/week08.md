@@ -207,14 +207,10 @@ var kwikEMart = new Company({
 });
 
 // save the company
-kwikEMart.save((err) => {
-  if(err) {
-    console.log("There was an error saving the Kwik-E-Mart company");
-  } else {
-    console.log("The Kwik-E-Mart company was saved to the web322_companies collection");
-  }
-  // exit the program after saving
-  process.exit();
+kwikEMart.save().then(()=>{
+      console.log("The Kwik-E-Mart company was saved to the web322_companies collection");
+}).catch(err=>{
+      console.log("There was an error saving the Kwik-E-Mart company");
 });
 ```
 
@@ -224,26 +220,24 @@ Modify the save call in the code above to look like the following:
 
 ```javascript
 // save the company
-kwikEMart.save((err) => {
-    if(err) {
-      console.log("There was an error saving the Kwik-E-Mart company");
-    } else {
-        console.log("The Kwik-E-Mart company was saved to the web322_companies collection");
-        Company.findOne({ companyName: "The Kwik-E-Mart" })
-        .exec()
-        .then((company) => {
-            if(!company) {
-                console.log("No company could be found");
-            } else {
-                console.log(company);
-            }
-            // exit the program after saving and finding
-            process.exit();
-        })
-        .catch((err) => {
-            console.log(`There was an error: ${err}`);
-        });
-    }   
+kwikEMart.save().then(()=>{
+  console.log("The Kwik-E-Mart company was saved to the web322_companies collection");
+  Company.findOne({ companyName: "The Kwik-E-Mart" })
+  .exec()
+  .then((company) => {
+      if(!company) {
+          console.log("No company could be found");
+      } else {
+          console.log(company);
+      }
+      // exit the program after saving and finding
+      process.exit();
+  })
+  .catch((err) => {
+      console.log(`There was an error: ${err}`);
+  });
+}).catch(err=>{
+  console.log("There was an error saving the Kwik-E-Mart company");
 });
 ```
 
@@ -366,24 +360,14 @@ To "save" (create) a new document, we must first create the document in code usi
 ```javascript
 var kwikEMart = new Company({ ... });
 
-kwikEMart.save((err) => {
-  if(err) {
-    // there was an error
-    console.log(err);
-  } else {
-    // everything good
-    console.log(kwikEMart);
-  }
+kwikEMart.save().then(() => {
+  // everything good
+  console.log(kwikEMart);
+}).catch(err => {
+  // there was an error
+  console.log(err);
 });
 ```
-
-Note: We can also pass a second parameter to the save callback, ie:  
-
-```javascript
-save((err,data)=>{ });
-```
-
-where "data" will contain the document just saved to the colection. This can be useful if we wish to obtain the automatically generated "_id" field (using data._id) immediately after creating the document.  
 
 <br>
 
@@ -544,46 +528,30 @@ var kwikEMart = new Company({
 });
 
 // save the company
-kwikEMart.save((err) => {
-  if(err) {
-    console.log(`There was an error saving the Kwik-E-Mart company: ${err}`);
-  } else {
-    console.log("The Kwik-E-Mart company was saved to the web322_companies collection");
-  }
+kwikEMart.save().then(() => {
+  console.log("The Kwik-E-Mart company was saved to the web322_companies collection");
   Company.find({ companyName: "The Kwik-E-Mart" })
-  .exec()
-  .then((company) => {
-    if(!company) {
-      console.log("No company could be found");
-    } else {
-      console.log(company);
-    }
-    // exit the program after saving
-    process.exit();
-  })
-  .catch((err) => {
-    console.log(`There was an error: ${err}`);
-  });
+    .exec()
+    .then((company) => {
+      if (!company) {
+        console.log("No company could be found");
+      } else {
+        console.log(company);
+      }
+    })
+    .catch((err) => {
+      console.log(`There was an error: ${err}`);
+    });
+}).catch(err => {
+    console.log(`There was an error saving the Kwik-E-Mart company: ${err}`);
 });
 ```
 
 Running it a second time: 
 
 ```bash
-
 $ node week8
-There was an error saving the Kwik-E-Mart company: WriteError({"code":11000,"index":0,
-"errmsg":"E11000 duplicate key error collection: web322.web322_companies index: 
-companyName_1 dup key: { : \"The Kwik-E-Mart\" }","op":{"companyName":"The Kwik-E-
-Mart","address":"Springfield","phone":"212-842-4923","country":"U.S.A","_id":"5864148f8e6a802830973e76","employeeCount
-":3,"__v":0}})
-[ { _id: 586412c78b50ee22cc9691d6,
-    companyName: 'The Kwik-E-Mart',
-    address: 'Springfield',
-    phone: '212-842-4923',
-    country: 'U.S.A',
-    __v: 0,
-    employeeCount: 3 } ]
+There was an error saving the Kwik-E-Mart company: MongoServerError: E11000 duplicate key error collection: web322.web322_companies index: companyName_1 dup key: { companyName: "The Kwik-E-Mart" }
 ```
 
 As you can see MongoDB threw back an error (E11000 duplicate key error). This is the most common form of error you'll encounter on saving a document to the database. You can handle it and act according to what your application should do.
